@@ -1,0 +1,351 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "shooting",
+                "name": "Shooting",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "adventure",
+                "name": "Adventure",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "strategy",
+                "name": "Strategy",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "casual",
+                "name": "Casual",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "driving",
+                "name": "Driving",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "cards",
+                "name": "Cards",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "puzzle",
+                "name": "Puzzle",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "music",
+                "name": "Music",
+                "iconKey": "music"
+            },
+            {
+                "slug": "platform",
+                "name": "Platform",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "racing",
+                "name": "Racing",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "tile-matching",
+                "name": "Tile-matching",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "fun",
+                "name": "Fun",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "typing",
+                "name": "Typing",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "sports",
+                "name": "Sports",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "About this portal",
+            "Terms of Use": "Terms of Use",
+            "Privacy Policy": "Privacy Policy",
+            "All": "All",
+            "Shortcut:": "Shortcut:",
+            "Close": "Close",
+            "More": "More",
+            "Search for a game": "Search for a game",
+            "Install WebGamer": "Install WebGamer",
+            "All categories": "All categories",
+            "Categories": "Categories",
+            "Favorites": "Favorites"
+        },
+        "lang": "en",
+        "game": {
+            "uuid": "82142194-c86c-4ce2-9ffa-2ccea76a6262",
+            "slug": "zoo-drop",
+            "name": "ZooDrop",
+            "score": 49,
+            "description": "ZooDrop.io is a cozy merging puzzle game with cute animals in 3D!",
+            "instructions": "Click anywhere to drop an animal. If it touches the same animal, they merge and turn into a bigger one! Try to get the highest score possible. The game ends if you reach the top of the box.",
+            "pokiUrl": "https://poki.com/en/g/zoodrop",
+            "allowIframe": true,
+            "externalPlayUrl": "https://zoodrop.io",
+            "superficialEngine": {
+                "slug": "react-three-fiber",
+                "name": "React Three Fiber"
+            },
+            "superficialSimilars": [
+                {
+                    "name": "Suika Game • Watermelon Game",
+                    "slug": "suika-game"
+                }
+            ],
+            "superficialTags": [
+                {
+                    "slug": "puzzle",
+                    "name": "Puzzle",
+                    "iconKey": "puzzle"
+                },
+                {
+                    "slug": "casual",
+                    "name": "Casual",
+                    "iconKey": "casual"
+                }
+            ],
+            "superficialMonetizations": [],
+            "detailedDeveloper": {
+                "name": "Stephen Haney",
+                "url": "https://twitter.com/sdothaney",
+                "superficialGames": [
+                    {
+                        "slug": "summoners-io",
+                        "name": "Summoners.io",
+                        "score": 51,
+                        "allowIframe": true,
+                        "mobileSupport": 1
+                    },
+                    {
+                        "slug": "zoo-drop",
+                        "name": "ZooDrop",
+                        "score": 49,
+                        "allowIframe": true,
+                        "preferredOrientation": "PORTRAIT",
+                        "mobileSupport": 2
+                    }
+                ]
+            },
+            "cta": "TWITTER-FOLLOW",
+            "ctaUrl": "https://twitter.com/sdothaney",
+            "mobileSupport": 2,
+            "preferredOrientation": "PORTRAIT",
+            "players": [
+                {
+                    "label": "1 Player",
+                    "slug": "1-player",
+                    "iconKey": "person"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "summer-afternoon",
+                    "name": "Summer Afternoon",
+                    "score": 51,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "egg-hunt",
+                    "name": "Egg Hunt",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "i-want-it-all",
+                    "name": "I Want It All",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "tower-stack",
+                    "name": "Tower Stack",
+                    "score": 48,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "monster-match",
+                    "name": "Monster Match",
+                    "score": 48,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "ducklings",
+                    "name": "Ducklings",
+                    "score": 48,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "crazy-pumpkin",
+                    "name": "Crazy Pumpkin",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "pipedown",
+                    "name": "Pipedown",
+                    "score": 47,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "eggsolotl",
+                    "name": "Eggsolotl",
+                    "score": 47,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true
+                },
+                {
+                    "slug": "keep-the-hype-up",
+                    "name": "Keep the Hype UP!",
+                    "score": 47,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "chroma",
+                    "name": "Chroma",
+                    "score": 46,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "bubbly-tim",
+                    "name": "Bubbly Tim's Time Bubble Trouble",
+                    "score": 45,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "swooop",
+                    "name": "Swooop",
+                    "score": 45,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "slash-saber",
+                    "name": "Slash Saber",
+                    "score": 44,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "modd-io",
+                    "name": "Modd.io",
+                    "score": 41,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Game Not Found",
+            "Play %s on WebGamer": "Play %s on WebGamer",
+            "Free with no ads": "Free with no ads",
+            "Cryptocurrency": "Cryptocurrency",
+            "cryptocurrency": "cryptocurrency",
+            "free-no-ads": "free-no-ads",
+            "1 Player": "1 Player",
+            "1-player": "1-player",
+            "Multiplayer": "Multiplayer",
+            "multiplayer": "multiplayer",
+            "Play": "Play",
+            "Learn more": "Learn more",
+            "More": "More",
+            "Wishlist on Steam": "Wishlist on Steam",
+            "Follow on Twitter": "Follow on Twitter",
+            "Buy on Steam": "Buy on Steam",
+            "Support on Patreon": "Support on Patreon",
+            "Follow on itch.io": "Follow on itch.io",
+            "Join the Discord": "Join the Discord",
+            "This game is 100% free and has no ads.": "This game is 100% free and has no ads.",
+            "This ad-free demo is highly replayable.": "This ad-free demo is highly replayable.",
+            "This is a free promotional game.": "This is a free promotional game.",
+            "This game contains few ads.": "This game contains few ads.",
+            "Game monetized with cosmetics.": "Game monetized with cosmetics.",
+            "Content warning": "Content warning",
+            "Preorder": "Preorder",
+            "on ": "on ",
+            "Expand": "Expand",
+            "Fullscreen": "Fullscreen",
+            "Play fullscreen": "Play fullscreen",
+            "Close": "Close",
+            "You will lose your progress. Close the game?": "You will lose your progress. Close the game?",
+            "Cancel": "Cancel",
+            "How to play %s?": "How to play %s?",
+            "Who created %s?": "Who created %s?",
+            "Similar to:": "Similar to:",
+            "Engine:": "Engine:",
+            "Website": "Website",
+            "Developer:": "Developer:",
+            "Open-source license:": "Open-source license:",
+            "Share": "Share",
+            "Something went wrong!": "Something went wrong!",
+            "Link copied!": "Link copied!",
+            "Games by %s": "Games by %s",
+            "Powered by": "Powered by",
+            "This game is no longer available.": "This game is no longer available."
+        },
+        "headTitle": "ZOODROP 🎮 Play ZooDrop on WebGamer",
+        "headDescription": "ZooDrop.io is a cozy merging puzzle game with cute animals in 3D!",
+        "socialImage": "https://webgamer.io/games/zoo-drop/zoo-drop.1280x.85pc.webp",
+        "url": "https://webgamer.io/en/g/zoo-drop"
+    },
+    "__N_SSG": true
+}
