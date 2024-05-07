@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { getAllGamesData, getPageData } from '../lib/pages';
 
 export async function getStaticProps() {
-  const allGamesData = getAllGamesData();
-  const pageData = getPageData();
+  const allGamesData = getAllGamesData("en");
+  const pageData = getPageData("en");
   return {
     props: {
       allGamesData,
