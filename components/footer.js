@@ -1,11 +1,21 @@
 import Link from 'next/link';
-import styles from './footer.module.css';
-export default function Footer({ footerData }) {
+export default function Footer({ pageData }) {
     return (
-        <div className={styles.container}>
-            <div className={styles.widthContainer}>
-                <Link href={`/en`} className={styles.item} key="en">english</Link>
-                <Link href={`/fr`} className={styles.item} key="fr">Français</Link>
+        <div className="w-full pt-6 pb-12 bg-gray-900">
+            <div className="max-w-screen-lg mx-auto text-white">
+                <div className="flex justify-between pb-4 mt-4">
+                    <div className="justify-start">
+                        <div className='text-md font-bold'>
+                            {pageData.layoutTr["About this portal"]}
+                        </div>
+                    </div>
+                    <div className="justify-end">
+                        <span className='px-2'>{pageData.layoutTr["Terms of Use"]}</span>
+                        <span className='px-2'>{pageData.layoutTr["Privacy Policy"]}</span>
+                        <Link href={`/en`} key="en" className='px-2'>english</Link>
+                        <Link href={`/fr`} key="fr" className='px-2'>Français</Link>
+                    </div>
+                </div>
             </div>
         </div>
     );

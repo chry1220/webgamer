@@ -19,7 +19,7 @@ export default function Home({ allGamesData, pageData }) {
   return (
     <Layout home pageData={pageData}>
       {allGamesData.map(({ gameSlug }) => (
-        <Link href={`/en/g/${gameSlug}`} className={utilStyles.gameCard} key={gameSlug}>
+        <Link href={`/en/g/${gameSlug}`} className="" key={gameSlug}>
           <img className={utilStyles.gameImg} width="100%" height="100%" alt="" src={`https://webgamer.io/games/${gameSlug}/${gameSlug}.240x.85pc.webp`} loading="eager"></img>
         </Link>
       ))}
