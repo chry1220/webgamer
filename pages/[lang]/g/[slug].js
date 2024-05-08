@@ -102,13 +102,13 @@ export default function Game({ pageData, allGamesData }) {
                     ))}
                 </div> */}
             </div>
-            <div className="grid grid-cols-5 gap-2">
+            {/* <div className="grid grid-cols-5 gap-2">
                 {gameData.relatedGames.slice(6).map(({ slug }) => (
                     <Link href={`/en/g/${slug}`} className="" key={slug}>
                         <img className="rounded-md my-3 mx-3" width="100%" height="100%" alt="" src={`https://webgamer.io/games/${slug}/${slug}.240x.85pc.webp`} loading="eager" />
                     </Link>
                 ))}
-            </div>
+            </div> */}
         </Layout >
     );
 }
