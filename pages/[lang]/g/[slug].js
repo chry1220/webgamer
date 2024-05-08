@@ -35,7 +35,7 @@ export default function Game({ pageData, allGamesData }) {
             <div className="grid grid-cols-4 gap-10">
                 <div className="col-span-3 text-white">
                     <div className="flex justify-between pb-4">
-                        <div className="justify-start text-4xl">{typeof pageData}</div>
+                        <div className="justify-start text-4xl">{pageData}</div>
                         {/* <div className="justify-end">
                             <button
                                 type="button"
