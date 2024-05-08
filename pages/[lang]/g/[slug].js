@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 export default function Game({ pageTxt, allGamesData }) {
 
     const pageData = JSON.parse(pageTxt).pageProps;
-    console.log(typeof pageData.game);
+    console.log(pageData.game['name']);
     // const gameData = pageData.game;
     // console.log(gameData.name);
     const [favs, setFavs] = useState([]);
