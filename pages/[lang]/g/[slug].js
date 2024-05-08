@@ -1,18 +1,13 @@
 import Link from "next/link";
 import Layout from "../../../components/layout";
-import { getAllGameIds, getAllGamesData, getGamePageData } from "../../../lib/pages";
+import { getAllGameIds, getAllGamesData, getGameData, getGamePageData } from "../../../lib/pages";
 import Cookies from 'js-cookie';
 import clsx from 'clsx';
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
-export default function Game({ pageData, allGamesData }) {
-    const gameData = pageData.game;
-    try {
-        console.log(gameData.name);
-    } catch (error) {
-        console.log(error)
-    }
+export default function Game({ pageData, gameData, allGamesData }) {
+
     console.log(gameData.name);
     const [favs, setFavs] = useState([]);
     useEffect(() => {
@@ -128,10 +123,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
     const pageData = getGamePageData(params.lang, params.slug);
+    const gameData = getGameData(params.lang, params.slug)
     const allGamesData = getAllGamesData(params.lang);
     return {
         props: {
             pageData,
+            gameData,
             allGamesData
         },
     };
