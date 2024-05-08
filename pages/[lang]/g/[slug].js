@@ -4,6 +4,7 @@ import { getAllGameIds, getAllGamesData, getGamePageData } from "../../../lib/pa
 import Cookies from 'js-cookie';
 import clsx from 'clsx';
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Game({ pageData, allGamesData }) {
     const gameData = pageData.game;
@@ -54,12 +55,12 @@ export default function Game({ pageData, allGamesData }) {
                             <button type="button" className="text-white bg-transparent font-medium text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Close"]}</button>
                         </div>
                     </div>
-                    {/* <iframe
+                    <iframe
                         title={pageData.game.name}
                         src={pageData.game.externalPlayUrl}
                         className="w-full aspect-w-16 aspect-h-9"
                         allow="fullscreen; allow-orientation-lock; autoplay; camera; midi; gyroscope; accelerometer; monetization; clipboard-read; clipboard-write; xr; xr-spatial-tracking; gamepad; geolocation; microphone; cross-origin-isolated; focus-without-user-activation *; keyboard-map *; payment; screen-wake-lock"
-                    /> */}
+                    />
                     <div className="flex justify-between pb-4 mt-4">
                         <div className="justify-start">
                             {
@@ -96,7 +97,7 @@ export default function Game({ pageData, allGamesData }) {
                 <div>
                     {gameData.relatedGames.slice(0, 6).map(({ slug }) => (
                         <Link href={`/en/g/${slug}`} className="" key={slug}>
-                            <img className="rounded-md my-3 mx-3" width="100%" height="100%" alt="" src={`https://webgamer.io/games/${slug}/${slug}.240x.85pc.webp`} loading="eager"></img>
+                            <Image className="rounded-md my-3 mx-3" width="100%" height="100%" alt="" src={`https://webgamer.io/games/${slug}/${slug}.240x.85pc.webp`} loading="eager"/>
                         </Link>
                     ))}
                 </div>
@@ -104,7 +105,7 @@ export default function Game({ pageData, allGamesData }) {
             <div className="grid grid-cols-5 gap-2">
                 {gameData.relatedGames.slice(6).map(({ slug }) => (
                     <Link href={`/en/g/${slug}`} className="" key={slug}>
-                        <img className="rounded-md my-3 mx-3" width="100%" height="100%" alt="" src={`https://webgamer.io/games/${slug}/${slug}.240x.85pc.webp`} loading="eager"></img>
+                        <Image className="rounded-md my-3 mx-3" width="100%" height="100%" alt="" src={`https://webgamer.io/games/${slug}/${slug}.240x.85pc.webp`} loading="eager"/>
                     </Link>
                 ))}
             </div>

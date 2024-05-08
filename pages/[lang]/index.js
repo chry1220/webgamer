@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Layout from '../../components/layout';
 import { getAllGamesData, getAllLangs, getPageData } from '../../lib/pages';
 import { useState, createContext } from "react";
+import Image from 'next/image';
 
 export async function getStaticProps({ params }) {
     const lang = params.lang;
@@ -31,7 +32,7 @@ export default function Home({ allGamesData, pageData, lang }) {
         <Layout home pageData={pageData} allGamesData={allGamesData}>
             {allGamesData.map(({ gameSlug }) => (
                 <Link href={`/${lang}/g/${gameSlug}`} className="rounded-lg" key={gameSlug}>
-                    <img className="rounded-lg" width="100%" height="100%" alt="" src={`https://webgamer.io/games/${gameSlug}/${gameSlug}.240x.85pc.webp`} loading="eager"></img>
+                    <Image className="rounded-lg" width="100%" height="100%" alt="" src={`https://webgamer.io/games/${gameSlug}/${gameSlug}.240x.85pc.webp`} loading="eager"/>
                 </Link>
             ))}
         </Layout>

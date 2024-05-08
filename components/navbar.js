@@ -11,6 +11,7 @@ import {
     DialogBody,
     DialogFooter
 } from "@material-tailwind/react";
+import Image from 'next/image';
 
 export default function Navbar({ pageData, allGamesData }) {
     const [open, setOpen] = useState(false);
@@ -60,10 +61,10 @@ export default function Navbar({ pageData, allGamesData }) {
             <div>
                 <nav className="bg-black fixed w-full z-20 top-0 start-0">
                     <div className="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto p-4">
-                        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+                        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                             <i className="fa-brands fa-fantasy-flight-games text-white text-2xl"></i>
                             <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">WEB GAMER</span>
-                        </a>
+                        </Link>
                         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                             <button type="button" className="text-white px-2 py-2 hover:bg-gray-900 rounded-full w-10 h-10" onClick={handleOpenSearch}>
                                 <i className="fa-solid fa-magnifying-glass"></i>
@@ -114,8 +115,8 @@ export default function Navbar({ pageData, allGamesData }) {
                             />
                             <div className='py-2'>
                                 {searchedGame.map(game => (
-                                    <Link href={`/en/g/${game.gameSlug}`} className='p-2 hover:bg-gray-900 cursor-pointer grid grid-cols-4 gap-4'>
-                                        <img className='rounded-lg h-10' alt="" src={`https://webgamer.io/games/${game.gameSlug}/${game.gameSlug}.240x.85pc.webp`} loading="eager"></img>
+                                    <Link href={`/en/g/${game.gameSlug}`} key={game.gameSlug} className='p-2 hover:bg-gray-900 cursor-pointer grid grid-cols-4 gap-4'>
+                                        <Image className='rounded-lg h-10' alt="" src={`https://webgamer.io/games/${game.gameSlug}/${game.gameSlug}.240x.85pc.webp`} loading="eager"/>
                                         <div className='col-span-3 leading-10 text-white'>{game.pageData.game.name}</div>
                                     </Link>
                                 ))}
