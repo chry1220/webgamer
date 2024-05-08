@@ -8,6 +8,11 @@ import Image from "next/image";
 
 export default function Game({ pageData, allGamesData }) {
     const gameData = pageData.game;
+    try {
+        console.log(gameData.name);
+    } catch (error) {
+        console.log(error)
+    }
     console.log(gameData.name);
     const [favs, setFavs] = useState([]);
     useEffect(() => {
