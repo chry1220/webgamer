@@ -4,8 +4,8 @@ import { getAllGamesData, getPageData } from '../lib/pages';
 import Image from 'next/image';
 
 export async function getStaticProps() {
-  const allGamesData = getAllGamesData("en");
-  const pageData = getPageData("en");
+  const allGamesData = await getAllGamesData("en");
+  const pageData = await getPageData("en");
   return {
     props: {
       allGamesData,

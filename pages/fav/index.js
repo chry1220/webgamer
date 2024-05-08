@@ -6,8 +6,8 @@ import { useState, useEffect } from "react";
 import Image from 'next/image';
 
 export async function getStaticProps() {
-    const allGamesData = getAllGamesData("en");
-    const pageData = getPageData("en");
+    const allGamesData = await getAllGamesData("en");
+    const pageData = await getPageData("en");
 
     return {
         props: {

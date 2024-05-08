@@ -8,7 +8,7 @@ import Image from 'next/image';
 export async function getStaticProps({ params }) {
     const lang = params.lang;
     const allGamesData = await getAllGamesData(lang);
-    const pageData = getPageData(lang);
+    const pageData = await getPageData(lang);
 
     return {
         props: {
