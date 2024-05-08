@@ -116,7 +116,7 @@ export default function Navbar({ pageData, allGamesData }) {
                             <div className='py-2'>
                                 {searchedGame.map(game => (
                                     <Link href={`/en/g/${game.gameSlug}`} key={game.gameSlug} className='p-2 hover:bg-gray-900 cursor-pointer grid grid-cols-4 gap-4'>
-                                        <Image className='rounded-lg h-10' alt="" src={`https://webgamer.io/games/${game.gameSlug}/${game.gameSlug}.240x.85pc.webp`} loading="eager"/>
+                                        <img className='rounded-lg h-10' alt="" src={`https://webgamer.io/games/${game.gameSlug}/${game.gameSlug}.240x.85pc.webp`} loading="eager"/>
                                         <div className='col-span-3 leading-10 text-white'>{game.pageData.game.name}</div>
                                     </Link>
                                 ))}
