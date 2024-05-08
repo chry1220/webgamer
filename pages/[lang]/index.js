@@ -3,6 +3,7 @@ import Link from 'next/link';
 import utilStyles from '../../styles/utils.module.css';
 import Layout from '../../components/layout';
 import { getAllGamesData, getAllLangs, getPageData } from '../../lib/pages';
+import { useState, createContext } from "react";
 
 export async function getStaticProps({ params }) {
     const lang = params.lang;

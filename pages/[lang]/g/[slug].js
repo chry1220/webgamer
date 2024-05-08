@@ -1,10 +1,30 @@
 import Link from "next/link";
 import Layout from "../../../components/layout";
 import { getAllGameIds, getGamePageData } from "../../../lib/pages";
+import Cookies from 'js-cookie';
+import clsx from 'clsx';
+import { useEffect, useState } from "react";
 
 export default function Game({ pageData }) {
-    console.log(pageData);
+    let favs = [];
+    if (typeof window !== 'undefined') {
+        const storedData = localStorage.getItem('fav');
+        favs = ((storedData || '').split(","));
+    }
     const gameData = pageData.game;
+    const toggleToFavorite = () => {
+        let preFavs = favs;
+        if (favs.includes(gameData.slug)) {
+            preFavs = favs.filter(fav => fav != pageData.game.slug);
+        } else {
+            preFavs.push(pageData.game.slug)
+        }
+        if (typeof window !== 'undefined') {
+            localStorage.setItem('fav', preFavs.join(","));
+        }
+        // setFavs(preFavs);
+        favs = preFavs
+    }
     return (
         <Layout pageData={pageData}>
             <div className="grid grid-cols-4 gap-10">
@@ -12,10 +32,20 @@ export default function Game({ pageData }) {
                     <div className="flex justify-between pb-4">
                         <div className="justify-start text-4xl">{pageData.game.name}</div>
                         <div className="justify-end">
-                            <button type="button" class="text-white px-2 py-2 hover:bg-gray-900">S</button>
-                            <button type="button" class="text-white bg-gray-700 font-medium rounded-md text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Expand"]}</button>
-                            <button type="button" class="text-black bg-white font-medium rounded-md text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Fullscreen"]}</button>
-                            <button type="button" class="text-white bg-transparent font-medium text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Close"]}</button>
+                            <button
+                                type="button"
+                                className={clsx(
+                                    "text-white px-2 py-2 hover:bg-gray-900",
+                                    {
+                                        'bg-gray-900': favs.includes(gameData.slug),
+                                    },
+                                )}
+                                onClick={toggleToFavorite}
+                            >F
+                            </button>
+                            <button type="button" className="text-white bg-gray-700 font-medium rounded-md text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Expand"]}</button>
+                            <button type="button" className="text-black bg-white font-medium rounded-md text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Fullscreen"]}</button>
+                            <button type="button" className="text-white bg-transparent font-medium text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Close"]}</button>
                         </div>
                     </div>
                     <iframe
@@ -35,7 +65,7 @@ export default function Game({ pageData }) {
                             }
                         </div>
                         <div className="justify-end">
-                            <button type="button" class="text-black bg-white font-medium rounded-md text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Share"]}</button>
+                            <button type="button" className="text-black bg-white font-medium rounded-md text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Share"]}</button>
                         </div>
                     </div>
                     <div className="grid grid-cols-3 gap-4">
