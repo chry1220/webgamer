@@ -75,7 +75,7 @@ export default function Game({ pageData, allGamesData }) {
                             <button type="button" className="text-black bg-white font-medium rounded-md text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Share"]}</button>
                         </div>
                     </div>
-                    <div className="grid grid-cols-3 gap-4">
+                    {/* <div className="grid grid-cols-3 gap-4">
                         <div className="col-span-2">
                             <div className="text-sm">{gameData.description}</div>
                             <div className="text-lg font-bold py-4">{pageData.pageTr["How to play %s?"].replace('%s', gameData.name)}</div>
@@ -92,7 +92,7 @@ export default function Game({ pageData, allGamesData }) {
                             <span className="font-bold text-sm px-1">Website</span>
                             <span className="font-bold text-sm px-1">Discord</span>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div>
                     {gameData.relatedGames.slice(0, 6).map(({ slug }) => (
