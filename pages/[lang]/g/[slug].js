@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Game({ pageData, allGamesData }) {
     const gameData = pageData.game;
-
+    console.log(gameData);
     const [favs, setFavs] = useState([]);
     useEffect(() => {
         const storedData = localStorage.getItem('fav');
@@ -21,9 +21,9 @@ export default function Game({ pageData, allGamesData }) {
     const toggleToFavorite = () => {
         let preFavs = favs;
         if (favs.includes(gameData.slug)) {
-            preFavs = favs.filter(fav => fav != pageData.game.slug);
+            preFavs = favs.filter(fav => fav != gameData.slug);
         } else {
-            preFavs = [...favs, pageData.game.slug]
+            preFavs = [...favs, gameData.slug]
         }
         localStorage.setItem('fav', preFavs.join(","));
         setFavs(preFavs);
@@ -31,7 +31,7 @@ export default function Game({ pageData, allGamesData }) {
     }
     return (
         <Layout pageData={pageData} allGamesData={allGamesData}>
-            
+
         </Layout >
     );
 }
