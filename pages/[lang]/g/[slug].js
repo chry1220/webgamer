@@ -8,8 +8,8 @@ import Image from "next/image";
 
 export default function Game({ pageData, allGamesData }) {
     // const gameData = pageData.game;
-    const gameData = JSON.parse(JSON.stringify(pageData.game));
-    console.log(gameData.name);
+    const gameData = JSON.stringify(pageData.game);
+    console.log(gameData);
     const [favs, setFavs] = useState([]);
     useEffect(() => {
         const storedData = localStorage.getItem('fav');
