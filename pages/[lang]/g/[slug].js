@@ -7,9 +7,8 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 export default function Game({ pageData, allGamesData }) {
-    // const gameData = pageData.game;
-    // console.log(pageData);
-    // console.log(pageData);
+    const gameData = pageData.game;
+    console.log(gameData.name);
     const [favs, setFavs] = useState([]);
     useEffect(() => {
         const storedData = localStorage.getItem('fav');
@@ -35,7 +34,7 @@ export default function Game({ pageData, allGamesData }) {
             <div className="grid grid-cols-4 gap-10">
                 <div className="col-span-3 text-white">
                     <div className="flex justify-between pb-4">
-                        <div className="justify-start text-4xl">{pageData}</div>
+                        {/* <div className="justify-start text-4xl">{pageData}</div> */}
                         {/* <div className="justify-end">
                             <button
                                 type="button"
@@ -123,8 +122,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const pageData = await getGamePageData(params.lang, params.slug);
-    const allGamesData = await getAllGamesData(params.lang);
+    const pageData = getGamePageData(params.lang, params.slug);
+    const allGamesData = getAllGamesData(params.lang);
     return {
         props: {
             pageData,
