@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 export default function Game({ pageData, allGamesData }) {
-    const gameData = pageData.game.name;
+    const gameData = pageData.game['name'];
     console.log(gameData);
     const [favs, setFavs] = useState([]);
     useEffect(() => {
