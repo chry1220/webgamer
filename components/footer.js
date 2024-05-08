@@ -1,7 +1,7 @@
 import Link from 'next/link';
 export default function Footer({ pageData }) {
     return (
-        <div className="w-full pt-6 pb-12 bg-gray-900">
+        <div className="w-full pt-6 pb-12 bg-black">
             <div className="max-w-screen-lg mx-auto text-white">
                 <div className="flex justify-between pb-4 mt-4">
                     <div className="justify-start">

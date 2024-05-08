@@ -2,7 +2,7 @@ import Footer from './footer';
 import Navbar from './navbar';
 import Head from 'next/head';
 
-export default function Layout({ children, home, pageData, toggleFavPage }) {
+export default function Layout({ children, home, pageData, allGamesData }) {
   return (
     <div>
       <Head>
@@ -14,7 +14,7 @@ export default function Layout({ children, home, pageData, toggleFavPage }) {
           referrerpolicy="no-referrer"
         />
       </Head>
-      <Navbar pageData={pageData} lang={pageData.lang} toggleFavPage={toggleFavPage} />
+      <Navbar pageData={pageData} lang={pageData.lang} allGamesData={allGamesData}/>
       {
         home ?
           <div className="max-w-screen-lg mx-auto mt-20 mb-3 grid grid-cols-5 gap-4">

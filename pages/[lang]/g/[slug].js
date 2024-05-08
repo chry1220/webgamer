@@ -1,32 +1,35 @@
 import Link from "next/link";
 import Layout from "../../../components/layout";
-import { getAllGameIds, getGamePageData } from "../../../lib/pages";
+import { getAllGameIds, getAllGamesData, getGamePageData } from "../../../lib/pages";
 import Cookies from 'js-cookie';
 import clsx from 'clsx';
 import { useEffect, useState } from "react";
 
-export default function Game({ pageData }) {
-    let favs = [];
-    if (typeof window !== 'undefined') {
-        const storedData = localStorage.getItem('fav');
-        favs = ((storedData || '').split(","));
-    }
+export default function Game({ pageData, allGamesData }) {
     const gameData = pageData.game;
+
+    const [favs, setFavs] = useState([]);
+    useEffect(() => {
+        const storedData = localStorage.getItem('fav');
+        let temp = []
+        if (storedData) temp = storedData.split(',');
+        setFavs(temp)
+        console.log("useEffect", temp);
+    }, []);
+
     const toggleToFavorite = () => {
         let preFavs = favs;
         if (favs.includes(gameData.slug)) {
             preFavs = favs.filter(fav => fav != pageData.game.slug);
         } else {
-            preFavs.push(pageData.game.slug)
+            preFavs = [...favs, pageData.game.slug]
         }
-        if (typeof window !== 'undefined') {
-            localStorage.setItem('fav', preFavs.join(","));
-        }
-        // setFavs(preFavs);
-        favs = preFavs
+        localStorage.setItem('fav', preFavs.join(","));
+        setFavs(preFavs);
+        console.log("Clicked", preFavs);
     }
     return (
-        <Layout pageData={pageData}>
+        <Layout pageData={pageData} allGamesData={allGamesData}>
             <div className="grid grid-cols-4 gap-10">
                 <div className="col-span-3 text-white">
                     <div className="flex justify-between pb-4">
@@ -36,24 +39,27 @@ export default function Game({ pageData }) {
                                 type="button"
                                 className={clsx(
                                     "text-white px-2 py-2 hover:bg-gray-900",
-                                    {
-                                        'bg-gray-900': favs.includes(gameData.slug),
-                                    },
                                 )}
                                 onClick={toggleToFavorite}
-                            >F
+                            >
+
+                                {
+                                    favs.includes(gameData.slug) ?
+                                    <i class="fa-solid fa-star"></i> :
+                                    <i class="fa-regular fa-star"></i>
+                                }
                             </button>
                             <button type="button" className="text-white bg-gray-700 font-medium rounded-md text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Expand"]}</button>
                             <button type="button" className="text-black bg-white font-medium rounded-md text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Fullscreen"]}</button>
                             <button type="button" className="text-white bg-transparent font-medium text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Close"]}</button>
                         </div>
                     </div>
-                    <iframe
+                    {/* <iframe
                         title={pageData.game.name}
                         src={pageData.game.externalPlayUrl}
                         className="w-full aspect-w-16 aspect-h-9"
                         allow="fullscreen; allow-orientation-lock; autoplay; camera; midi; gyroscope; accelerometer; monetization; clipboard-read; clipboard-write; xr; xr-spatial-tracking; gamepad; geolocation; microphone; cross-origin-isolated; focus-without-user-activation *; keyboard-map *; payment; screen-wake-lock"
-                    />
+                    /> */}
                     <div className="flex justify-between pb-4 mt-4">
                         <div className="justify-start">
                             {
@@ -116,9 +122,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
     const pageData = await getGamePageData(params.lang, params.slug);
+    const allGamesData = await getAllGamesData(params.lang);
     return {
         props: {
-            pageData
+            pageData,
+            allGamesData
         },
     };
 }
