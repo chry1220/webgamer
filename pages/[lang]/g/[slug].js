@@ -7,8 +7,8 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 export default function Game({ pageData, allGamesData }) {
-    const gameData = pageData.game;
-    console.log(gameData.name);
+    const gameData = pageData.game.name;
+    console.log(gameData);
     const [favs, setFavs] = useState([]);
     useEffect(() => {
         const storedData = localStorage.getItem('fav');
@@ -18,17 +18,17 @@ export default function Game({ pageData, allGamesData }) {
         console.log("useEffect", temp);
     }, []);
 
-    const toggleToFavorite = () => {
-        let preFavs = favs;
-        if (favs.includes(gameData.slug)) {
-            preFavs = favs.filter(fav => fav != gameData.slug);
-        } else {
-            preFavs = [...favs, gameData.slug]
-        }
-        localStorage.setItem('fav', preFavs.join(","));
-        setFavs(preFavs);
-        console.log("Clicked", preFavs);
-    }
+    // const toggleToFavorite = () => {
+    //     let preFavs = favs;
+    //     if (favs.includes(gameData.slug)) {
+    //         preFavs = favs.filter(fav => fav != gameData.slug);
+    //     } else {
+    //         preFavs = [...favs, gameData.slug]
+    //     }
+    //     localStorage.setItem('fav', preFavs.join(","));
+    //     setFavs(preFavs);
+    //     console.log("Clicked", preFavs);
+    // }
     return (
         <Layout pageData={pageData} allGamesData={allGamesData}>
             <div className="grid grid-cols-4 gap-10">
