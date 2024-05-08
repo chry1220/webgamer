@@ -7,7 +7,7 @@ export default function Game({ pageTxt, allGamesData }) {
 
     const pageData = JSON.parse(pageTxt).pageProps;
     const gameData = pageData.game;
-
+    console.log(gameData.slug);
     const [favs, setFavs] = useState([]);
     useEffect(() => {
         const storedData = localStorage.getItem('fav');
