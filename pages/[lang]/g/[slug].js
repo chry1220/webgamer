@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Game({ pageData, allGamesData }) {
     // const gameData = pageData.game;
-    console.log(pageData.game.name);
+    console.log(pageData.game);
     const [favs, setFavs] = useState([]);
     useEffect(() => {
         const storedData = localStorage.getItem('fav');
@@ -34,6 +34,7 @@ export default function Game({ pageData, allGamesData }) {
             <div className="grid grid-cols-4 gap-10">
                 <div className="col-span-3 text-white">
                     <div className="flex justify-between pb-4">
+                        {JSON.stringify(pageData.game)}
                         {/* <div className="justify-start text-4xl">{pageData}</div> */}
                         {/* <div className="justify-end">
                             <button
