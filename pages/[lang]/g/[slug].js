@@ -1,14 +1,13 @@
 import Link from "next/link";
 import Layout from "../../../components/layout";
-import { getAllGameIds, getAllGamesData, getGameData, getGamePageData } from "../../../lib/pages";
-import Cookies from 'js-cookie';
-import clsx from 'clsx';
+import { getAllGameIds, getGamePageTxt } from "../../../lib/pages";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
-export default function Game({ pageData, gameData, allGamesData }) {
+export default function Game({ pageTxt, allGamesData }) {
 
-    console.log(gameData);
+    const pageData = JSON.parse(pageTxt).pageProps;
+    const gameData = pageData.game;
+
     const [favs, setFavs] = useState([]);
     useEffect(() => {
         const storedData = localStorage.getItem('fav');
@@ -18,29 +17,27 @@ export default function Game({ pageData, gameData, allGamesData }) {
         console.log("useEffect", temp);
     }, []);
 
-    // const toggleToFavorite = () => {
-    //     let preFavs = favs;
-    //     if (favs.includes(gameData.slug)) {
-    //         preFavs = favs.filter(fav => fav != gameData.slug);
-    //     } else {
-    //         preFavs = [...favs, gameData.slug]
-    //     }
-    //     localStorage.setItem('fav', preFavs.join(","));
-    //     setFavs(preFavs);
-    //     console.log("Clicked", preFavs);
-    // }
+    const toggleToFavorite = () => {
+        let preFavs = favs;
+        if (favs.includes(gameData.slug)) {
+            preFavs = favs.filter(fav => fav != gameData.slug);
+        } else {
+            preFavs = [...favs, gameData.slug]
+        }
+        localStorage.setItem('fav', preFavs.join(","));
+        setFavs(preFavs);
+        console.log("Clicked", preFavs);
+    }
     return (
         <Layout pageData={pageData} allGamesData={allGamesData}>
             <div className="grid grid-cols-4 gap-10">
                 <div className="col-span-3 text-white">
                     <div className="flex justify-between pb-4">
-                        {/* <div className="justify-start text-4xl">{pageData}</div> */}
-                        {/* <div className="justify-end">
+                        <div className="justify-start text-4xl">{gameData.name}</div>
+                        <div className="justify-end">
                             <button
                                 type="button"
-                                className={clsx(
-                                    "text-white px-2 py-2 hover:bg-gray-900",
-                                )}
+                                className="text-white px-2 py-2 hover:bg-gray-900"
                                 onClick={toggleToFavorite}
                             >
 
@@ -53,15 +50,15 @@ export default function Game({ pageData, gameData, allGamesData }) {
                             <button type="button" className="text-white bg-gray-700 font-medium rounded-md text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Expand"]}</button>
                             <button type="button" className="text-black bg-white font-medium rounded-md text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Fullscreen"]}</button>
                             <button type="button" className="text-white bg-transparent font-medium text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Close"]}</button>
-                        </div> */}
+                        </div>
                     </div>
-                    {/* <iframe
+                    <iframe
                         title={gameData.name}
                         src={gameData.externalPlayUrl}
                         className="w-full aspect-w-16 aspect-h-9"
                         allow="fullscreen; allow-orientation-lock; autoplay; camera; midi; gyroscope; accelerometer; monetization; clipboard-read; clipboard-write; xr; xr-spatial-tracking; gamepad; geolocation; microphone; cross-origin-isolated; focus-without-user-activation *; keyboard-map *; payment; screen-wake-lock"
-                    /> */}
-                    {/* <div className="flex justify-between pb-4 mt-4">
+                    />
+                    <div className="flex justify-between pb-4 mt-4">
                         <div className="justify-start">
                             {
                                 gameData.superficialTags.map(tag => (
@@ -74,8 +71,8 @@ export default function Game({ pageData, gameData, allGamesData }) {
                         <div className="justify-end">
                             <button type="button" className="text-black bg-white font-medium rounded-md text-sm px-4 py-2 mx-1 text-center">{pageData.pageTr["Share"]}</button>
                         </div>
-                    </div> */}
-                    {/* <div className="grid grid-cols-3 gap-4">
+                    </div>
+                    <div className="grid grid-cols-3 gap-4">
                         <div className="col-span-2">
                             <div className="text-sm">{gameData.description}</div>
                             <div className="text-lg font-bold py-4">{pageData.pageTr["How to play %s?"].replace('%s', gameData.name)}</div>
@@ -92,23 +89,23 @@ export default function Game({ pageData, gameData, allGamesData }) {
                             <span className="font-bold text-sm px-1">Website</span>
                             <span className="font-bold text-sm px-1">Discord</span>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
-                {/* <div>
+                <div>
                     {gameData.relatedGames.slice(0, 6).map(({ slug }) => (
                         <Link href={`/en/g/${slug}`} className="" key={slug}>
                             <img className="rounded-md my-3 mx-3" width="100%" height="100%" alt="" src={`https://webgamer.io/games/${slug}/${slug}.240x.85pc.webp`} loading="eager" />
                         </Link>
                     ))}
-                </div> */}
+                </div>
             </div>
-            {/* <div className="grid grid-cols-5 gap-2">
+            <div className="grid grid-cols-5 gap-2">
                 {gameData.relatedGames.slice(6).map(({ slug }) => (
                     <Link href={`/en/g/${slug}`} className="" key={slug}>
                         <img className="rounded-md my-3 mx-3" width="100%" height="100%" alt="" src={`https://webgamer.io/games/${slug}/${slug}.240x.85pc.webp`} loading="eager" />
                     </Link>
                 ))}
-            </div> */}
+            </div>
         </Layout >
     );
 }
@@ -122,13 +119,13 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const pageData = getGamePageData(params.lang, params.slug);
-    const gameData = getGameData(params.lang, params.slug)
-    const allGamesData = getAllGamesData(params.lang);
+    // const pageData = getGamePageData(params.lang, params.slug);
+    const pageTxt = await getGamePageTxt(params.lang, params.slug);
+    // const allGamesData = await getAllGamesData(params.lang);
+    const allGamesData = "asdf";
     return {
         props: {
-            pageData,
-            gameData,
+            pageTxt,
             allGamesData
         },
     };
