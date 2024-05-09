@@ -115,46 +115,55 @@
         },
         "lang": "fr",
         "game": {
-            "uuid": "d140c840-e9d2-4fe5-8cb2-6937b365e496",
-            "slug": "slay-one",
-            "name": "Slay.one",
-            "score": 50,
-            "description": "Slay.one est un jeu de tir multijoueur en 2D vu de haut intense où vous ramassez des armes et des bonus et combattez contre d'autres joueurs dans des arènes. Jouez en modes 1 contre 1 classé, chacun pour soi, Infection ou Jeu en équipe.",
-            "instructions": "- WASD : Se déplacer\n- Clic gauche : Tirer\n- Clic droit : Sauter\n- 0 à 9 et molette : Changer d'arme\n- Q et E : Capacités",
+            "uuid": "bc2caf8b-5809-4cd2-8af1-0593c5366c26",
+            "slug": "drift-io",
+            "name": "Drift.io",
+            "score": 53,
+            "description": "Drift.io est un jeu de course de voitures. Affrontez d'autres joueurs dans le Grand Prix, battez votre meilleur temps dans les Time Trials, ou détendez-vous sur le terrain de jeu du garage !",
+            "instructions": "- WASD/flèches : Conduire\n- Espace : Dérapage\n- Maj : Utiliser un objet",
+            "pokiUrl": "https://poki.com/en/g/drift-io",
             "allowIframe": true,
-            "externalPlayUrl": "https://slay.one/",
+            "externalPlayUrl": "https://drift.io/?x=webgamer",
             "superficialEngine": {
-                "slug": "javascript",
-                "name": "JavaScript"
+                "slug": "three-js",
+                "name": "Three.js"
             },
-            "superficialSimilars": [],
+            "superficialSimilars": [
+                {
+                    "name": "Mario Kart",
+                    "slug": "mario-kart"
+                }
+            ],
             "superficialTags": [
                 {
-                    "slug": "tir",
-                    "name": "Tir",
-                    "iconKey": "shooting"
+                    "slug": "course",
+                    "name": "Course",
+                    "iconKey": "racing"
+                },
+                {
+                    "slug": "conduite",
+                    "name": "Conduite",
+                    "iconKey": "driving"
                 }
             ],
             "superficialMonetizations": [],
             "detailedDeveloper": {
-                "name": "JBS",
-                "url": "https://twitter.com/jbgames_",
+                "name": "The Drift.io Team",
                 "superficialGames": [
                     {
-                        "slug": "army-clash-io",
-                        "name": "ArmyClash.io",
-                        "score": 49,
-                        "allowIframe": true
-                    },
-                    {
-                        "slug": "slay-one",
-                        "name": "Slay.one",
-                        "score": 50,
-                        "allowIframe": true
+                        "slug": "drift-io",
+                        "name": "Drift.io",
+                        "score": 53,
+                        "allowIframe": true,
+                        "preferredOrientation": "LANDSCAPE",
+                        "mobileSupport": 2
                     }
                 ]
             },
-            "discordUrl": "https://discord.com/invite/DTvcu44",
+            "playerFriendlyType": "FEW-ADS",
+            "discordUrl": "https://discord.com/invite/amqfhGnng7",
+            "mobileSupport": 2,
+            "preferredOrientation": "LANDSCAPE",
             "players": [
                 {
                     "label": "Multijoueur",
@@ -164,56 +173,27 @@
             ],
             "relatedGames": [
                 {
-                    "slug": "venge-io",
-                    "name": "Venge.io",
-                    "score": 54,
-                    "allowIframe": true,
-                    "preferredOrientation": "LANDSCAPE",
-                    "mobileSupport": 2
-                },
-                {
-                    "slug": "narrow-one",
-                    "name": "Narrow One",
+                    "slug": "polytrack",
+                    "name": "PolyTrack",
                     "score": 53,
                     "allowIframe": true,
-                    "preferredOrientation": "LANDSCAPE",
-                    "mobileSupport": 2
+                    "fullscreenLock": true
                 },
                 {
-                    "slug": "cryzen-io",
-                    "name": "Cryzen.io",
-                    "score": 53,
-                    "allowIframe": true,
-                    "preferredOrientation": "LANDSCAPE",
-                    "mobileSupport": 2
-                },
-                {
-                    "slug": "deadshot-io",
-                    "name": "Deadshot.io",
+                    "slug": "the-race",
+                    "name": "The Race",
                     "score": 52,
-                    "allowIframe": true
-                },
-                {
-                    "slug": "redead-io",
-                    "name": "reDEAD",
-                    "score": 51,
                     "allowIframe": true,
                     "preferredOrientation": "LANDSCAPE",
                     "mobileSupport": 2
                 },
                 {
-                    "slug": "ev-io",
-                    "name": "ev.io",
-                    "score": 50,
+                    "slug": "the-race-2",
+                    "name": "The Race – Season 2",
+                    "score": 52,
                     "allowIframe": true,
                     "preferredOrientation": "LANDSCAPE",
                     "mobileSupport": 2
-                },
-                {
-                    "slug": "jamir",
-                    "name": "Jamir",
-                    "score": 50,
-                    "allowIframe": true
                 },
                 {
                     "slug": "smash-karts",
@@ -224,52 +204,15 @@
                     "mobileSupport": 2
                 },
                 {
-                    "slug": "shell-shockers",
-                    "name": "Shell Shockers",
-                    "score": 48,
-                    "allowIframe": true,
-                    "preferredOrientation": "LANDSCAPE",
-                    "mobileSupport": 2
-                },
-                {
-                    "slug": "deadswitch-3",
-                    "name": "Deadswitch 3",
-                    "score": 48,
+                    "slug": "threltemania",
+                    "name": "Threltemania",
+                    "score": 43,
                     "allowIframe": true
                 },
                 {
-                    "slug": "dinogen-online",
-                    "name": "Dinogen Online",
-                    "score": 48,
-                    "allowIframe": true
-                },
-                {
-                    "slug": "arsenal-online",
-                    "name": "Arsenal Online",
-                    "score": 48,
-                    "allowIframe": true
-                },
-                {
-                    "slug": "bad-egg",
-                    "name": "Bad Egg",
-                    "score": 47,
-                    "allowIframe": true,
-                    "preferredOrientation": "LANDSCAPE",
-                    "mobileSupport": 1
-                },
-                {
-                    "slug": "earths-greatest-defender",
-                    "name": "Earth's Greatest Defender",
-                    "score": 47,
-                    "allowIframe": true,
-                    "preferredOrientation": "LANDSCAPE",
-                    "mobileSupport": 2
-                },
-                {
-                    "slug": "rocket-bot-royale",
-                    "name": "Rocket Bot Royale",
-                    "score": 47,
-                    "allowIframe": true
+                    "slug": "slow-roads",
+                    "name": "Slow Roads",
+                    "score": 34
                 }
             ]
         },
@@ -321,10 +264,10 @@
             "Powered by": "Propulsé par",
             "This game is no longer available.": "Ce jeu n’est plus disponible."
         },
-        "headTitle": "SLAY.ONE 🎮 Jouer à Slay.one sur WebGamer",
-        "headDescription": "Slay.one est un jeu de tir multijoueur en 2D vu de haut intense où vous ramassez des armes et des bonus et combattez contre d'autres joueurs dans des arènes. Jouez en modes 1 contre 1 classé, chacun p...",
-        "socialImage": "https://webgamer.io/games/slay-one/slay-one.1280x.85pc.webp",
-        "url": "https://webgamer.io/fr/g/slay-one"
+        "headTitle": "DRIFT.IO 🎮 Jouer à Drift.io sur WebGamer",
+        "headDescription": "Drift.io est un jeu de course de voitures. Affrontez d'autres joueurs dans le Grand Prix, battez votre meilleur temps dans les Time Trials, ou détendez-vous sur le terrain de jeu du garage !",
+        "socialImage": "https://webgamer.io/games/drift-io/drift-io.1280x.85pc.webp",
+        "url": "https://webgamer.io/fr/g/drift-io"
     },
     "__N_SSG": true
 }

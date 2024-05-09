@@ -14,17 +14,8 @@ export default function Layout({ children, home, pageData, allGamesData }) {
           referrerpolicy="no-referrer"
         />
       </Head>
-      <Navbar pageData={pageData} lang={pageData.lang} allGamesData={allGamesData}/>
-      {
-        home ?
-          <div className="max-w-screen-lg mx-auto mt-20 mb-3 grid grid-cols-5 gap-4">
-            {children}
-          </div> :
-          <div className="max-w-screen-lg mx-auto mt-20 mb-3">
-            {children}
-          </div>
-      }
-
+      <Navbar pageData={pageData} lang={pageData.lang} allGamesData={allGamesData} />
+      {children}
       <Footer pageData={pageData} />
     </div>
   );

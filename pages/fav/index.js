@@ -4,18 +4,8 @@ import Layout from '../../components/layout';
 import { getAllGamesData, getPageData } from '../../lib/pages';
 import { useState, useEffect } from "react";
 import Image from 'next/image';
+import ImageTilt from '../../components/TiltComponent/ImageTilt';
 
-// export async function getStaticProps() {
-//     const allGamesData = await getAllGamesData("en");
-//     const pageData = await getPageData("en");
-
-//     return {
-//         props: {
-//             allGamesData,
-//             pageData
-//         },
-//     };
-// }
 
 export async function getServerSideProps() {
     const allGamesData = await getAllGamesData("en");
@@ -40,11 +30,21 @@ export default function Home({ allGamesData, pageData }) {
 
     return (
         <Layout home pageData={pageData} allGamesData={allGamesData}>
-            {allGamesData.filter(game => favs.includes(game.gameSlug)).map(({ gameSlug }) => (
-                <Link href={`/${"en"}/g/${gameSlug}`} className="rounded-lg" key={gameSlug}>
-                    <img className="rounded-lg" width="100%" height="100%" alt="" src={`https://webgamer.io/games/${gameSlug}/${gameSlug}.240x.85pc.webp`} loading="eager"/>
-                </Link>
-            ))}
+            <div className="bg-[#181818] py-2">
+                <div className="max-w-screen-xl mx-auto mt-14 mb-3">
+                    <div className="text-xl font-bold pt-2 pb-3 text-[#ffa500]">
+                        <i className={`fa-solid w-7 mr-2 fa-star`}></i>
+                        Favorite
+                    </div>
+                    <div className='grid grid-cols-7 gap-4'>
+                        {allGamesData.filter(game => favs.includes(game.gameSlug)).map(({ gameSlug }) => (
+                            <Link href={`/${"en"}/g/${gameSlug}`} className="rounded-lg" key={gameSlug}>
+                                <ImageTilt slug={gameSlug} />
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </div>
         </Layout>
     );
 }

@@ -115,47 +115,75 @@
         },
         "lang": "en",
         "game": {
-            "uuid": "d140c840-e9d2-4fe5-8cb2-6937b365e496",
-            "slug": "slay-one",
-            "name": "Slay.one",
-            "score": 50,
-            "description": "Slay.one is an intense 2D multiplayer top-down shooting game where you pick up weapons and power-ups and fight against other players in arenas. Play in 1v1 Ranked, Free for All, Infection, or Team Game modes.",
-            "instructions": "- WASD: Move\n- Left click: Shoot\n- Right click: Jump\n- 0-9 and scroll wheel: Change weapon\n- Q and E: Abilities",
+            "uuid": "3e065860-9b85-437b-b7a5-758ea6ae0b85",
+            "slug": "summoners-io",
+            "name": "Summoners.io",
+            "score": 51,
+            "description": "Summoners.io is a strategic card game where you use creatures, spells, and buildings to beat your opponent by destroying their headquarters. Pick a faction and earn bonuses as you win matches!",
+            "instructions": "- Cards cost mana, and your mana increases by 1 each turn.\n- Mana cost is indicated at the top of the cards.\n- Creatures can attack on the turn after they are played.\n- The number on the left is attack, and the number on the right is health.",
             "allowIframe": true,
-            "externalPlayUrl": "https://slay.one/",
+            "externalPlayUrl": "https://summoners.io",
             "superficialEngine": {
-                "slug": "javascript",
-                "name": "JavaScript"
+                "slug": "babylon-js",
+                "name": "Babylon.js"
             },
-            "superficialSimilars": [],
+            "superficialSimilars": [
+                {
+                    "name": "Hearthstone",
+                    "slug": "hearthstone"
+                },
+                {
+                    "name": "Slay the Spire",
+                    "slug": "slay-the-spire"
+                },
+                {
+                    "name": "Magic: The Gathering Arena",
+                    "slug": "magic-the-gathering-arena"
+                }
+            ],
             "superficialTags": [
                 {
-                    "slug": "shooting",
-                    "name": "Shooting",
-                    "iconKey": "shooting"
+                    "slug": "cards",
+                    "name": "Cards",
+                    "iconKey": "cards"
+                },
+                {
+                    "slug": "strategy",
+                    "name": "Strategy",
+                    "iconKey": "strategy"
                 }
             ],
             "superficialMonetizations": [],
             "detailedDeveloper": {
-                "name": "JBS",
-                "url": "https://twitter.com/jbgames_",
+                "name": "Stephen Haney",
+                "url": "https://twitter.com/sdothaney",
                 "superficialGames": [
                     {
-                        "slug": "army-clash-io",
-                        "name": "ArmyClash.io",
-                        "score": 49,
-                        "allowIframe": true
+                        "slug": "summoners-io",
+                        "name": "Summoners.io",
+                        "score": 51,
+                        "allowIframe": true,
+                        "mobileSupport": 1
                     },
                     {
-                        "slug": "slay-one",
-                        "name": "Slay.one",
-                        "score": 50,
-                        "allowIframe": true
+                        "slug": "zoo-drop",
+                        "name": "ZooDrop",
+                        "score": 49,
+                        "allowIframe": true,
+                        "preferredOrientation": "PORTRAIT",
+                        "mobileSupport": 2
                     }
                 ]
             },
-            "discordUrl": "https://discord.com/invite/DTvcu44",
+            "playerFriendlyType": "EXTENSIVE-DEMO",
+            "discordUrl": "https://discord.com/invite/9ECuhfuEdA",
+            "mobileSupport": 1,
             "players": [
+                {
+                    "label": "1 Player",
+                    "slug": "1-player",
+                    "iconKey": "person"
+                },
                 {
                     "label": "Multiplayer",
                     "slug": "multiplayer",
@@ -164,111 +192,105 @@
             ],
             "relatedGames": [
                 {
-                    "slug": "venge-io",
-                    "name": "Venge.io",
-                    "score": 54,
-                    "allowIframe": true,
-                    "preferredOrientation": "LANDSCAPE",
-                    "mobileSupport": 2
-                },
-                {
-                    "slug": "narrow-one",
-                    "name": "Narrow One",
-                    "score": 53,
-                    "allowIframe": true,
-                    "preferredOrientation": "LANDSCAPE",
-                    "mobileSupport": 2
-                },
-                {
-                    "slug": "cryzen-io",
-                    "name": "Cryzen.io",
-                    "score": 53,
-                    "allowIframe": true,
-                    "preferredOrientation": "LANDSCAPE",
-                    "mobileSupport": 2
-                },
-                {
-                    "slug": "deadshot-io",
-                    "name": "Deadshot.io",
-                    "score": 52,
+                    "slug": "starblast",
+                    "name": "Starblast",
+                    "score": 50,
                     "allowIframe": true
                 },
                 {
-                    "slug": "redead-io",
-                    "name": "reDEAD",
-                    "score": 51,
-                    "allowIframe": true,
-                    "preferredOrientation": "LANDSCAPE",
-                    "mobileSupport": 2
-                },
-                {
-                    "slug": "ev-io",
-                    "name": "ev.io",
+                    "slug": "hole-io",
+                    "name": "Hole.io",
                     "score": 50,
                     "allowIframe": true,
                     "preferredOrientation": "LANDSCAPE",
                     "mobileSupport": 2
                 },
                 {
-                    "slug": "jamir",
-                    "name": "Jamir",
+                    "slug": "captain-forever-io",
+                    "name": "CaptainForever.io",
                     "score": 50,
+                    "specialAttribute": "NEW",
                     "allowIframe": true
                 },
                 {
-                    "slug": "smash-karts",
-                    "name": "Smash Karts",
+                    "slug": "conq-io",
+                    "name": "Conq.io",
+                    "score": 49,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "army-clash-io",
+                    "name": "ArmyClash.io",
+                    "score": 49,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "roams-io",
+                    "name": "Roams.io",
                     "score": 49,
                     "allowIframe": true,
                     "preferredOrientation": "LANDSCAPE",
                     "mobileSupport": 2
                 },
                 {
-                    "slug": "shell-shockers",
-                    "name": "Shell Shockers",
+                    "slug": "mini-mana",
+                    "name": "Mini Mana",
                     "score": 48,
                     "allowIframe": true,
                     "preferredOrientation": "LANDSCAPE",
+                    "fullscreenLock": true,
                     "mobileSupport": 2
                 },
                 {
-                    "slug": "deadswitch-3",
-                    "name": "Deadswitch 3",
+                    "slug": "konkr-io",
+                    "name": "Konkr.io",
                     "score": 48,
-                    "allowIframe": true
-                },
-                {
-                    "slug": "dinogen-online",
-                    "name": "Dinogen Online",
-                    "score": 48,
-                    "allowIframe": true
-                },
-                {
-                    "slug": "arsenal-online",
-                    "name": "Arsenal Online",
-                    "score": 48,
-                    "allowIframe": true
-                },
-                {
-                    "slug": "bad-egg",
-                    "name": "Bad Egg",
-                    "score": 47,
                     "allowIframe": true,
-                    "preferredOrientation": "LANDSCAPE",
-                    "mobileSupport": 1
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
                 },
                 {
-                    "slug": "earths-greatest-defender",
-                    "name": "Earth's Greatest Defender",
+                    "slug": "athena-crisis",
+                    "name": "Athena Crisis",
                     "score": 47,
                     "allowIframe": true,
                     "preferredOrientation": "LANDSCAPE",
                     "mobileSupport": 2
                 },
                 {
-                    "slug": "rocket-bot-royale",
-                    "name": "Rocket Bot Royale",
+                    "slug": "evoworld-io",
+                    "name": "EvoWorld.io (FlyOrDie.io)",
                     "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "swordbattle-io",
+                    "name": "Swordbattle.io",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "candy-riot",
+                    "name": "Candy Riot",
+                    "score": 45,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "pvpz-io",
+                    "name": "PvPz.io",
+                    "score": 45,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "lord-of-the-harvest",
+                    "name": "Lord of the Harvest",
+                    "score": 43,
                     "allowIframe": true
                 }
             ]
@@ -321,10 +343,10 @@
             "Powered by": "Powered by",
             "This game is no longer available.": "This game is no longer available."
         },
-        "headTitle": "SLAY.ONE 🎮 Play Slay.one on WebGamer",
-        "headDescription": "Slay.one is an intense 2D multiplayer top-down shooting game where you pick up weapons and power-ups and fight against other players in arenas. Play in 1v1 Ranked, Free for All, Infection, or Team Gam...",
-        "socialImage": "https://webgamer.io/games/slay-one/slay-one.1280x.85pc.webp",
-        "url": "https://webgamer.io/en/g/slay-one"
+        "headTitle": "SUMMONERS.IO 🎮 Play Summoners.io on WebGamer",
+        "headDescription": "Summoners.io is a strategic card game where you use creatures, spells, and buildings to beat your opponent by destroying their headquarters. Pick a faction and earn bonuses as you win matches!",
+        "socialImage": "https://webgamer.io/games/summoners-io/summoners-io.1280x.85pc.webp",
+        "url": "https://webgamer.io/en/g/summoners-io"
     },
     "__N_SSG": true
 }
