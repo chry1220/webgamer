@@ -19,7 +19,9 @@ export default function HomeWithTag({ pageData, gamesData, allGamesData, tagSlug
                     </div>
                     <div className="grid grid-cols-7 gap-4">
                         {gamesData.map(({ gameSlug }) => (
-                            <ImageTilt slug={gameSlug} key={gameSlug}/>
+                            <Link href={`/${"en"}/g/${gameSlug}`} className="rounded-lg" key={gameSlug}>
+                                <ImageTilt slug={gameSlug}/>
+                            </Link>
                         ))}
                     </div>
                 </div>
