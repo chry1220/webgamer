@@ -19,7 +19,7 @@ export default function HomeWithTag({ pageData, gamesData, allGamesData, tagSlug
                     </div>
                     <div className="grid grid-cols-7 gap-4">
                         {gamesData.map(({ gameSlug }) => (
-                            <ImageTilt slug={gameSlug}/>
+                            <ImageTilt slug={gameSlug} key={gameSlug}/>
                         ))}
                     </div>
                 </div>
@@ -34,7 +34,6 @@ export async function getServerSideProps({ params }) {
     const allGamesData = await getAllGamesData(params.lang);
     const gamesData = await getGames(params.lang, params.tag);
     const tagSlug = params.tag;
-    // const pageData = params;
     return {
         props: {
             pageData,

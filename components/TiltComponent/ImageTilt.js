@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import React, { useState } from 'react';
 import Tilt from 'react-parallax-tilt';
-const ImageTilt = ({ slug }) => {
+const ImageTilt = ({ slug, key }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [showImage2, setShowImage2] = useState(false);
 
@@ -31,6 +31,7 @@ const ImageTilt = ({ slug }) => {
         <img
           src={showImage2 ? `https://webgamer.io/games/${slug}/${slug}-1.240x.85pc.webp` : `https://webgamer.io/games/${slug}/${slug}.240x.85pc.webp`}
           alt="Image"
+          key={key}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           className={isHovered ? "rounded-lg" : "rounded-lg"}
