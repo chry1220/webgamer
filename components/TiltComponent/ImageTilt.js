@@ -33,7 +33,7 @@ const ImageTilt = ({ slug }) => {
           alt="Image"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className={isHovered ? "rounded-lg" : "rounded-lg"}
+          className="rounded-lg w-full h-auto"
         />
       </Tilt>
     </div>

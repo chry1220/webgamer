@@ -24,6 +24,13 @@ export default function Navbar({ pageData, allGamesData }) {
     const onSearchValue = ({ target }) => {
         setSearchedGame(allGamesData.filter(g => g.gameSlug.indexOf(target.value) > -1));
     }
+    const [favs, setFavs] = useState([]);
+    useEffect(() => {
+        const storedData = localStorage.getItem('fav');
+        let temp = []
+        if (storedData) temp = storedData.split(',');
+        setFavs(temp)
+    }, []);
     const handleOpenSearch = () => {
         setOpenSearch((cur) => !cur)
         setSearchedGame([]);
@@ -66,13 +73,23 @@ export default function Navbar({ pageData, allGamesData }) {
                             <i className="fa-brands fa-fantasy-flight-games text-white text-2xl"></i>
                             <img width="180" height="18" alt="WebGamer" src="https://webgamer.io/fonts/logo-text-spaced-optim.svg"></img>
                         </Link>
-                        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse text-xs">
+                        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse text-xs items-center">
+                            <li className='text-sm flex lg:hidden lg:justify-end text-center'>
+                                <div className="flex items-center p-2 bg-transparent rounded-3xl hover:bg-gray-900 cursor-pointer" onClick={openDrawer}>
+                                    <i className="fa-solid fa-bars leading-4 pr-1"></i>
+                                    <span className='hidden sm:block leading-4'>{pageData.layoutTr["Categories"]}</span>
+                                </div>
+                            </li>
                             <button type="button" className="text-white px-2 py-2 hover:bg-gray-900 rounded-full w-8 h-8" onClick={handleOpenSearch}>
                                 <i className="fa-solid fa-magnifying-glass"></i>
                             </button>
-                            <Link href={`/${pageData.lang}/fav`} className="text-[#ffa500] px-2 py-2 hover:bg-gray-900 rounded-full w-8 h-8 text-center">
-                                <i className="fa-solid fa-star"></i>
-                            </Link>
+                            {
+                                favs.length > 0 ?
+                                    <Link href={`/${pageData.lang}/fav`} className="text-[#ffa500] px-2 py-2 hover:bg-gray-900 rounded-full w-8 h-8 text-center">
+                                        <i className="fa-solid fa-star"></i>
+                                    </Link> :
+                                    <button type='button' className='text-[#ffa500] px-2 py-2 hover:bg-gray-900 rounded-full w-8 h-8 cursor-no-drop' disabled><i className="fa-regular fa-star"></i></button>
+                            }
                             <Link href={'https://discord.com/invite/6wFkdVGhvk'} type="button" className="text-white px-2 py-2 hover:bg-gray-900 rounded-full w-8 h-8">
                                 <i className="fa-brands fa-discord"></i>
                             </Link>
@@ -80,12 +97,12 @@ export default function Navbar({ pageData, allGamesData }) {
                                 <span className="sr-only">Open main menu</span>
                             </button>
                         </div>
-                        <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                            <ul className="text-sm font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-gray-800 md:bg-black border-gray-700">
+                        <div className="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="navbar-sticky">
+                            <ul className="text-sm font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-gray-800 md:bg-black border-gray-700">
                                 {
                                     navbarData.map(({ slug, name, iconKey }) => (
                                         <li key={slug}>
-                                            <Link href={`/${pageData.lang}/${slug}`} className="block p-0 bg-transparent rounded ">
+                                            <Link href={`/${pageData.lang}/${slug}`} className="block p-0 bg-transparent rounded rounded-3xl hover:bg-gray-900 px-3 py-1">
                                                 <i className={`fa-solid mr-2 ` + MyIcons[iconKey]}></i>
                                                 {name}
                                             </Link>
@@ -93,7 +110,7 @@ export default function Navbar({ pageData, allGamesData }) {
                                     ))
                                 }
                                 <li>
-                                    <div className="block p-0 bg-transparent rounded cursor-pointer" onClick={openDrawer}>
+                                    <div className="block p-0 bg-transparent rounded cursor-pointer rounded-3xl hover:bg-gray-900 px-3 py-1" onClick={openDrawer}>
                                         <i className="fa-solid fa-bars leading-3 pr-1"></i>
                                         <span className='leading-3'>{pageData.layoutTr["More"]}</span>
                                     </div>
@@ -159,6 +176,19 @@ export default function Navbar({ pageData, allGamesData }) {
                                 </svg>
                             </IconButton>
                         </div>
+
+                        <Link href='/' key={'all'} className="block lg:hidden pl-4 text-sm py-1.5 text-white bg-transparent rounded hover:bg-gray-900">
+                            <i className={`fa-solid w-7 ` + MyIcons["all"]}></i>
+                            All
+                        </Link>
+                        {
+                            navbarData.map(({ slug, name, iconKey }) => (
+                                <Link href={`/${pageData.lang}/${slug}`} key={slug} className="block lg:hidden pl-4 text-sm py-1.5 text-white bg-transparent rounded hover:bg-gray-900">
+                                    <i className={`fa-solid w-7 ` + MyIcons[iconKey]}></i>
+                                    {name}
+                                </Link>
+                            ))
+                        }
                         {
                             moreTags.map(({ slug, name, iconKey }) => (
                                 <Link href={`/${pageData.lang}/${slug}`} key={slug} className="block pl-4 text-sm py-1.5 text-white bg-transparent rounded hover:bg-gray-900">

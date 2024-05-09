@@ -37,10 +37,10 @@ export default function Game({ pageData, allGamesData }) {
     const [openImg1, setOpenImg1] = useState(false);
     const [expand, setExpand] = useState(false);
     const [openClose, setOpenClose] = useState(false);
-    const handleCloseGame = () => { 
+    const handleCloseGame = () => {
         handleOpenClose();
         handlePlaying();
-     }
+    }
     const handleOpenClose = () => { setOpenClose((cur) => !cur) };
     const handleExpand = () => setExpand((cur) => !cur);
     const handlePlaying = () => setPlaying((cur) => !cur);

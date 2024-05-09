@@ -18,10 +18,14 @@ export default function Home({ allGamesData, pageData }) {
   return (
     <Layout home pageData={pageData} allGamesData={allGamesData}>
       <div className="px-3 max-w-screen-xl mx-auto mt-16 mb-3 grid gap-2 grid-cols-2 xl:grid-cols-7 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 relative">
+        <Link href={`/en/g/venge-io`} className='col-span-2' key={"venge-io-1"}>
+          {/* <img className='rounded-lg' width="100%" height="100%" alt="" src={`https://webgamer.io/games/${gameSlug}/${gameSlug}.240x.85pc.webp`} loading="eager" /> */}
+          <ImageTilt slug={"venge-io"} />
+        </Link>
         {gamesData.map(({ gameSlug }) => (
-          <Link href={`/en/g/${gameSlug}`}  key={gameSlug}>
+          <Link href={`/en/g/${gameSlug}`} key={gameSlug}>
             {/* <img className='rounded-lg' width="100%" height="100%" alt="" src={`https://webgamer.io/games/${gameSlug}/${gameSlug}.240x.85pc.webp`} loading="eager" /> */}
-            <ImageTilt slug={gameSlug}/>
+            <ImageTilt slug={gameSlug} />
           </Link>
         ))}
       </div>

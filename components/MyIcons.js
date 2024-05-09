@@ -18,4 +18,5 @@ export const MyIcons = {
     "typing": "fa-keyboard",
     "sports": "fa-volleyball-ball",
     "rpg": "fa-question",
+    "all": "fa-home"
 }
