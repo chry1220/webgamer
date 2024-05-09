@@ -23,7 +23,7 @@ export async function getServerSideProps({ params }) {
 export default function Home({ allGamesData, pageData, lang }) {
     return (
         <Layout home pageData={pageData} allGamesData={allGamesData}>
-            <div className="max-w-screen-xl mx-auto mt-14 mb-3 grid grid-cols-7 gap-4">
+            <div className="px-3 max-w-screen-xl mx-auto mt-16 mb-3 grid gap-2 grid-cols-2 xl:grid-cols-7 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 relative">
                 {allGamesData.map(({ gameSlug }) => (
                     <Link href={`/${lang}/g/${gameSlug}`} className="rounded-lg" key={gameSlug}>
                         <img className="rounded-lg" width="100%" height="100%" alt="" src={`https://webgamer.io/games/${gameSlug}/${gameSlug}.240x.85pc.webp`} loading="eager" />

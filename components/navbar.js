@@ -13,8 +13,11 @@ import {
 } from "@material-tailwind/react";
 import Image from 'next/image';
 import { MyIcons } from './MyIcons';
+import { useRouter } from 'next/router';
 
 export default function Navbar({ pageData, allGamesData }) {
+    const router = useRouter();
+
     const [open, setOpen] = useState(false);
     const [openSearch, setOpenSearch] = useState(false);
     const [searchedGame, setSearchedGame] = useState([]);
@@ -54,9 +57,6 @@ export default function Navbar({ pageData, allGamesData }) {
     }
     const navbarData = pageData.navTags;
     const moreTags = pageData.moreTags;
-    const lang = pageData.lang;
-    const onClickFavBtn = () => {
-    }
     return (
         <div>
             <div className='text-white'>
@@ -70,7 +70,7 @@ export default function Navbar({ pageData, allGamesData }) {
                             <button type="button" className="text-white px-2 py-2 hover:bg-gray-900 rounded-full w-8 h-8" onClick={handleOpenSearch}>
                                 <i className="fa-solid fa-magnifying-glass"></i>
                             </button>
-                            <Link href={'/fav'} className="text-[#ffa500] px-2 py-2 hover:bg-gray-900 rounded-full w-8 h-8 text-center">
+                            <Link href={`/${pageData.lang}/fav`} className="text-[#ffa500] px-2 py-2 hover:bg-gray-900 rounded-full w-8 h-8 text-center">
                                 <i className="fa-solid fa-star"></i>
                             </Link>
                             <Link href={'https://discord.com/invite/6wFkdVGhvk'} type="button" className="text-white px-2 py-2 hover:bg-gray-900 rounded-full w-8 h-8">
@@ -85,7 +85,7 @@ export default function Navbar({ pageData, allGamesData }) {
                                 {
                                     navbarData.map(({ slug, name, iconKey }) => (
                                         <li key={slug}>
-                                            <Link href={`/${lang}/${slug}`} className="block p-0 bg-transparent rounded ">
+                                            <Link href={`/${pageData.lang}/${slug}`} className="block p-0 bg-transparent rounded ">
                                                 <i className={`fa-solid mr-2 ` + MyIcons[iconKey]}></i>
                                                 {name}
                                             </Link>
@@ -161,7 +161,7 @@ export default function Navbar({ pageData, allGamesData }) {
                         </div>
                         {
                             moreTags.map(({ slug, name, iconKey }) => (
-                                <Link href={`/${lang}/${slug}`} key={slug} className="block pl-4 text-sm py-1.5 text-white bg-transparent rounded hover:bg-gray-900">
+                                <Link href={`/${pageData.lang}/${slug}`} key={slug} className="block pl-4 text-sm py-1.5 text-white bg-transparent rounded hover:bg-gray-900">
                                     <i className={`fa-solid w-7 ` + MyIcons[iconKey]}></i>
                                     {name}
                                 </Link>

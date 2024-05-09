@@ -48,18 +48,17 @@ export default function Game({ pageData, allGamesData }) {
                     /> :
                     <Layout pageData={pageData} allGamesData={allGamesData}>
                         <div className="bg-[#181818] ">
-                            <div className="max-w-screen-xl mx-auto mt-14 mb-3 pt-3">
-                                <div className="grid grid-cols-4 gap-10">
-                                    <div className="col-span-3 text-white">
-                                        <div className="flex justify-between pb-4">
-                                            <div className="justify-start text-4xl">{gameData.name}</div>
+                            <div className="max-w-screen-xl mx-auto mt-14 mb-3 p-3">
+                                <div className="grid xl:grid-cols-4 gap-10">
+                                    <div className="xl:col-span-3 text-white">
+                                        <div className="md:flex md:justify-between pb-4">
+                                            <div className="justify-start text-4xl text-center p-3 md:p-0">{gameData.name}</div>
                                             <div className="justify-end">
                                                 <button
                                                     type="button"
                                                     className="text-[#ffa500] px-2 py-2 hover:bg-gray-900"
                                                     onClick={toggleToFavorite}
                                                 >
-
                                                     {
                                                         favs.includes(gameData.slug) ?
                                                             <i className="fa-solid fa-star"></i> :
@@ -127,62 +126,62 @@ export default function Game({ pageData, allGamesData }) {
                                                     </div>
                                                 </div>
                                         }
-                                        <div className="flex justify-between pb-4 mt-4">
-                                            <div className="justify-start">
-                                                {
-                                                    gameData.superficialTags.map(tag => (
-                                                        <Link href={`/en/${tag.slug}`} className="border border-gray-600 text-white bg-transparent hover:bg-gray-900 rounded-full text-sm px-5 py-1 me-2 mb-2" key={tag.slug}>
-                                                            {tag.name}
-                                                        </Link>
-                                                    ))
-                                                }
-                                            </div>
-                                            <div className="justify-end">
-                                                <button type="button" className="text-black bg-white font-medium rounded-md text-sm px-4 py-2 mx-1 text-center">
-                                                    <i className="fa-solid fa-share-alt-square pr-3"></i>
-                                                    {pageData.pageTr["Share"]}
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div className="grid grid-cols-3 gap-4">
+                                        <div className="grid md:grid-cols-3 gap-4 mt-6">
                                             <div className="col-span-2">
+                                                <div className="mb-6">
+                                                    {
+                                                        gameData.superficialTags.map(tag => (
+                                                            <Link href={`/en/${tag.slug}`} className="border border-gray-600 text-white bg-transparent hover:bg-gray-900 rounded-full text-sm px-5 py-1 me-2 mb-2" key={tag.slug}>
+                                                                {tag.name}
+                                                            </Link>
+                                                        ))
+                                                    }
+                                                </div>
                                                 <div className="text-sm">{gameData.description}</div>
                                                 <div className="text-lg font-bold py-4">{pageData.pageTr["How to play %s?"].replace('%s', gameData.name)}</div>
                                                 <pre className="text-sm">{gameData.instructions}</pre>
                                             </div>
-                                            <div className="border-l-2 border-gray-800 pl-4">
-                                                <div className="text-sm">{pageData.pageTr["Developer:"]} <strong>{gameData.detailedDeveloper.name}</strong></div>
-                                                <div className="text-sm">{pageData.pageTr["Similar to:"]}
-                                                    <strong className="py-1">
-                                                        {gameData.superficialSimilars.map(si => (si.name))}
-                                                    </strong>
+                                            <div>
+                                                <div className="flex justify-end mb-3">
+                                                    <button type="button" className="text-black bg-white font-medium rounded-md text-sm px-4 py-2 mx-1 text-center">
+                                                        <i className="fa-solid fa-share-alt-square pr-3"></i>
+                                                        {pageData.pageTr["Share"]}
+                                                    </button>
                                                 </div>
-                                                <div className="text-sm">{pageData.pageTr["Engine:"]} <strong>{gameData.superficialEngine.name}</strong></div>
-                                                <span className="font-bold text-sm px-1">
-                                                    <i className="fa-solid fa-earth pr-2"></i>
-                                                    Website
-                                                </span>
-                                                <span className="font-bold text-sm px-1">
-                                                    <i className="fa-brands fa-discord pr-2"></i>
-                                                    Discord
-                                                </span>
+                                                <div className="md:border-l-2 md:border-gray-800 md:pl-4">
+                                                    <div className="text-sm">{pageData.pageTr["Developer:"]} <strong>{gameData.detailedDeveloper.name}</strong></div>
+                                                    <div className="text-sm">{pageData.pageTr["Similar to:"]}
+                                                        <strong className="py-1">
+                                                            {gameData.superficialSimilars.map(si => (si.name))}
+                                                        </strong>
+                                                    </div>
+                                                    <div className="text-sm">{pageData.pageTr["Engine:"]} <strong>{gameData.superficialEngine.name}</strong></div>
+                                                    <span className="font-bold text-sm px-1">
+                                                        <i className="fa-solid fa-earth pr-2"></i>
+                                                        Website
+                                                    </span>
+                                                    <span className="font-bold text-sm px-1">
+                                                        <i className="fa-brands fa-discord pr-2"></i>
+                                                        Discord
+                                                    </span>
+                                                </div>
+
 
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="bg-black rounded-xl px-3">
+                                    <div className="bg-black rounded-xl p-3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-1 gap-3">
                                         {gameData.relatedGames.slice(0, 6).map(({ slug }) => (
-                                            <div className="rounded-lg my-3" key={slug}>
+                                            <div className="rounded-lg" key={slug}>
                                                 <ImageTilt slug={slug} />
                                             </div>
                                         ))}
                                     </div>
                                 </div>
-
                             </div>
-                            <div className="bg-black pt-3">
+                            <div className="bg-black px-6 py-3">
                                 <div className="max-w-screen-xl mx-auto">
-                                    <div className="grid grid-cols-5 gap-4">
+                                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3">
                                         {gameData.relatedGames.slice(6).map(({ slug }) => (
                                             <div className="rounded-lg" key={slug}>
                                                 <ImageTilt slug={slug} />
