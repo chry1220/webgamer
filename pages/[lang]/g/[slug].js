@@ -3,17 +3,45 @@ import { getAllGamesData, getGamePageData } from "../../../lib/pages";
 import { useEffect, useState } from "react";
 import Layout from "../../../components/layout";
 import Link from "next/link";
-import { Card, Dialog, DialogBody } from "@material-tailwind/react";
 import clsx from "clsx";
 import ImageTilt from "../../../components/TiltComponent/ImageTilt";
+import { ThemeProvider } from "@material-tailwind/react";
 
+import {
+    Drawer,
+    Button,
+    IconButton,
+    Dialog,
+    Input,
+    DialogBody,
+    DialogFooter
+} from "@material-tailwind/react";
 export default function Game({ pageData, allGamesData }) {
+    const theme = {
+        dialog: {
+            styles: {
+                base: {
+                    backdrop: {
+                        backgroundColor: 'bg-white',
+                        backgroundOpacity: "bg-opacity-10",
+                        backdropFilter: "backdrop-blur-none"
+                    }
+                }
+            }
+        },
+    }
     const gameData = pageData.game;
     const [favs, setFavs] = useState([]);
     const [playing, setPlaying] = useState(true);
     const [openImg, setOpenImg] = useState(false);
     const [openImg1, setOpenImg1] = useState(false);
     const [expand, setExpand] = useState(false);
+    const [openClose, setOpenClose] = useState(false);
+    const handleCloseGame = () => { 
+        handleOpenClose();
+        handlePlaying();
+     }
+    const handleOpenClose = () => { setOpenClose((cur) => !cur) };
     const handleExpand = () => setExpand((cur) => !cur);
     const handlePlaying = () => setPlaying((cur) => !cur);
     const handleOpenImg = () => { setOpenImg((cur) => !cur) };
@@ -47,6 +75,26 @@ export default function Game({ pageData, allGamesData }) {
                         allow="fullscreen; allow-orientation-lock; autoplay; camera; midi; gyroscope; accelerometer; monetization; clipboard-read; clipboard-write; xr; xr-spatial-tracking; gamepad; geolocation; microphone; cross-origin-isolated; focus-without-user-activation *; keyboard-map *; payment; screen-wake-lock"
                     /> :
                     <Layout pageData={pageData} allGamesData={allGamesData}>
+                        <ThemeProvider value={theme}>
+                            <Dialog
+                                size="xs"
+                                open={openClose}
+                                handler={handleOpenClose}
+                                className='bg-[#181818] p-3 fixed top-11'
+                            >
+                                <DialogBody className='p-2 text-white text-sm'>
+                                    {pageData.pageTr["You will lose your progress. Close the game?"]}
+                                </DialogBody>
+                                <DialogFooter className='p-0'>
+                                    <Button className='py-2 px-3 mx-1 text-xs' variant="text" color="white" onClick={handleOpenClose} >
+                                        cancel
+                                    </Button>
+                                    <Button className='py-2 px-3 mx-1 text-xs bg-[#C53030] hover:bg-[#9B2C2C] ' variant="text" color="white" onClick={handleCloseGame} >
+                                        Close
+                                    </Button>
+                                </DialogFooter>
+                            </Dialog>
+                        </ThemeProvider>
                         <div className="bg-[#181818] ">
                             <div className="max-w-screen-xl mx-auto mt-14 mb-3 p-3">
                                 <div className="grid xl:grid-cols-4 gap-10">
@@ -76,7 +124,7 @@ export default function Game({ pageData, allGamesData }) {
                                                                 <i className="fa-solid fa-expand pr-3"></i>
                                                                 {pageData.pageTr["Fullscreen"]}
                                                             </button>
-                                                            <button type="button" className="text-white bg-transparent font-medium text-sm px-4 py-2 mx-1 text-center" onClick={handlePlaying}>
+                                                            <button type="button" className="text-white bg-transparent font-medium text-sm px-4 py-2 mx-1 text-center" onClick={handleOpenClose}>
                                                                 <i className="fa-solid fa-close pr-3"></i>
                                                                 {pageData.pageTr["Close"]}
                                                             </button>
@@ -138,8 +186,8 @@ export default function Game({ pageData, allGamesData }) {
                                                     }
                                                 </div>
                                                 <div className="text-sm">{gameData.description}</div>
-                                                <div className="text-lg font-bold py-4">{pageData.pageTr["How to play %s?"].replace('%s', gameData.name)}</div>
-                                                <pre className="text-sm">{gameData.instructions}</pre>
+                                                {/* <div className="text-lg font-bold py-4">{pageData.pageTr["How to play %s?"].replace('%s', gameData.name)}</div>
+                                                <pre className="text-sm">{gameData.instructions}</pre> */}
                                             </div>
                                             <div>
                                                 <div className="flex justify-end mb-3">
@@ -150,11 +198,11 @@ export default function Game({ pageData, allGamesData }) {
                                                 </div>
                                                 <div className="md:border-l-2 md:border-gray-800 md:pl-4">
                                                     <div className="text-sm">{pageData.pageTr["Developer:"]} <strong>{gameData.detailedDeveloper.name}</strong></div>
-                                                    <div className="text-sm">{pageData.pageTr["Similar to:"]}
+                                                    {/* <div className="text-sm">{pageData.pageTr["Similar to:"]}
                                                         <strong className="py-1">
                                                             {gameData.superficialSimilars.map(si => (si.name))}
                                                         </strong>
-                                                    </div>
+                                                    </div> */}
                                                     <div className="text-sm">{pageData.pageTr["Engine:"]} <strong>{gameData.superficialEngine.name}</strong></div>
                                                     <span className="font-bold text-sm px-1">
                                                         <i className="fa-solid fa-earth pr-2"></i>
