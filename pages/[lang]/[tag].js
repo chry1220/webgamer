@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Layout from "../../components/layout";
-import { getAllTags, getPageData, getGames, getAllGamesData } from "../../lib/pages";
-import Image from "next/image";
+import { getPageData, getGames, getAllGamesData } from "../../lib/pages";
+
 
 export default function HomeWithTag({ pageData, gamesData, allGamesData }) {
     return (
@@ -15,16 +15,9 @@ export default function HomeWithTag({ pageData, gamesData, allGamesData }) {
     );
 }
 
-export async function getStaticPaths() {
-    const paths = getAllTags("en");
-    return {
-        paths: paths,
-        fallback: false // or 'blocking' for incremental static regeneration
-    };
-}
 
-export async function getStaticProps({ params }) {
-    const pageData = await getPageData(params.lang, params.slug);
+export async function getServerSideProps({ params }) {
+    const pageData = await getPageData(params.lang);
     const allGamesData = await getAllGamesData(params.lang);
     const gamesData = await getGames(params.lang, params.tag);
     // const pageData = params;

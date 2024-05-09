@@ -5,7 +5,19 @@ import { getAllGamesData, getPageData } from '../../lib/pages';
 import { useState, useEffect } from "react";
 import Image from 'next/image';
 
-export async function getStaticProps() {
+// export async function getStaticProps() {
+//     const allGamesData = await getAllGamesData("en");
+//     const pageData = await getPageData("en");
+
+//     return {
+//         props: {
+//             allGamesData,
+//             pageData
+//         },
+//     };
+// }
+
+export async function getServerSideProps() {
     const allGamesData = await getAllGamesData("en");
     const pageData = await getPageData("en");
 
@@ -17,13 +29,13 @@ export async function getStaticProps() {
     };
 }
 
+
 export default function Home({ allGamesData, pageData }) {
     const [favs, setFavs] = useState([]);
     useEffect(() => {
         const storedData = localStorage.getItem('fav');
         const storedFavs = ((storedData || '').split(","));
         setFavs(storedFavs);
-        console.log(storedFavs);
     }, [])
 
     return (

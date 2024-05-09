@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout from '../../components/layout';
-import { getAllGamesData, getAllLangs, getPageData } from '../../lib/pages';
+import { getAllGamesData, getPageData } from '../../lib/pages';
 import { useState, createContext } from "react";
 import Image from 'next/image';
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
     const lang = params.lang;
     const allGamesData = await getAllGamesData(lang);
     const pageData = await getPageData(lang);
@@ -19,13 +19,6 @@ export async function getStaticProps({ params }) {
     };
 }
 
-export async function getStaticPaths() {
-    const paths = getAllLangs();
-    return {
-        paths: paths,
-        fallback: false // or 'blocking' for incremental static regeneration
-    };
-}
 
 export default function Home({ allGamesData, pageData, lang }) {
     return (

@@ -1,9 +1,8 @@
 import Layout, { siteTitle } from '../components/layout';
 import Link from 'next/link';
 import { getAllGamesData, getPageData } from '../lib/pages';
-import Image from 'next/image';
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const allGamesData = await getAllGamesData("en");
   const pageData = await getPageData("en");
   return {
