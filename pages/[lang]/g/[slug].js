@@ -172,9 +172,9 @@ export default function Game({ pageData, allGamesData }) {
                                     </div>
                                     <div className="bg-black rounded-xl px-3">
                                         {gameData.relatedGames.slice(0, 6).map(({ slug }) => (
-                                            <Link href={`/${"en"}/g/${slug}`} className="rounded-lg my-3" key={slug}>
-                                                <ImageTilt slug={slug}/>
-                                            </Link>
+                                            <div className="rounded-lg my-3" key={slug}>
+                                                <ImageTilt slug={slug} />
+                                            </div>
                                         ))}
                                     </div>
                                 </div>
@@ -184,9 +184,9 @@ export default function Game({ pageData, allGamesData }) {
                                 <div className="max-w-screen-xl mx-auto">
                                     <div className="grid grid-cols-5 gap-4">
                                         {gameData.relatedGames.slice(6).map(({ slug }) => (
-                                            <Link href={`/${"en"}/g/${slug}`} className="rounded-lg" key={slug}>
+                                            <div className="rounded-lg" key={slug}>
                                                 <ImageTilt slug={slug} />
-                                            </Link>
+                                            </div>
                                         ))}
                                     </div>
                                 </div>
