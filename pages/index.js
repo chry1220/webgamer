@@ -19,7 +19,7 @@ export default function Home({ allGamesData, pageData }) {
   return (
     <Layout home pageData={pageData} allGamesData={allGamesData}>
       <div className='bg-black'>
-        <div className="max-w-screen-xl mx-auto mt-16 mb-3 p-3">
+        <div className="max-w-screen-xl mx-auto mt-16 mb-3 p-3 animate-fadeIn">
           <div className='hidden xl:block'>
             <Grid
               templateAreas={
