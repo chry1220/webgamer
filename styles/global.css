@@ -7,6 +7,40 @@ iframe {
 }
 
 body {
-  background-color: black;
+  background-color: black !important;
 }
 
+.grid-container--tight {
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas:
+      ".. .. .. .. b1 b1 .."
+      ".. .. .. .. b1 b1 .."
+      ".. b2 b2 .. .. .. .."
+      ".. b2 b2 .. .. .. .."
+      ".. .. .. .. b3 b3 .."
+      ".. .. .. .. b3 b3 .."
+      ".. b4 b4 .. .. .. .."
+      ".. b4 b4 .. .. .. .."
+      ".. .. .. .. b5 b5 .."
+      ".. .. .. .. b5 b5 .."
+      ".. b6 b6 .. .. .. .."
+      ".. b6 b6 .. .. .. ..";
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 13px;
+  gap: 13px;
+  grid-auto-flow: row dense;
+}
+
+.grid-container--tight>.game {
+  height: 110px;
+}
+
+.grid-container>.game {
+  text-align: center;
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+}
