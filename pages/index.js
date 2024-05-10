@@ -2,7 +2,7 @@ import Layout, { siteTitle } from '../components/layout';
 import Link from 'next/link';
 import { getAllGamesData, getPageData } from '../lib/pages';
 import ImageTilt from "../components/TiltComponent/ImageTilt";
-import { Grid, GridItem } from '@chakra-ui/react'
+import { Grid, GridItem, SlideFade } from '@chakra-ui/react'
 export async function getServerSideProps() {
   const allGamesData = await getAllGamesData("en");
   const pageData = await getPageData("en");
@@ -20,10 +20,12 @@ export default function Home({ allGamesData, pageData }) {
     <Layout home pageData={pageData} allGamesData={allGamesData}>
       <div className='bg-black'>
         <div className="max-w-screen-xl mx-auto mt-16 mb-3 p-3 animate-fadeIn">
-          <div className='hidden xl:block'>
-            <Grid
-              templateAreas={
-                `".. .. .. .. b1 b1 .."
+
+          <SlideFade in={true} offsetY='20px'>
+            <div className='hidden xl:block'>
+              <Grid
+                templateAreas={
+                  `".. .. .. .. b1 b1 .."
               ".. .. .. .. b1 b1 .."
               ".. b2 b2 .. .. .. .."
               ".. b2 b2 .. .. .. .."
@@ -35,26 +37,26 @@ export default function Home({ allGamesData, pageData }) {
               ".. .. .. .. b5 b5 .."
               ".. b6 b6 .. .. .. .."
               ".. b6 b6 .. .. .. .."`
-              }
-              templateColumns='repeat(7, 1fr)'
-              gap={4}
-            >
-              {gamesData.map((datum, i) => (
-                <GridItem
-                  area={i % 11 == 0 ? "b" + (i / 11 + 1) : ''}
-                  key={datum.gameSlug}
-                >
-                  <Link href={`/en/g/${datum.gameSlug}`}>
-                    <ImageTilt slug={datum.gameSlug} />
-                  </Link>
-                </GridItem>
-              ))}
-            </Grid>
-          </div>
-          <div className='hidden lg:block xl:hidden'>
-            <Grid
-              templateAreas={
-                `".. .. .. b1 b1 .."
+                }
+                templateColumns='repeat(7, 1fr)'
+                gap={4}
+              >
+                {gamesData.map((datum, i) => (
+                  <GridItem
+                    area={i % 11 == 0 ? "b" + (i / 11 + 1) : ''}
+                    key={datum.gameSlug}
+                  >
+                    <Link href={`/en/g/${datum.gameSlug}`}>
+                      <ImageTilt slug={datum.gameSlug} />
+                    </Link>
+                  </GridItem>
+                ))}
+              </Grid>
+            </div>
+            <div className='hidden lg:block xl:hidden'>
+              <Grid
+                templateAreas={
+                  `".. .. .. b1 b1 .."
                 ".. .. .. b1 b1 .."
                 ".. .. .. .. .. .."
                 ".. b2 b2 .. .. .."
@@ -69,26 +71,26 @@ export default function Home({ allGamesData, pageData }) {
                 ".. .. .. b5 b5 .."
                 ".. b6 b6 .. .. .."
                 ".. b6 b6 .. .. .."`
-              }
-              templateColumns='repeat(6, 1fr)'
-              gap={4}
-            >
-              {gamesData.map((datum, i) => (
-                <GridItem
-                  area={i % 15 == 0 ? "b" + (i / 15 + 1) : ''}
-                  key={datum.gameSlug}
-                >
-                  <Link href={`/en/g/${datum.gameSlug}`}>
-                    <ImageTilt slug={datum.gameSlug} />
-                  </Link>
-                </GridItem>
-              ))}
-            </Grid>
-          </div>
-          <div className='hidden md:block lg:hidden'>
-            <Grid
-              templateAreas={
-                `".. .. .. b1 b1"
+                }
+                templateColumns='repeat(6, 1fr)'
+                gap={4}
+              >
+                {gamesData.map((datum, i) => (
+                  <GridItem
+                    area={i % 15 == 0 ? "b" + (i / 15 + 1) : ''}
+                    key={datum.gameSlug}
+                  >
+                    <Link href={`/en/g/${datum.gameSlug}`}>
+                      <ImageTilt slug={datum.gameSlug} />
+                    </Link>
+                  </GridItem>
+                ))}
+              </Grid>
+            </div>
+            <div className='hidden md:block lg:hidden'>
+              <Grid
+                templateAreas={
+                  `".. .. .. b1 b1"
                 ".. .. .. b1 b1"
                 ".. .. .. .. .."
                 ".. b2 b2 .. .."
@@ -105,26 +107,26 @@ export default function Home({ allGamesData, pageData }) {
                 ".. .. .. .. .."
                 ".. b6 b6 .. .."
                 ".. b6 b6 .. .."`
-              }
-              templateColumns='repeat(5, 1fr)'
-              gap={4}
-            >
-              {gamesData.map((datum, i) => (
-                <GridItem
-                  area={i % 12 == 0 ? "b" + (i / 12 + 1) : ''}
-                  key={datum.gameSlug}
-                >
-                  <Link href={`/en/g/${datum.gameSlug}`}>
-                    <ImageTilt slug={datum.gameSlug} />
-                  </Link>
-                </GridItem>
-              ))}
-            </Grid>
-          </div>
-          <div className='hidden sm:block md:hidden'>
-            <Grid
-              templateAreas={
-                `".. .. .."
+                }
+                templateColumns='repeat(5, 1fr)'
+                gap={4}
+              >
+                {gamesData.map((datum, i) => (
+                  <GridItem
+                    area={i % 12 == 0 ? "b" + (i / 12 + 1) : ''}
+                    key={datum.gameSlug}
+                  >
+                    <Link href={`/en/g/${datum.gameSlug}`}>
+                      <ImageTilt slug={datum.gameSlug} />
+                    </Link>
+                  </GridItem>
+                ))}
+              </Grid>
+            </div>
+            <div className='hidden sm:block md:hidden'>
+              <Grid
+                templateAreas={
+                  `".. .. .."
                 ".. b1 b1"
                 ".. b1 b1"
                 ".. .. .."
@@ -142,32 +144,33 @@ export default function Home({ allGamesData, pageData }) {
                 ".. .. .."
                 "b6 b6 .."
                 "b6 b6 .."`
-              }
-              templateColumns='repeat(3, 1fr)'
-              gap={4}
-            >
-              {gamesData.map((datum, i) => (
-                <GridItem
-                  area={i % 6 == 0 ? "b" + (i / 6 + 1) : ''}
-                  key={datum.gameSlug}
-                >
-                  <Link href={`/en/g/${datum.gameSlug}`}>
-                    <ImageTilt slug={datum.gameSlug} />
-                  </Link>
-                </GridItem>
-              ))}
-            </Grid>
-          </div>
-          <div className='sm:hidden'>
-            <div className="grid gap-2 grid-cols-2">
-              {gamesData.map(({ gameSlug }) => (
-                <Link href={`/en/g/${gameSlug}`} key={gameSlug}>
-                  {/* <img className='rounded-lg' width="100%" height="100%" alt="" src={`https://webgamer.io/games/${gameSlug}/${gameSlug}.240x.85pc.webp`} loading="eager" /> */}
-                  <ImageTilt slug={gameSlug} />
-                </Link>
-              ))}
+                }
+                templateColumns='repeat(3, 1fr)'
+                gap={4}
+              >
+                {gamesData.map((datum, i) => (
+                  <GridItem
+                    area={i % 6 == 0 ? "b" + (i / 6 + 1) : ''}
+                    key={datum.gameSlug}
+                  >
+                    <Link href={`/en/g/${datum.gameSlug}`}>
+                      <ImageTilt slug={datum.gameSlug} />
+                    </Link>
+                  </GridItem>
+                ))}
+              </Grid>
             </div>
-          </div>
+            <div className='sm:hidden'>
+              <div className="grid gap-2 grid-cols-2">
+                {gamesData.map(({ gameSlug }) => (
+                  <Link href={`/en/g/${gameSlug}`} key={gameSlug}>
+                    {/* <img className='rounded-lg' width="100%" height="100%" alt="" src={`https://webgamer.io/games/${gameSlug}/${gameSlug}.240x.85pc.webp`} loading="eager" /> */}
+                    <ImageTilt slug={gameSlug} />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </SlideFade>
         </div>
       </div>
     </Layout >
