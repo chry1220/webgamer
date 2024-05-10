@@ -17,7 +17,7 @@ import { useRouter } from 'next/router';
 
 export default function Navbar({ pageData, allGamesData }) {
     const router = useRouter();
-
+    const tag = router.query.tag;
     const [open, setOpen] = useState(false);
     const [openSearch, setOpenSearch] = useState(false);
     const [searchedGame, setSearchedGame] = useState([]);
@@ -55,7 +55,7 @@ export default function Navbar({ pageData, allGamesData }) {
                 base: {
                     overlay: {
                         backgroundColor: 'bg-white',
-                        backgroundOpacity: "bg-opacity-10",
+                        backgroundOpacity: "bg-opacity-0",
                         backdropFilter: "backdrop-blur-none"
                     }
                 }
@@ -102,7 +102,15 @@ export default function Navbar({ pageData, allGamesData }) {
                                 {
                                     navbarData.map(({ slug, name, iconKey }) => (
                                         <li key={slug}>
-                                            <Link href={`/${pageData.lang}/${slug}`} className="block p-0 bg-transparent rounded rounded-3xl hover:bg-gray-900 px-3 py-1">
+                                            <Link
+                                                href={
+                                                    slug == tag ? `/${pageData.lang}` : `/${pageData.lang}/${slug}`
+                                                }
+                                                className={
+                                                    slug == tag ? "block p-0 bg-transparent rounded rounded-3xl hover:bg-gray-900 px-3 py-1 border border-white" :
+                                                        "block p-0 bg-transparent rounded rounded-3xl hover:bg-gray-900 px-3 py-1 "
+                                                }
+                                            >
                                                 <i className={`fa-solid mr-2 ` + MyIcons[iconKey]}></i>
                                                 {name}
                                             </Link>
@@ -183,7 +191,17 @@ export default function Navbar({ pageData, allGamesData }) {
                         </Link>
                         {
                             navbarData.map(({ slug, name, iconKey }) => (
-                                <Link href={`/${pageData.lang}/${slug}`} key={slug} className="block lg:hidden pl-4 text-sm py-1.5 text-white bg-transparent rounded hover:bg-gray-900">
+                                <Link
+                                    href={
+                                        slug == tag ? `/${pageData.lang}` : `/${pageData.lang}/${slug}`
+                                    }
+                                    key={slug}
+                                    className={
+                                        slug == tag ?
+                                            "block lg:hidden pl-4 text-sm py-1.5 text-white rounded bg-gray-900" :
+                                            "block lg:hidden pl-4 text-sm py-1.5 text-white bg-transparent rounded hover:bg-gray-900 "
+                                    }
+                                >
                                     <i className={`fa-solid w-7 ` + MyIcons[iconKey]}></i>
                                     {name}
                                 </Link>
@@ -191,7 +209,16 @@ export default function Navbar({ pageData, allGamesData }) {
                         }
                         {
                             moreTags.map(({ slug, name, iconKey }) => (
-                                <Link href={`/${pageData.lang}/${slug}`} key={slug} className="block pl-4 text-sm py-1.5 text-white bg-transparent rounded hover:bg-gray-900">
+                                <Link
+                                    href={
+                                        slug == tag ? `/${pageData.lang}` : `/${pageData.lang}/${slug}`
+                                    }
+                                    key={slug}
+                                    className={
+                                        slug == tag ?
+                                            "block pl-4 text-sm py-1.5 text-white rounded bg-gray-900" :
+                                            "block pl-4 text-sm py-1.5 text-white bg-transparent rounded hover:bg-gray-900"
+                                    }>
                                     <i className={`fa-solid w-7 ` + MyIcons[iconKey]}></i>
                                     {name}
                                 </Link>
