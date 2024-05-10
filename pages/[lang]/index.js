@@ -44,7 +44,7 @@ export default function Home({ allGamesData, pageData, lang }) {
                 ".. b6 b6 .. .. .. .."`
                             }
                             templateColumns='repeat(7, 1fr)'
-                            gap={4}
+                            gap={2}
                         >
                             {gamesData.map((datum, i) => (
                                 <GridItem
@@ -78,7 +78,7 @@ export default function Home({ allGamesData, pageData, lang }) {
                   ".. b6 b6 .. .. .."`
                             }
                             templateColumns='repeat(6, 1fr)'
-                            gap={4}
+                            gap={3}
                         >
                             {gamesData.map((datum, i) => (
                                 <GridItem
@@ -114,7 +114,7 @@ export default function Home({ allGamesData, pageData, lang }) {
                   ".. b6 b6 .. .."`
                             }
                             templateColumns='repeat(5, 1fr)'
-                            gap={4}
+                            gap={3}
                         >
                             {gamesData.map((datum, i) => (
                                 <GridItem
@@ -151,7 +151,7 @@ export default function Home({ allGamesData, pageData, lang }) {
                   "b6 b6 .."`
                             }
                             templateColumns='repeat(3, 1fr)'
-                            gap={4}
+                            gap={3}
                         >
                             {gamesData.map((datum, i) => (
                                 <GridItem
