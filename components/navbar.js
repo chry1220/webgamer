@@ -109,7 +109,7 @@ export default function Navbar({ pageData, allGamesData }) {
                                                 }
                                                 className={
                                                     slug == tag ? "block p-0 bg-transparent rounded rounded-3xl hover:bg-gray-900 px-3 py-1 border border-white" :
-                                                        "block p-0 bg-transparent rounded rounded-3xl hover:bg-gray-900 px-3 py-1 "
+                                                        "block p-0 bg-transparent rounded rounded-3xl hover:bg-gray-900 px-2 py-1 "
                                                 }
                                             >
                                                 <i className={`fa-solid mr-2 ` + MyIcons[iconKey]}></i>

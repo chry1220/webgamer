@@ -33,10 +33,13 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-parallax-tilt": "^1.7.225",
+    "react-spring": "^9.7.3",
     "react-tilt": "^1.0.2",
+    "react-vanilla-tilt": "^1.0.0",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "tw-elements-react": "^1.0.0-alpha2"
+    "tw-elements-react": "^1.0.0-alpha2",
+    "use-3d-effect": "^1.1.0"
   },
   "engines": {
     "node": ">=18"

@@ -39,7 +39,7 @@ export default function Home({ allGamesData, pageData }) {
               ".. b6 b6 .. .. .. .."`
                 }
                 templateColumns='repeat(7, 1fr)'
-                gap={4}
+                gap={2}
               >
                 {gamesData.map((datum, i) => (
                   <GridItem
@@ -73,7 +73,7 @@ export default function Home({ allGamesData, pageData }) {
                 ".. b6 b6 .. .. .."`
                 }
                 templateColumns='repeat(6, 1fr)'
-                gap={4}
+                gap={3}
               >
                 {gamesData.map((datum, i) => (
                   <GridItem
@@ -109,7 +109,7 @@ export default function Home({ allGamesData, pageData }) {
                 ".. b6 b6 .. .."`
                 }
                 templateColumns='repeat(5, 1fr)'
-                gap={4}
+                gap={3}
               >
                 {gamesData.map((datum, i) => (
                   <GridItem
@@ -146,7 +146,7 @@ export default function Home({ allGamesData, pageData }) {
                 "b6 b6 .."`
                 }
                 templateColumns='repeat(3, 1fr)'
-                gap={4}
+                gap={3}
               >
                 {gamesData.map((datum, i) => (
                   <GridItem
@@ -164,7 +164,6 @@ export default function Home({ allGamesData, pageData }) {
               <div className="grid gap-2 grid-cols-2">
                 {gamesData.map(({ gameSlug }) => (
                   <Link href={`/en/g/${gameSlug}`} key={gameSlug}>
-                    {/* <img className='rounded-lg' width="100%" height="100%" alt="" src={`https://webgamer.io/games/${gameSlug}/${gameSlug}.240x.85pc.webp`} loading="eager" /> */}
                     <ImageTilt slug={gameSlug} />
                   </Link>
                 ))}
