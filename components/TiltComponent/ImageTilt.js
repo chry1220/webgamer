@@ -7,7 +7,7 @@ const ImageTilt = ({ slug }) => {
   const [zIndex, setZIndex] = useState(0);
   const handleMouseEnter = () => {
     setIsHovered(true);
-    setZIndex(10);
+    setZIndex(100);
     setTimeout(() => {
       setShowImage2(true);
     }, 300); // Delay before showing the second image
