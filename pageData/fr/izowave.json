@@ -120,7 +120,7 @@
             "name": "Izowave",
             "score": 51,
             "description": "Votre tâche est de survivre dans un monde ouvert pendant le plus de vagues possible. Le nombre d'ennemis et leurs caractéristiques augmenteront avec chaque vague.\n\nConstruisez des murs pour vous défendre, des tours pour attaquer, des générateurs pour obtenir des ressources, des munitions pour recharger les tours et des infirmiers pour reconstituer votre santé. Et améliorez les compétences de votre personnage et de son assistant.",
-            "instructions": "- WASD : Se déplacer\n- Clic gauche : Construire\n- Clic droit : Enlever le bâtiment\n- E ou U : Améliorer le bâtiment actif\n- Retour arrière : Détruire le bâtiment actif\n- N : Passer le temps restant de la vague\n- \\+ et \\- : Changer le zoom",
+            "instructions": "- WASD : Se déplacer\n- Clic gauche : Construire\n- Clic droit : Enlever le bâtiment\n- E ou U : Améliorer le bâtiment actif\n- Retour arrière : Détruire le bâtiment actif\n- N : Passer le temps restant de la vague et Changer le zoom",
             "pokiUrl": "https://poki.com/en/g/izowave-build-and-defend",
             "allowIframe": true,
             "externalPlayUrl": "https://izowave.neki.guru/",

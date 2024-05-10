@@ -120,7 +120,7 @@
             "name": "Izowave",
             "score": 51,
             "description": "Your task is to survive in an open world for as many waves as possible. The number of enemies and their characteristics will grow with each wave.\n\nBuild walls to defend, towers to attack, generators to get resources, ammunitions to reload towers, and medics to replenish your health. And upgrade the skills of your character and his assistant.",
-            "instructions": "- WASD: Move\n- Left click: Build\n- Right click: Remove building\n- E or U: Upgrade active building\n- Backspace: Destroy the active building\n- N: Skip wave time left\n- \\+ and \\-: Change zoom",
+            "instructions": "- WASD: Move\n- Left click: Build\n- Right click: Remove building\n- E or U: Upgrade active building\n- Backspace: Destroy the active building\n- N: Skip wave time left and Change zoom",
             "pokiUrl": "https://poki.com/en/g/izowave-build-and-defend",
             "allowIframe": true,
             "externalPlayUrl": "https://izowave.neki.guru/",

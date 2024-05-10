@@ -120,7 +120,7 @@
             "name": "I Want It All",
             "score": 51,
             "description": "Un jeu de casse-briques promotionnel par Merci Michel pour MSI.",
-            "instructions": "Contrôlez la raquette et cassez les briques avec la balle. Il y a 6 bonus :\n- **Scale** : donne une raquette plus grande\n- **Simultaneity** : ajoute une balle supplémentaire\n- **Power** : fait tirer des lasers à votre raquette\n- **Future Shield** : empêche de perdre temporairement\n- **Battle-Ready** : la balle traverse les briques\n- **Personalization** : lumières néon !",
+            "instructions": "- Scale : donne une raquette plus grande\n- Simultaneity : ajoute une balle supplémentaire\n- Power : fait tirer des lasers à votre raquette\n- Future Shield : empêche de perdre temporairement\n- Battle-Ready : la balle traverse les briques\n- Personalization : lumières néon !",
             "websiteUrl": "https://msi.com",
             "allowIframe": true,
             "externalPlayUrl": "https://iwantitall.merci-michel.com/",

@@ -120,7 +120,7 @@
             "name": "I Want It All",
             "score": 51,
             "description": "A promotional brick-breaker game by Merci Michel for MSI.",
-            "instructions": "Control the paddle and break bricks with the ball. There are 6 power-ups:\n- **Scale**: gives a larger paddle\n- **Simultaneity**: adds an extra ball\n- **Power**: makes your paddle shoot lasers\n- **Future Shield**: prevents losing temporarily\n- **Battle-Ready**: the ball goes through bricks\n- **Personalization**: neon lights!",
+            "instructions": "- Scale: gives a larger paddle- Simultaneity: adds an extra ball\n- Power: makes your paddle shoot lasers\n- Future Shield: prevents losing temporarily\n- BattleReady: the ball goes through bricks\n- Personalization: neon lights!",
             "websiteUrl": "https://msi.com",
             "allowIframe": true,
             "externalPlayUrl": "https://iwantitall.merci-michel.com/",

@@ -65,6 +65,11 @@ export default function Game({ pageData, allGamesData }) {
         localStorage.setItem('fav', preFavs.join(","));
         setFavs(preFavs);
     }
+    let instructions = [];
+    if (gameData.instructions) {
+        instructions = gameData.instructions.split("-");
+        instructions.shift()
+    }
     return (
         <>
             {
@@ -189,8 +194,24 @@ export default function Game({ pageData, allGamesData }) {
                                                             }
                                                         </div>
                                                         <div className="text-sm">{gameData.description}</div>
-                                                        {/* <div className="text-lg font-bold py-4">{pageData.pageTr["How to play %s?"].replace('%s', gameData.name)}</div>
-                                                <pre className="text-sm">{gameData.instructions}</pre> */}
+                                                        {
+                                                            instructions.length > 0 ?
+                                                                <>
+                                                                    <div className="text-lg font-bold py-4">{pageData.pageTr["How to play %s?"].replace('%s', gameData.name)}</div>
+                                                                    <div className="text-sm">
+                                                                        <ul role="list" className="list-disc px-3">
+                                                                            {
+                                                                                instructions.map(ins => (
+                                                                                    <li key={ins}>
+                                                                                        {ins}
+                                                                                    </li>
+                                                                                ))
+                                                                            }
+                                                                        </ul>
+                                                                    </div>
+                                                                </> : null
+                                                        }
+
                                                     </div>
                                                     <div>
                                                         <div className="flex justify-end mb-3">
@@ -200,13 +221,23 @@ export default function Game({ pageData, allGamesData }) {
                                                             </button>
                                                         </div>
                                                         <div className="md:border-l-2 md:border-gray-800 md:pl-4">
-                                                            <div className="text-sm">{pageData.pageTr["Developer:"]} <strong>{gameData.detailedDeveloper.name}</strong></div>
-                                                            {/* <div className="text-sm">{pageData.pageTr["Similar to:"]}
-                                                        <strong className="py-1">
-                                                            {gameData.superficialSimilars.map(si => (si.name))}
-                                                        </strong>
-                                                    </div> */}
-                                                            <div className="text-sm">{pageData.pageTr["Engine:"]} <strong>{gameData.superficialEngine.name}</strong></div>
+                                                            {
+                                                                gameData.detailedDeveloper ?
+                                                                    <div className="text-sm">{pageData.pageTr["Developer:"]} <strong>{gameData.detailedDeveloper.name}</strong></div> : null
+                                                            }
+                                                            {
+                                                                gameData.superficialSimilars ?
+                                                                    <div className="text-sm">{pageData.pageTr["Similar to:"]}
+                                                                        <strong className="py-1 pl-1">
+                                                                            {gameData.superficialSimilars.map(si => (si.name))}
+                                                                        </strong>
+                                                                    </div> : null
+                                                            }
+
+                                                            {
+                                                                gameData.superficialEngine ?
+                                                                    <div className="text-sm">{pageData.pageTr["Engine:"]} <strong>{gameData.superficialEngine.name}</strong></div> : null
+                                                            }
                                                             <span className="font-bold text-sm px-1">
                                                                 <i className="fa-solid fa-earth pr-2"></i>
                                                                 Website
