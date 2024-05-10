@@ -6,8 +6,7 @@ import ImageTilt from "../../components/TiltComponent/ImageTilt";
 
 
 export default function HomeWithTag({ pageData, gamesData, allGamesData, tagSlug }) {
-    console.log(tagSlug);
-    console.log(pageData);
+
     let tag = pageData.navTags.find(tag => tag.slug == tagSlug) ? pageData.navTags.find(tag => tag.slug == tagSlug) : pageData.moreTags.find(tag => tag.slug == tagSlug);
     return (
         <Layout home pageData={pageData} allGamesData={allGamesData}>

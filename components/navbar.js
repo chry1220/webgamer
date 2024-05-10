@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { ThemeProvider } from "@material-tailwind/react";
 
 import {
@@ -14,8 +14,9 @@ import {
 import Image from 'next/image';
 import { MyIcons } from './MyIcons';
 import { useRouter } from 'next/router';
-
+import MyContext from './MyContext';
 export default function Navbar({ pageData, allGamesData }) {
+    const parentFavs = useContext(MyContext);
     const router = useRouter();
     const tag = router.query.tag;
     const [open, setOpen] = useState(false);
@@ -84,7 +85,7 @@ export default function Navbar({ pageData, allGamesData }) {
                                 <i className="fa-solid fa-magnifying-glass"></i>
                             </button>
                             {
-                                favs.length > 0 ?
+                                (parentFavs ? parentFavs.length > 0 : favs.length > 0) ?
                                     <Link href={`/${pageData.lang}/fav`} className="text-[#ffa500] px-2 py-2 hover:bg-gray-900 rounded-full w-8 h-8 text-center">
                                         <i className="fa-solid fa-star"></i>
                                     </Link> :

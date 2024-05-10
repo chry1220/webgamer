@@ -20,7 +20,6 @@ export default function Footer({ home, pageData }) {
         }
     };
     if (!lang) lang = "en";
-    console.log(lang);
     return (
         <div className="w-full pt-6 pb-12 px-3 bg-black">
             <div className="max-w-screen-xl mx-auto text-white">
