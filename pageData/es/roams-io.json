@@ -115,47 +115,49 @@
         },
         "lang": "es",
         "game": {
-            "uuid": "434f2b2e-e4eb-4e2f-8f40-2ab8eed46c96",
-            "slug": "roams-io",
-            "name": "Roams.io",
-            "score": 49,
-            "description": "Roams.io es un juego de supervivencia donde evolucionas tu animal subiendo en la cadena alimenticia. ¡Come alimentos y otros jugadores en varios biomas para hacerte más fuerte y alcanzar la cima de la tabla de clasificación!",
-            "instructions": "- Mueve tu ratón para ir en esa dirección.\n- Come objetos rodeados de verde y evita a los jugadores rodeados de rojo.\n- Clic izquierdo o Espacio: Acelera (consume agua).\n- W: Acciones especiales cuando estén disponibles.",
+            "uuid": "abf43ba9-5cee-4697-814e-c95cc78a9092",
+            "slug": "redead-io",
+            "name": "reDEAD",
+            "score": 51,
+            "description": "reDEAD.io es un juego de disparos de supervivencia donde defiendes tu base contra oleadas de zombis y monstruos con varias armas. Mejora tu personaje y sobrevive tanto tiempo como puedas.",
+            "instructions": "- WASD o flechas: Moverse\n- Clic izquierdo: Disparar\n- 1 a 4: Cambiar arma",
             "allowIframe": true,
-            "externalPlayUrl": "https://roams.io/",
+            "externalPlayUrl": "https://redead.io",
             "superficialEngine": {
-                "slug": "javascript",
-                "name": "JavaScript"
+                "slug": "three-js",
+                "name": "Three.js"
             },
             "superficialSimilars": [
                 {
-                    "name": "Mope.io",
-                    "slug": null
+                    "name": "Vampire Survivors",
+                    "slug": "vampire-survivors"
                 }
             ],
             "superficialTags": [
                 {
-                    "slug": "estrategia",
-                    "name": "Estrategia",
-                    "iconKey": "strategy"
+                    "slug": "disparos",
+                    "name": "Disparos",
+                    "iconKey": "shooting"
                 }
             ],
             "superficialMonetizations": [],
             "detailedDeveloper": {
-                "name": "Roams Team",
-                "url": "https://discord.com/invite/roams-io-1064222211537379388",
+                "name": "TheoTheDev",
+                "longName": "TheoTheDev (Bohdan Horpynchuk)",
+                "url": "https://twitter.com/theo_the_dev",
                 "superficialGames": [
                     {
-                        "slug": "roams-io",
-                        "name": "Roams.io",
-                        "score": 49,
+                        "slug": "redead-io",
+                        "name": "reDEAD",
+                        "score": 51,
                         "allowIframe": true,
                         "preferredOrientation": "LANDSCAPE",
                         "mobileSupport": 2
                     }
                 ]
             },
-            "discordUrl": "https://discord.com/invite/roams-io-1064222211537379388",
+            "playerFriendlyType": "100-FREE",
+            "discordUrl": "https://discord.gg/SaAfCFjm8C",
             "mobileSupport": 2,
             "preferredOrientation": "LANDSCAPE",
             "players": [
@@ -167,97 +169,109 @@
             ],
             "relatedGames": [
                 {
-                    "slug": "starblast",
-                    "name": "Starblast",
-                    "score": 50,
+                    "slug": "venge-io",
+                    "name": "Venge.io",
+                    "score": 54,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "narrow-one",
+                    "name": "Narrow One",
+                    "score": 53,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "cryzen-io",
+                    "name": "Cryzen.io",
+                    "score": 53,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "deadshot-io",
+                    "name": "Deadshot.io",
+                    "score": 52,
                     "allowIframe": true
                 },
                 {
-                    "slug": "hole-io",
-                    "name": "Hole.io",
+                    "slug": "ev-io",
+                    "name": "ev.io",
                     "score": 50,
                     "allowIframe": true,
                     "preferredOrientation": "LANDSCAPE",
                     "mobileSupport": 2
                 },
                 {
-                    "slug": "captain-forever-io",
-                    "name": "CaptainForever.io",
+                    "slug": "jamir",
+                    "name": "Jamir",
                     "score": 50,
-                    "specialAttribute": "NEW",
                     "allowIframe": true
                 },
                 {
-                    "slug": "conq-io",
-                    "name": "Conq.io",
+                    "slug": "slay-one",
+                    "name": "Slay.one",
+                    "score": 50,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "smash-karts",
+                    "name": "Smash Karts",
                     "score": 49,
                     "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
                     "mobileSupport": 2
                 },
                 {
-                    "slug": "army-clash-io",
-                    "name": "ArmyClash.io",
-                    "score": 49,
-                    "allowIframe": true
-                },
-                {
-                    "slug": "mini-mana",
-                    "name": "Mini Mana",
+                    "slug": "shell-shockers",
+                    "name": "Shell Shockers",
                     "score": 48,
                     "allowIframe": true,
                     "preferredOrientation": "LANDSCAPE",
-                    "fullscreenLock": true,
                     "mobileSupport": 2
                 },
                 {
-                    "slug": "konkr-io",
-                    "name": "Konkr.io",
+                    "slug": "deadswitch-3",
+                    "name": "Deadswitch 3",
                     "score": 48,
-                    "allowIframe": true,
-                    "preferredOrientation": "PORTRAIT",
-                    "mobileSupport": 2
-                },
-                {
-                    "slug": "athena-crisis",
-                    "name": "Athena Crisis",
-                    "score": 47,
-                    "allowIframe": true,
-                    "preferredOrientation": "LANDSCAPE",
-                    "mobileSupport": 2
-                },
-                {
-                    "slug": "evoworld-io",
-                    "name": "EvoWorld.io (FlyOrDie.io)",
-                    "score": 47,
-                    "allowIframe": true,
-                    "preferredOrientation": "LANDSCAPE",
-                    "mobileSupport": 2
-                },
-                {
-                    "slug": "swordbattle-io",
-                    "name": "Swordbattle.io",
-                    "score": 47,
-                    "allowIframe": true,
-                    "preferredOrientation": "LANDSCAPE",
-                    "mobileSupport": 2
-                },
-                {
-                    "slug": "candy-riot",
-                    "name": "Candy Riot",
-                    "score": 45,
-                    "allowIframe": true,
-                    "mobileSupport": 2
-                },
-                {
-                    "slug": "pvpz-io",
-                    "name": "PvPz.io",
-                    "score": 45,
                     "allowIframe": true
                 },
                 {
-                    "slug": "lord-of-the-harvest",
-                    "name": "Lord of the Harvest",
-                    "score": 43,
+                    "slug": "dinogen-online",
+                    "name": "Dinogen Online",
+                    "score": 48,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "arsenal-online",
+                    "name": "Arsenal Online",
+                    "score": 48,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "bad-egg",
+                    "name": "Bad Egg",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 1
+                },
+                {
+                    "slug": "earths-greatest-defender",
+                    "name": "Earth's Greatest Defender",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "rocket-bot-royale",
+                    "name": "Rocket Bot Royale",
+                    "score": 47,
                     "allowIframe": true
                 }
             ]
@@ -310,10 +324,10 @@
             "Powered by": "Desarrollado por",
             "This game is no longer available.": "Este juego ya no está disponible."
         },
-        "headTitle": "ROAMS.IO 🎮 Jugar a Roams.io en WebGamer",
-        "headDescription": "Roams.io es un juego de supervivencia donde evolucionas tu animal subiendo en la cadena alimenticia. ¡Come alimentos y otros jugadores en varios biomas para hacerte más fuerte y alcanzar la cima de la...",
-        "socialImage": "https://webgamer.io/games/roams-io/roams-io.1280x.85pc.webp",
-        "url": "https://webgamer.io/es/g/roams-io"
+        "headTitle": "REDEAD 🎮 Jugar a reDEAD en WebGamer",
+        "headDescription": "reDEAD.io es un juego de disparos de supervivencia donde defiendes tu base contra oleadas de zombis y monstruos con varias armas. Mejora tu personaje y sobrevive tanto tiempo como puedas.",
+        "socialImage": "https://webgamer.io/games/redead-io/redead-io.1280x.85pc.webp",
+        "url": "https://webgamer.io/es/g/redead-io"
     },
     "__N_SSG": true
 }

@@ -32,16 +32,16 @@ export default function Home({ allGamesData, pageData }) {
     return (
         <Layout home pageData={pageData} allGamesData={allGamesData}>
             <div className="bg-[#181818] py-2">
-                <div className="max-w-screen-xl mx-auto mt-14 mb-3 px-3">
-                    <div className="text-xl font-bold pt-2 pb-3 text-[#ffa500]">
-                        <i className={`fa-solid w-7 mr-2 fa-star`}></i>
+                <div className="max-w-[1280px] mx-auto mt-14 mb-3 px-3">
+                    <div className="text-3xl font-bold pt-4 pb-6 text-white">
+                        <i className={`fa-solid w-7 mr-6 fa-star text-[#ffa500]`}></i>
                         {pageData.layoutTr["Favorites"]}
                     </div>
                     <SlideFade in={true} offsetY='20px'>
-                        <div className='grid gap-2 grid-cols-2 xl:grid-cols-7 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3'>
-                            {allGamesData.filter(game => favs.includes(game.gameSlug)).map(({ gameSlug }) => (
-                                <Link href={`/${"en"}/g/${gameSlug}`} className="rounded-lg" key={gameSlug}>
-                                    <ImageTilt slug={gameSlug} />
+                        <div className='grid gap-2 grid-cols-2 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3'>
+                            {allGamesData.filter(game => favs.includes(game.slug)).map((game) => (
+                                <Link href={`/${"en"}/g/${game.slug}`} className="rounded-lg relatedgame" key={game.slug}>
+                                    <ImageTilt game={game} />
                                 </Link>
                             ))}
                         </div>

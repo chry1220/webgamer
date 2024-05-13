@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import React, { useState } from 'react';
 import Tilt from 'react-parallax-tilt';
-const ImageTilt = ({ slug }) => {
+const ImageTilt = ({game}) => {
   const [isHovered, setIsHovered] = useState(false);
   const [showImage2, setShowImage2] = useState(false);
   const [zIndex, setZIndex] = useState(0);
@@ -20,7 +20,7 @@ const ImageTilt = ({ slug }) => {
   };
 
   return (
-    <div style={{ position: 'relative', zIndex: zIndex }} >
+    <div style={{ position: 'relative', zIndex: zIndex }} className='w-full h-full' >
       <Tilt
         tiltReverse={true}
         tiltMaxAngleX={10}
@@ -28,14 +28,33 @@ const ImageTilt = ({ slug }) => {
         glareEnable={true}
         glareMaxOpacity={0.8}
         scale={1.5}
+        className='w-full, h-full'
       >
-        <img
-          src={showImage2 ? `https://webgamer.io/games/${slug}/${slug}-1.240x.85pc.webp` : `https://webgamer.io/games/${slug}/${slug}.240x.85pc.webp`}
-          alt="Image"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          className="rounded-lg w-full h-auto"
-        />
+        {
+          game.detailedDeveloper &&
+            game.detailedDeveloper.superficialGames &&
+            game.detailedDeveloper.superficialGames.find(g => g.slug == game.slug).specialAttribute == "NEW" ?
+            <div class="new-game">🎉 NEW</div> : null
+        }
+        <div className='smooth-container'>
+          <img
+            src={`https://webgamer.io/games/${game.slug}/${game.slug}.240x.85pc.webp`}
+            alt="Image"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            className="initial-image rounded-lg"
+          />
+          <img
+            src={`https://webgamer.io/games/${game.slug}/${game.slug}-1.240x.85pc.webp`}
+            alt="Image"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            className="hover-image rounded-lg"
+          />
+          <div className='game-title hover-image'>
+            <span className='game-background'>{game.name}</span>
+          </div>
+        </div>
       </Tilt>
     </div>
   );

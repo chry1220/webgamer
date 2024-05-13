@@ -1,0 +1,337 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "tir",
+                "name": "Tir",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "aventure",
+                "name": "Aventure",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "strategie",
+                "name": "Stratégie",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "detente",
+                "name": "Détente",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "conduite",
+                "name": "Conduite",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "cartes",
+                "name": "Cartes",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "puzzle",
+                "name": "Puzzle",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "musique",
+                "name": "Musique",
+                "iconKey": "music"
+            },
+            {
+                "slug": "plateforme",
+                "name": "Plateforme",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "course",
+                "name": "Course",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "combinaisons",
+                "name": "Combinaisons",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "amusant",
+                "name": "Amusant",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "dactylographie",
+                "name": "Dactylographie",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "sports",
+                "name": "Sports",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "À propos de ce portail",
+            "Terms of Use": "Conditions d’utilisation",
+            "Privacy Policy": "Politique de confidentialité",
+            "All": "Tout",
+            "Shortcut:": "Raccourci :",
+            "Close": "Fermer",
+            "More": "Plus",
+            "Search for a game": "Rechercher un jeu",
+            "Install WebGamer": "Installer WebGamer",
+            "All categories": "Toutes les catégories",
+            "Categories": "Catégories",
+            "Favorites": "Favoris"
+        },
+        "lang": "fr",
+        "game": {
+            "uuid": "3c591e23-fe0f-4ca7-a56b-dd1694bedad2",
+            "slug": "ev-io",
+            "name": "ev.io",
+            "score": 50,
+            "description": "ev.io est un FPS compétitif futuriste basé sur la blockchain Solana où vous combattez contre d'autres joueurs dans des arènes. Vous pouvez gagner des SOL en jouant et en remportant des matchs, et les utiliser pour acheter de nouvelles armes et des skins.",
+            "instructions": "- Clic gauche : Tirer\n- Clic droit : Viser\n- Espace : Sauter, Double saut\n- 1-9 : Changer d'arme\n- Z : Arme de corps à corps\n- Maj : Sprint\n- Q : Téléportation\n- G : Grenade\n- V : Grenade collante\n- E : Grenade à impulsion\n- U : Grenade fumigène",
+            "allowIframe": true,
+            "externalPlayUrl": "https://ev.io",
+            "superficialEngine": {
+                "slug": "three-js",
+                "name": "Three.js"
+            },
+            "superficialSimilars": [
+                {
+                    "name": "Counter-Strike: Global Offensive",
+                    "slug": "counter-strike-global-offensive"
+                },
+                {
+                    "name": "Overwatch",
+                    "slug": "overwatch"
+                },
+                {
+                    "name": "Counter-Strike 2",
+                    "slug": "counter-strike-2"
+                }
+            ],
+            "superficialTags": [
+                {
+                    "slug": "tir",
+                    "name": "Tir",
+                    "iconKey": "shooting"
+                }
+            ],
+            "superficialMonetizations": [
+                {
+                    "label": "Cryptomonnaie",
+                    "slug": "cryptomonnaie",
+                    "iconKey": "bitcoin"
+                },
+                {
+                    "label": "NFT",
+                    "slug": "nft",
+                    "iconKey": "monkey"
+                }
+            ],
+            "detailedDeveloper": null,
+            "discordUrl": "https://discord.com/invite/evio",
+            "mobileSupport": 2,
+            "preferredOrientation": "LANDSCAPE",
+            "players": [
+                {
+                    "label": "Multijoueur",
+                    "slug": "multijoueur",
+                    "iconKey": "people"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "venge-io",
+                    "name": "Venge.io",
+                    "score": 54,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "narrow-one",
+                    "name": "Narrow One",
+                    "score": 53,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "cryzen-io",
+                    "name": "Cryzen.io",
+                    "score": 53,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "deadshot-io",
+                    "name": "Deadshot.io",
+                    "score": 52,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "redead-io",
+                    "name": "reDEAD",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "jamir",
+                    "name": "Jamir",
+                    "score": 50,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "slay-one",
+                    "name": "Slay.one",
+                    "score": 50,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "smash-karts",
+                    "name": "Smash Karts",
+                    "score": 49,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "shell-shockers",
+                    "name": "Shell Shockers",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "deadswitch-3",
+                    "name": "Deadswitch 3",
+                    "score": 48,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "dinogen-online",
+                    "name": "Dinogen Online",
+                    "score": 48,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "arsenal-online",
+                    "name": "Arsenal Online",
+                    "score": 48,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "bad-egg",
+                    "name": "Bad Egg",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 1
+                },
+                {
+                    "slug": "earths-greatest-defender",
+                    "name": "Earth's Greatest Defender",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "rocket-bot-royale",
+                    "name": "Rocket Bot Royale",
+                    "score": 47,
+                    "allowIframe": true
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Jeu introuvable",
+            "Play %s on WebGamer": "Jouer à %s sur WebGamer",
+            "Free with no ads": "Gratuit sans pubs",
+            "Cryptocurrency": "Cryptomonnaie",
+            "cryptocurrency": "cryptomonnaie",
+            "free-no-ads": "gratuit-sans-pubs",
+            "1 Player": "1 Joueur",
+            "1-player": "1-joueur",
+            "Multiplayer": "Multijoueur",
+            "multiplayer": "multijoueur",
+            "Play": "Jouer",
+            "Learn more": "En savoir plus",
+            "More": "Plus",
+            "Wishlist on Steam": "Ajouter à la liste de souhaits Steam",
+            "Follow on Twitter": "Suivre sur Twitter",
+            "Buy on Steam": "Acheter sur Steam",
+            "Support on Patreon": "Soutenir sur Patreon",
+            "Follow on itch.io": "Suivre sur itch.io",
+            "Join the Discord": "Rejoindre le Discord",
+            "This game is 100% free and has no ads.": "Ce jeu est 100% gratuit et sans pubs.",
+            "This ad-free demo is highly replayable.": "Cette démo sans pubs est très rejouable.",
+            "This is a free promotional game.": "Ce jeu promotionnel est gratuit.",
+            "This game contains few ads.": "Ce jeu contient peu de publicités.",
+            "Game monetized with cosmetics.": "Jeu monétisé avec des cosmétiques.",
+            "Content warning": "Avertissement de contenu",
+            "Preorder": "Précommander",
+            "on ": "sur ",
+            "Expand": "Agrandir",
+            "Fullscreen": "Plein écran",
+            "Play fullscreen": "Jouer en plein écran",
+            "Close": "Fermer",
+            "You will lose your progress. Close the game?": "Vous perdrez votre progression. Fermer le jeu ?",
+            "Cancel": "Annuler",
+            "How to play %s?": "Comment jouer à %s ?",
+            "Who created %s?": "Qui a créé %s ?",
+            "Similar to:": "Similaire à :",
+            "Engine:": "Moteur :",
+            "Website": "Site web",
+            "Developer:": "Développeur :",
+            "Open-source license:": "Licence open-source :",
+            "Share": "Partager",
+            "Something went wrong!": "Cela n'a pas fonctionné !",
+            "Link copied!": "Lien copié !",
+            "Games by %s": "Jeux par %s",
+            "Powered by": "Propulsé par",
+            "This game is no longer available.": "Ce jeu n’est plus disponible."
+        },
+        "headTitle": "EV.IO 🎮 Jouer à ev.io sur WebGamer",
+        "headDescription": "ev.io est un FPS compétitif futuriste basé sur la blockchain Solana où vous combattez contre d'autres joueurs dans des arènes. Vous pouvez gagner des SOL en jouant et en remportant des matchs, et les ...",
+        "socialImage": "https://webgamer.io/games/ev-io/ev-io.1280x.85pc.webp",
+        "url": "https://webgamer.io/fr/g/ev-io"
+    },
+    "__N_SSG": true
+}

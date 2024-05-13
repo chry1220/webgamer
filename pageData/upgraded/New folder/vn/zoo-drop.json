@@ -1,0 +1,351 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "bắn-súng",
+                "name": "Bắn súng",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "phiêu-lưu",
+                "name": "Phiêu lưu",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "chiến-thuật",
+                "name": "Chiến thuật",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "giải-trí",
+                "name": "Giải trí",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "lái-xe",
+                "name": "Lái xe",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "thẻ-bài",
+                "name": "Thẻ bài",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "giải-đố",
+                "name": "Giải đố",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "âm-nhạc",
+                "name": "Âm nhạc",
+                "iconKey": "music"
+            },
+            {
+                "slug": "nền-tảng",
+                "name": "Nền tảng",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "đua-xe",
+                "name": "Đua xe",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "ghép-các-ô",
+                "name": "Ghép các ô",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "vui-nhộn",
+                "name": "Vui nhộn",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "đánh-máy",
+                "name": "Đánh Máy",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "thể-thao",
+                "name": "Thể thao",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "Về trang web này",
+            "Terms of Use": "Điều khoản sử dụng",
+            "Privacy Policy": "Chính sách bảo mật",
+            "All": "Tất cả",
+            "Shortcut:": "Phím tắt:",
+            "Close": "Đóng",
+            "More": "Thêm",
+            "Search for a game": "Tìm kiếm một trò chơi",
+            "Install WebGamer": "Cài đặt WebGamer",
+            "All categories": "Tất cả các loại",
+            "Categories": "Thể loại",
+            "Favorites": "Yêu thích"
+        },
+        "lang": "vn",
+        "game": {
+            "uuid": "82142194-c86c-4ce2-9ffa-2ccea76a6262",
+            "slug": "zoo-drop",
+            "name": "ZooDrop",
+            "score": 49,
+            "description": "ZooDrop.io là một trò chơi ghép hình ấm cúng với những con vật dễ thương trong không gian 3D!",
+            "instructions": "Nhấn vào bất kỳ đâu để thả một con vật. Nếu nó chạm vào một con vật giống hệt, chúng sẽ kết hợp và biến thành một con lớn hơn! Hãy cố gắng đạt được điểm số cao nhất có thể. Trò chơi kết thúc nếu bạn chạm đến phía trên cùng của hộp.",
+            "pokiUrl": "https://poki.com/en/g/zoodrop",
+            "allowIframe": true,
+            "externalPlayUrl": "https://zoodrop.io",
+            "superficialEngine": {
+                "slug": "react-three-fiber",
+                "name": "React Three Fiber"
+            },
+            "superficialSimilars": [
+                {
+                    "name": "Suika Game • Watermelon Game",
+                    "slug": "suika-game"
+                }
+            ],
+            "superficialTags": [
+                {
+                    "slug": "giải-đố",
+                    "name": "Giải đố",
+                    "iconKey": "puzzle"
+                },
+                {
+                    "slug": "giải-trí",
+                    "name": "Giải trí",
+                    "iconKey": "casual"
+                }
+            ],
+            "superficialMonetizations": [],
+            "detailedDeveloper": {
+                "name": "Stephen Haney",
+                "url": "https://twitter.com/sdothaney",
+                "superficialGames": [
+                    {
+                        "slug": "summoners-io",
+                        "name": "Summoners.io",
+                        "score": 51,
+                        "allowIframe": true,
+                        "mobileSupport": 1
+                    },
+                    {
+                        "slug": "zoo-drop",
+                        "name": "ZooDrop",
+                        "score": 49,
+                        "allowIframe": true,
+                        "preferredOrientation": "PORTRAIT",
+                        "mobileSupport": 2
+                    }
+                ]
+            },
+            "cta": "TWITTER-FOLLOW",
+            "ctaUrl": "https://twitter.com/sdothaney",
+            "mobileSupport": 2,
+            "preferredOrientation": "PORTRAIT",
+            "players": [
+                {
+                    "label": "1 Người chơi",
+                    "slug": "1-người",
+                    "iconKey": "person"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "summer-afternoon",
+                    "name": "Summer Afternoon",
+                    "score": 51,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "egg-hunt",
+                    "name": "Egg Hunt",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "i-want-it-all",
+                    "name": "I Want It All",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "tower-stack",
+                    "name": "Tower Stack",
+                    "score": 48,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "monster-match",
+                    "name": "Monster Match",
+                    "score": 48,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "ducklings",
+                    "name": "Ducklings",
+                    "score": 48,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "crazy-pumpkin",
+                    "name": "Crazy Pumpkin",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "pipedown",
+                    "name": "Pipedown",
+                    "score": 47,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "eggsolotl",
+                    "name": "Eggsolotl",
+                    "score": 47,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true
+                },
+                {
+                    "slug": "keep-the-hype-up",
+                    "name": "Keep the Hype UP!",
+                    "score": 47,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "chroma",
+                    "name": "Chroma",
+                    "score": 46,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "bubbly-tim",
+                    "name": "Bubbly Tim's Time Bubble Trouble",
+                    "score": 45,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "swooop",
+                    "name": "Swooop",
+                    "score": 45,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "slash-saber",
+                    "name": "Slash Saber",
+                    "score": 44,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "modd-io",
+                    "name": "Modd.io",
+                    "score": 41,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Không tìm thấy trò chơi",
+            "Play %s on WebGamer": "Chơi %s trên WebGamer",
+            "Free with no ads": "Hoàn toàn miễn phí",
+            "Cryptocurrency": "Tiền điện tử",
+            "cryptocurrency": "tiền-điện-tử",
+            "free-no-ads": "miễn-phí-không-quảng-cáo",
+            "1 Player": "1 Người chơi",
+            "1-player": "1-người",
+            "Multiplayer": "Nhiều người chơi",
+            "multiplayer": "đa-người",
+            "Play": "Chơi",
+            "Learn more": "Tìm hiểu thêm",
+            "More": "Thêm",
+            "Wishlist on Steam": "Thêm vào danh sách mong muốn trên Steam",
+            "Follow on Twitter": "Theo dõi trên Twitter",
+            "Buy on Steam": "Mua trên Steam",
+            "Support on Patreon": "Ủng hộ trên Patreon",
+            "Follow on itch.io": "Theo dõi trên itch.io",
+            "Join the Discord": "Tham gia Discord",
+            "This game is 100% free and has no ads.": "Trò chơi 100% miễn phí, không quảng cáo.",
+            "This ad-free demo is highly replayable.": "Démo miễn phí chơi lại nhiều lần.",
+            "This is a free promotional game.": "Đây là một trò chơi quảng cáo miễn phí.",
+            "This game contains few ads.": "Trò chơi này có rất ít quảng cáo.",
+            "Game monetized with cosmetics.": "Trò chơi được tiếp thị với mỹ phẩm.",
+            "Content warning": "Cảnh báo nội dung",
+            "Preorder": "Đặt hàng trước",
+            "on ": "trên ",
+            "Expand": "Mở rộng",
+            "Fullscreen": "Toàn màn hình",
+            "Play fullscreen": "Chơi toàn màn hình",
+            "Close": "Đóng",
+            "You will lose your progress. Close the game?": "Bạn sẽ mất tiến trình của mình. Đóng trò chơi?",
+            "Cancel": "Hủy",
+            "How to play %s?": "Làm thế nào để chơi %s?",
+            "Who created %s?": "Ai đã tạo %s?",
+            "Similar to:": "Tương tự:",
+            "Engine:": "Động cơ:",
+            "Website": "Trang web",
+            "Developer:": "Nhà phát triển:",
+            "Open-source license:": "Giấy phép mã nguồn mở:",
+            "Share": "Chia sẻ",
+            "Something went wrong!": "Đã xảy ra lỗi!",
+            "Link copied!": "Đã sao chép liên kết!",
+            "Games by %s": "Trò chơi bởi %s",
+            "Powered by": "Được hỗ trợ bởi",
+            "This game is no longer available.": "Trò chơi này không còn nữa."
+        },
+        "headTitle": "ZOODROP 🎮 Chơi ZooDrop trên WebGamer",
+        "headDescription": "ZooDrop.io là một trò chơi ghép hình ấm cúng với những con vật dễ thương trong không gian 3D!",
+        "socialImage": "https://webgamer.io/games/zoo-drop/zoo-drop.1280x.85pc.webp",
+        "url": "https://webgamer.io/vn/g/zoo-drop"
+    },
+    "__N_SSG": true
+}

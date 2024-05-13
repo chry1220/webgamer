@@ -1,0 +1,397 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "tir",
+                "name": "Tir",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "aventure",
+                "name": "Aventure",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "strategie",
+                "name": "Stratégie",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "detente",
+                "name": "Détente",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "conduite",
+                "name": "Conduite",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "cartes",
+                "name": "Cartes",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "puzzle",
+                "name": "Puzzle",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "musique",
+                "name": "Musique",
+                "iconKey": "music"
+            },
+            {
+                "slug": "plateforme",
+                "name": "Plateforme",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "course",
+                "name": "Course",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "combinaisons",
+                "name": "Combinaisons",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "amusant",
+                "name": "Amusant",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "dactylographie",
+                "name": "Dactylographie",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "sports",
+                "name": "Sports",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "À propos de ce portail",
+            "Terms of Use": "Conditions d’utilisation",
+            "Privacy Policy": "Politique de confidentialité",
+            "All": "Tout",
+            "Shortcut:": "Raccourci :",
+            "Close": "Fermer",
+            "More": "Plus",
+            "Search for a game": "Rechercher un jeu",
+            "Install WebGamer": "Installer WebGamer",
+            "All categories": "Toutes les catégories",
+            "Categories": "Catégories",
+            "Favorites": "Favoris"
+        },
+        "lang": "fr",
+        "game": {
+            "uuid": "66fe2855-599c-4282-b766-3f71a28439d2",
+            "slug": "miu-vie-star",
+            "name": "Miu-Vie Star",
+            "score": 46,
+            "description": "Un jeu de plateforme promotionnel créé par Merci Michel pour Miu Miu. Obtenez le maximum de points possible avant d'atteindre la fin du niveau !",
+            "instructions": "- Espace/Haut/Clic gauche : Sauter (maintenir pour planer)",
+            "websiteUrl": "https://www.miumiu.com",
+            "allowIframe": true,
+            "externalPlayUrl": "https://www.miumiu.com/miumiu-twist-edt/en/",
+            "superficialEngine": {
+                "slug": "pixi-js",
+                "name": "PixiJS"
+            },
+            "superficialSimilars": [],
+            "superficialTags": [
+                {
+                    "slug": "plateforme",
+                    "name": "Plateforme",
+                    "iconKey": "platform"
+                },
+                {
+                    "slug": "aventure",
+                    "name": "Aventure",
+                    "iconKey": "adventure"
+                }
+            ],
+            "superficialMonetizations": [],
+            "detailedDeveloper": {
+                "name": "Merci Michel",
+                "url": "https://www.merci-michel.com/projects/",
+                "superficialGames": [
+                    {
+                        "slug": "the-race",
+                        "name": "The Race",
+                        "score": 52,
+                        "allowIframe": true,
+                        "preferredOrientation": "LANDSCAPE",
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "egg-hunt",
+                        "name": "Egg Hunt",
+                        "score": 51,
+                        "allowIframe": true,
+                        "preferredOrientation": "PORTRAIT",
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "i-want-it-all",
+                        "name": "I Want It All",
+                        "score": 51,
+                        "allowIframe": true,
+                        "preferredOrientation": "PORTRAIT",
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "the-race-2",
+                        "name": "The Race – Season 2",
+                        "score": 52,
+                        "allowIframe": true,
+                        "preferredOrientation": "LANDSCAPE",
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "miu-vie-star",
+                        "name": "Miu-Vie Star",
+                        "score": 46,
+                        "allowIframe": true,
+                        "preferredOrientation": "PORTRAIT",
+                        "mobileSupport": 2
+                    }
+                ]
+            },
+            "playerFriendlyType": "100-FREE",
+            "cta": "TWITTER-FOLLOW",
+            "ctaUrl": "https://twitter.com/MerciMichel",
+            "mobileSupport": 2,
+            "preferredOrientation": "PORTRAIT",
+            "players": [
+                {
+                    "label": "1 Joueur",
+                    "slug": "1-joueur",
+                    "iconKey": "person"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "tribals-io",
+                    "name": "Tribals.io",
+                    "score": 53,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "vectaria-io",
+                    "name": "Vectaria.io",
+                    "score": 52,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "simply-up",
+                    "name": "Simply Up",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "ninja-vs-evilcorp",
+                    "name": "Ninja vs EVILCORP",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "up-together",
+                    "name": "Up Together",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "finns-ascent",
+                    "name": "Finn's Ascent",
+                    "score": 50,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "edelweiss",
+                    "name": "Edelweiss",
+                    "score": 49,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "dungeon-survivors",
+                    "name": "Dungeon Survivors",
+                    "score": 49,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "lurkers-io",
+                    "name": "Lurkers.io",
+                    "score": 49,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "mini-mana",
+                    "name": "Mini Mana",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "fullscreenLock": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "path-to-glory",
+                    "name": "Path to Glory",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "earths-greatest-defender",
+                    "name": "Earth's Greatest Defender",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "robocalypse",
+                    "name": "Robocalypse",
+                    "score": 47,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "mine-blocks",
+                    "name": "Mine Blocks",
+                    "score": 46,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "bubbly-tim",
+                    "name": "Bubbly Tim's Time Bubble Trouble",
+                    "score": 45,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "realmz-io",
+                    "name": "Realmz.io",
+                    "score": 45,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "cybernetic-serenade",
+                    "name": "Cybernetic Serenade",
+                    "score": 43,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "dragon-joust",
+                    "name": "Dragon Joust",
+                    "score": 43,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Jeu introuvable",
+            "Play %s on WebGamer": "Jouer à %s sur WebGamer",
+            "Free with no ads": "Gratuit sans pubs",
+            "Cryptocurrency": "Cryptomonnaie",
+            "cryptocurrency": "cryptomonnaie",
+            "free-no-ads": "gratuit-sans-pubs",
+            "1 Player": "1 Joueur",
+            "1-player": "1-joueur",
+            "Multiplayer": "Multijoueur",
+            "multiplayer": "multijoueur",
+            "Play": "Jouer",
+            "Learn more": "En savoir plus",
+            "More": "Plus",
+            "Wishlist on Steam": "Ajouter à la liste de souhaits Steam",
+            "Follow on Twitter": "Suivre sur Twitter",
+            "Buy on Steam": "Acheter sur Steam",
+            "Support on Patreon": "Soutenir sur Patreon",
+            "Follow on itch.io": "Suivre sur itch.io",
+            "Join the Discord": "Rejoindre le Discord",
+            "This game is 100% free and has no ads.": "Ce jeu est 100% gratuit et sans pubs.",
+            "This ad-free demo is highly replayable.": "Cette démo sans pubs est très rejouable.",
+            "This is a free promotional game.": "Ce jeu promotionnel est gratuit.",
+            "This game contains few ads.": "Ce jeu contient peu de publicités.",
+            "Game monetized with cosmetics.": "Jeu monétisé avec des cosmétiques.",
+            "Content warning": "Avertissement de contenu",
+            "Preorder": "Précommander",
+            "on ": "sur ",
+            "Expand": "Agrandir",
+            "Fullscreen": "Plein écran",
+            "Play fullscreen": "Jouer en plein écran",
+            "Close": "Fermer",
+            "You will lose your progress. Close the game?": "Vous perdrez votre progression. Fermer le jeu ?",
+            "Cancel": "Annuler",
+            "How to play %s?": "Comment jouer à %s ?",
+            "Who created %s?": "Qui a créé %s ?",
+            "Similar to:": "Similaire à :",
+            "Engine:": "Moteur :",
+            "Website": "Site web",
+            "Developer:": "Développeur :",
+            "Open-source license:": "Licence open-source :",
+            "Share": "Partager",
+            "Something went wrong!": "Cela n'a pas fonctionné !",
+            "Link copied!": "Lien copié !",
+            "Games by %s": "Jeux par %s",
+            "Powered by": "Propulsé par",
+            "This game is no longer available.": "Ce jeu n’est plus disponible."
+        },
+        "headTitle": "MIU-VIE STAR 🎮 Jouer à Miu-Vie Star sur WebGamer",
+        "headDescription": "Un jeu de plateforme promotionnel créé par Merci Michel pour Miu Miu. Obtenez le maximum de points possible avant d'atteindre la fin du niveau !",
+        "socialImage": "https://webgamer.io/games/miu-vie-star/miu-vie-star.1280x.85pc.webp",
+        "url": "https://webgamer.io/fr/g/miu-vie-star"
+    },
+    "__N_SSG": true
+}

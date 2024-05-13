@@ -7,7 +7,7 @@ import { SlideFade } from "@chakra-ui/react";
 
 
 export default function HomeWithTag({ pageData, gamesData, allGamesData, engine }) {
-    console.log(gamesData[0]);
+    
     return (
         <Layout home pageData={pageData} allGamesData={allGamesData}>
             <div className="bg-[#181818] py-2 text-white">

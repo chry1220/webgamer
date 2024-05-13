@@ -1,0 +1,289 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "bắn-súng",
+                "name": "Bắn súng",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "phiêu-lưu",
+                "name": "Phiêu lưu",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "chiến-thuật",
+                "name": "Chiến thuật",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "giải-trí",
+                "name": "Giải trí",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "lái-xe",
+                "name": "Lái xe",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "thẻ-bài",
+                "name": "Thẻ bài",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "giải-đố",
+                "name": "Giải đố",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "âm-nhạc",
+                "name": "Âm nhạc",
+                "iconKey": "music"
+            },
+            {
+                "slug": "nền-tảng",
+                "name": "Nền tảng",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "đua-xe",
+                "name": "Đua xe",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "ghép-các-ô",
+                "name": "Ghép các ô",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "vui-nhộn",
+                "name": "Vui nhộn",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "đánh-máy",
+                "name": "Đánh Máy",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "thể-thao",
+                "name": "Thể thao",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "Về trang web này",
+            "Terms of Use": "Điều khoản sử dụng",
+            "Privacy Policy": "Chính sách bảo mật",
+            "All": "Tất cả",
+            "Shortcut:": "Phím tắt:",
+            "Close": "Đóng",
+            "More": "Thêm",
+            "Search for a game": "Tìm kiếm một trò chơi",
+            "Install WebGamer": "Cài đặt WebGamer",
+            "All categories": "Tất cả các loại",
+            "Categories": "Thể loại",
+            "Favorites": "Yêu thích"
+        },
+        "lang": "vn",
+        "game": {
+            "uuid": "36cd07e7-cf0d-4ad8-b35c-1a777f878fe3",
+            "slug": "keep-the-hype-up",
+            "name": "Keep the Hype UP!",
+            "score": 47,
+            "description": "Bạn là một quản lý tiệc! Bạn phải giữ cho khách mời luôn phấn khích, nếu không họ sẽ rời đi. Trò chơi này được phát triển cho cuộc thi React Jam và đã giành giải nhất!",
+            "instructions": "Khiến khách của bạn nhảy múa, uống, ăn và đi tiểu bằng cách đặt họ vào các điểm nóng. Bữa tiệc của bạn được đánh giá bằng chỉ số sức hút. Càng nhiều sức hút và càng nhiều khách, số điểm sẽ càng cao vào cuối đêm!",
+            "allowIframe": true,
+            "externalPlayUrl": "https://console-buche.github.io/reactjam_party/",
+            "superficialEngine": {
+                "slug": "react-three-fiber",
+                "name": "React Three Fiber"
+            },
+            "superficialSimilars": [],
+            "superficialTags": [
+                {
+                    "slug": "giải-trí",
+                    "name": "Giải trí",
+                    "iconKey": "casual"
+                }
+            ],
+            "superficialMonetizations": [
+                {
+                    "label": "Hoàn toàn miễn phí",
+                    "slug": "miễn-phí-không-quảng-cáo",
+                    "iconKey": "money-off",
+                    "iconColor": "green"
+                }
+            ],
+            "detailedDeveloper": {
+                "name": "Neolectron & ConsoleBuche",
+                "url": "https://summer-2023.reactjam.com/games/summer-2023-keep-the-hype-up",
+                "superficialGames": [
+                    {
+                        "slug": "keep-the-hype-up",
+                        "name": "Keep the Hype UP!",
+                        "score": 47,
+                        "allowIframe": true
+                    }
+                ]
+            },
+            "playerFriendlyType": "100-FREE",
+            "cta": "TWITTER-FOLLOW",
+            "ctaUrl": "https://twitter.com/Console_buche/status/1691839992681689498",
+            "license": "No License",
+            "sourceUrl": "https://github.com/Console-buche/reactjam_party",
+            "fullscreenPosition": "Top Left",
+            "players": [
+                {
+                    "label": "1 Người chơi",
+                    "slug": "1-người",
+                    "iconKey": "person"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "summer-afternoon",
+                    "name": "Summer Afternoon",
+                    "score": 51,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "egg-hunt",
+                    "name": "Egg Hunt",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "i-want-it-all",
+                    "name": "I Want It All",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "ducklings",
+                    "name": "Ducklings",
+                    "score": 48,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "crazy-pumpkin",
+                    "name": "Crazy Pumpkin",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "swooop",
+                    "name": "Swooop",
+                    "score": 45,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "slash-saber",
+                    "name": "Slash Saber",
+                    "score": 44,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "modd-io",
+                    "name": "Modd.io",
+                    "score": 41,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Không tìm thấy trò chơi",
+            "Play %s on WebGamer": "Chơi %s trên WebGamer",
+            "Free with no ads": "Hoàn toàn miễn phí",
+            "Cryptocurrency": "Tiền điện tử",
+            "cryptocurrency": "tiền-điện-tử",
+            "free-no-ads": "miễn-phí-không-quảng-cáo",
+            "1 Player": "1 Người chơi",
+            "1-player": "1-người",
+            "Multiplayer": "Nhiều người chơi",
+            "multiplayer": "đa-người",
+            "Play": "Chơi",
+            "Learn more": "Tìm hiểu thêm",
+            "More": "Thêm",
+            "Wishlist on Steam": "Thêm vào danh sách mong muốn trên Steam",
+            "Follow on Twitter": "Theo dõi trên Twitter",
+            "Buy on Steam": "Mua trên Steam",
+            "Support on Patreon": "Ủng hộ trên Patreon",
+            "Follow on itch.io": "Theo dõi trên itch.io",
+            "Join the Discord": "Tham gia Discord",
+            "This game is 100% free and has no ads.": "Trò chơi 100% miễn phí, không quảng cáo.",
+            "This ad-free demo is highly replayable.": "Démo miễn phí chơi lại nhiều lần.",
+            "This is a free promotional game.": "Đây là một trò chơi quảng cáo miễn phí.",
+            "This game contains few ads.": "Trò chơi này có rất ít quảng cáo.",
+            "Game monetized with cosmetics.": "Trò chơi được tiếp thị với mỹ phẩm.",
+            "Content warning": "Cảnh báo nội dung",
+            "Preorder": "Đặt hàng trước",
+            "on ": "trên ",
+            "Expand": "Mở rộng",
+            "Fullscreen": "Toàn màn hình",
+            "Play fullscreen": "Chơi toàn màn hình",
+            "Close": "Đóng",
+            "You will lose your progress. Close the game?": "Bạn sẽ mất tiến trình của mình. Đóng trò chơi?",
+            "Cancel": "Hủy",
+            "How to play %s?": "Làm thế nào để chơi %s?",
+            "Who created %s?": "Ai đã tạo %s?",
+            "Similar to:": "Tương tự:",
+            "Engine:": "Động cơ:",
+            "Website": "Trang web",
+            "Developer:": "Nhà phát triển:",
+            "Open-source license:": "Giấy phép mã nguồn mở:",
+            "Share": "Chia sẻ",
+            "Something went wrong!": "Đã xảy ra lỗi!",
+            "Link copied!": "Đã sao chép liên kết!",
+            "Games by %s": "Trò chơi bởi %s",
+            "Powered by": "Được hỗ trợ bởi",
+            "This game is no longer available.": "Trò chơi này không còn nữa."
+        },
+        "headTitle": "KEEP THE HYPE UP! 🎮 Chơi Keep the Hype UP! trên WebGamer",
+        "headDescription": "Bạn là một quản lý tiệc! Bạn phải giữ cho khách mời luôn phấn khích, nếu không họ sẽ rời đi. Trò chơi này được phát triển cho cuộc thi React Jam và đã giành giải nhất!",
+        "socialImage": "https://webgamer.io/games/keep-the-hype-up/keep-the-hype-up.1280x.85pc.webp",
+        "url": "https://webgamer.io/vn/g/keep-the-hype-up"
+    },
+    "__N_SSG": true
+}

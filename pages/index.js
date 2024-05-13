@@ -20,7 +20,6 @@ export default function Home({ allGamesData, pageData }) {
     <Layout home pageData={pageData} allGamesData={allGamesData}>
       <div className='bg-black'>
         <div className="max-w-[1420px] mx-auto mt-14 mb-3 p-3 animate-fadeIn">
-
           <SlideFade in={true} offsetY='20px'>
             <div className='hidden xl:block'>
               <Grid
@@ -44,10 +43,13 @@ export default function Home({ allGamesData, pageData }) {
                 {gamesData.map((datum, i) => (
                   <GridItem
                     area={i % 11 == 0 && i < 66 ? "b" + (i / 11 + 1) : ''}
-                    key={datum.gameSlug}
+                    key={datum.slug}
+                    className={i % 11 == 0 && i < 66 ? "big-game relative" : 'game relative'}
                   >
-                    <Link href={`/en/g/${datum.gameSlug}`}>
-                      <ImageTilt slug={datum.gameSlug} />
+                    
+                    {/* <div class="new-game">🎉 NEW</div> */}
+                    <Link href={`/en/g/${datum.slug}`} className='w-full h-full inline-block'>
+                      <ImageTilt game={datum} />
                     </Link>
                   </GridItem>
                 ))}
@@ -78,10 +80,11 @@ export default function Home({ allGamesData, pageData }) {
                 {gamesData.map((datum, i) => (
                   <GridItem
                     area={i % 15 == 0 ? "b" + (i / 15 + 1) : ''}
-                    key={datum.gameSlug}
+                    key={datum.slug}
+                    className={i % 15 == 0 ? "big-game relative" : 'game relative'}
                   >
-                    <Link href={`/en/g/${datum.gameSlug}`}>
-                      <ImageTilt slug={datum.gameSlug} />
+                    <Link href={`/en/g/${datum.slug}`} className='w-full h-full inline-block'>
+                      <ImageTilt game={datum} />
                     </Link>
                   </GridItem>
                 ))}
@@ -114,10 +117,11 @@ export default function Home({ allGamesData, pageData }) {
                 {gamesData.map((datum, i) => (
                   <GridItem
                     area={i % 12 == 0 && i < 67 ? "b" + (i / 12 + 1) : ''}
-                    key={datum.gameSlug}
+                    key={datum.slug}
+                    className={i % 12 == 0 && i < 67 ? "big-game relative" : 'game relative'}
                   >
-                    <Link href={`/en/g/${datum.gameSlug}`}>
-                      <ImageTilt slug={datum.gameSlug} />
+                    <Link href={`/en/g/${datum.slug}`} className='w-full h-full inline-block'>
+                      <ImageTilt game={datum} />
                     </Link>
                   </GridItem>
                 ))}
@@ -151,10 +155,11 @@ export default function Home({ allGamesData, pageData }) {
                 {gamesData.map((datum, i) => (
                   <GridItem
                     area={i % 6 == 0 && i < 36 ? "b" + (i / 6 + 1) : ''}
-                    key={datum.gameSlug}
+                    key={datum.slug}
+                    className={i % 6 == 0 && i < 36 ? "big-game relative" : 'game relative'}
                   >
-                    <Link href={`/en/g/${datum.gameSlug}`}>
-                      <ImageTilt slug={datum.gameSlug} />
+                    <Link href={`/en/g/${datum.slug}`} className='w-full h-full inline-block'>
+                      <ImageTilt game={datum} />
                     </Link>
                   </GridItem>
                 ))}
@@ -162,9 +167,9 @@ export default function Home({ allGamesData, pageData }) {
             </div>
             <div className='sm:hidden'>
               <div className="grid gap-2 grid-cols-2">
-                {gamesData.map(({ gameSlug }) => (
-                  <Link href={`/en/g/${gameSlug}`} key={gameSlug}>
-                    <ImageTilt slug={gameSlug} />
+                {gamesData.map((game) => (
+                  <Link href={`/en/g/${game.slug}`} key={game.slug} className='game'>
+                    <ImageTilt game={game} />
                   </Link>
                 ))}
               </div>

@@ -24,7 +24,7 @@ export default function Footer({ home, pageData }) {
     return (
         <div className="w-full pt-6 pb-12 px-3 bg-black">
             <SlideFade in={true} offsetY='50px'>
-                <div className="max-w-[1420px] mx-auto text-white">
+                <div className="max-w-[1280px] mx-auto text-white">
                     <div className="md:flex md:justify-between pb-4 mt-4">
                         <div className="md:justify-start text-center">
                             <div className='text-lg font-bold md:inline'>
