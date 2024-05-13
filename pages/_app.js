@@ -12,10 +12,8 @@ library.add(
 
 export default function App({ Component, pageProps }) {
   return (
-    <AppProvider>
-      <ChakraProvider>
-        <Component {...pageProps} />
-      </ChakraProvider>
-    </AppProvider>
+    <ChakraProvider>
+      <Component {...pageProps} />
+    </ChakraProvider>
   )
 }
