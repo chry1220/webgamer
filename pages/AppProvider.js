@@ -1,6 +1,6 @@
 // AppProvider.js
 import React, { useState } from 'react';
-import AppContext from './createContext';
+import AppContext from '../components/createContext';
 
 const AppProvider = ({ children }) => {
     const [allData, setAllData] = useState([]);
