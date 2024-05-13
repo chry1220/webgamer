@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import AppContext from './createContext';
 
 const AppProvider = ({ children }) => {
-    const [allData, setAllData] = useState(initialState);
+    const [allData, setAllData] = useState([]);
 
     return (
         <AppContext.Provider value={{ allData, setAllData }}>
