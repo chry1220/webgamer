@@ -12,5 +12,9 @@ module.exports = withMT({
   plugins: [
     require('flowbite/plugin')
   ],
-  theme: {}
+  theme: {
+    fontFamily: {
+      'heading': ["-apple-system","BlinkMacSystemFont","Segoe UI","Helvetica","Arial","sans-serif","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"]
+    }
+  }
 });

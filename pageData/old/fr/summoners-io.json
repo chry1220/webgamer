@@ -1,0 +1,352 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "tir",
+                "name": "Tir",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "aventure",
+                "name": "Aventure",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "strategie",
+                "name": "Stratégie",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "detente",
+                "name": "Détente",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "conduite",
+                "name": "Conduite",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "cartes",
+                "name": "Cartes",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "puzzle",
+                "name": "Puzzle",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "musique",
+                "name": "Musique",
+                "iconKey": "music"
+            },
+            {
+                "slug": "plateforme",
+                "name": "Plateforme",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "course",
+                "name": "Course",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "combinaisons",
+                "name": "Combinaisons",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "amusant",
+                "name": "Amusant",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "dactylographie",
+                "name": "Dactylographie",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "sports",
+                "name": "Sports",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "À propos de ce portail",
+            "Terms of Use": "Conditions d’utilisation",
+            "Privacy Policy": "Politique de confidentialité",
+            "All": "Tout",
+            "Shortcut:": "Raccourci :",
+            "Close": "Fermer",
+            "More": "Plus",
+            "Search for a game": "Rechercher un jeu",
+            "Install WebGamer": "Installer WebGamer",
+            "All categories": "Toutes les catégories",
+            "Categories": "Catégories",
+            "Favorites": "Favoris"
+        },
+        "lang": "fr",
+        "game": {
+            "uuid": "3e065860-9b85-437b-b7a5-758ea6ae0b85",
+            "slug": "summoners-io",
+            "name": "Summoners.io",
+            "score": 51,
+            "description": "Summoners.io est un jeu de cartes stratégique où vous utilisez des créatures, des sorts et des bâtiments pour battre votre adversaire en détruisant son quartier général. Choisissez une faction et gagnez des bonus au fur et à mesure de vos victoires !",
+            "instructions": "- Les cartes coûtent du mana, et votre mana augmente de 1 à chaque tour.\n- Le coût en mana est indiqué en haut des cartes.\n- Les créatures peuvent attaquer au tour après qu'elles sont jouées.\n- Le nombre à gauche est l'attaque, et le nombre à droite est la santé.",
+            "allowIframe": true,
+            "externalPlayUrl": "https://summoners.io",
+            "superficialEngine": {
+                "slug": "babylon-js",
+                "name": "Babylon.js"
+            },
+            "superficialSimilars": [
+                {
+                    "name": "Hearthstone",
+                    "slug": "hearthstone"
+                },
+                {
+                    "name": "Slay the Spire",
+                    "slug": "slay-the-spire"
+                },
+                {
+                    "name": "Magic: The Gathering Arena",
+                    "slug": "magic-the-gathering-arena"
+                }
+            ],
+            "superficialTags": [
+                {
+                    "slug": "cartes",
+                    "name": "Cartes",
+                    "iconKey": "cards"
+                },
+                {
+                    "slug": "strategie",
+                    "name": "Stratégie",
+                    "iconKey": "strategy"
+                }
+            ],
+            "superficialMonetizations": [],
+            "detailedDeveloper": {
+                "name": "Stephen Haney",
+                "url": "https://twitter.com/sdothaney",
+                "superficialGames": [
+                    {
+                        "slug": "summoners-io",
+                        "name": "Summoners.io",
+                        "score": 51,
+                        "allowIframe": true,
+                        "mobileSupport": 1
+                    },
+                    {
+                        "slug": "zoo-drop",
+                        "name": "ZooDrop",
+                        "score": 49,
+                        "allowIframe": true,
+                        "preferredOrientation": "PORTRAIT",
+                        "mobileSupport": 2
+                    }
+                ]
+            },
+            "playerFriendlyType": "EXTENSIVE-DEMO",
+            "discordUrl": "https://discord.com/invite/9ECuhfuEdA",
+            "mobileSupport": 1,
+            "players": [
+                {
+                    "label": "1 Joueur",
+                    "slug": "1-joueur",
+                    "iconKey": "person"
+                },
+                {
+                    "label": "Multijoueur",
+                    "slug": "multijoueur",
+                    "iconKey": "people"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "starblast",
+                    "name": "Starblast",
+                    "score": 50,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "hole-io",
+                    "name": "Hole.io",
+                    "score": 50,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "captain-forever-io",
+                    "name": "CaptainForever.io",
+                    "score": 50,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true
+                },
+                {
+                    "slug": "conq-io",
+                    "name": "Conq.io",
+                    "score": 49,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "army-clash-io",
+                    "name": "ArmyClash.io",
+                    "score": 49,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "roams-io",
+                    "name": "Roams.io",
+                    "score": 49,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "mini-mana",
+                    "name": "Mini Mana",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "fullscreenLock": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "konkr-io",
+                    "name": "Konkr.io",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "athena-crisis",
+                    "name": "Athena Crisis",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "evoworld-io",
+                    "name": "EvoWorld.io (FlyOrDie.io)",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "swordbattle-io",
+                    "name": "Swordbattle.io",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "candy-riot",
+                    "name": "Candy Riot",
+                    "score": 45,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "pvpz-io",
+                    "name": "PvPz.io",
+                    "score": 45,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "lord-of-the-harvest",
+                    "name": "Lord of the Harvest",
+                    "score": 43,
+                    "allowIframe": true
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Jeu introuvable",
+            "Play %s on WebGamer": "Jouer à %s sur WebGamer",
+            "Free with no ads": "Gratuit sans pubs",
+            "Cryptocurrency": "Cryptomonnaie",
+            "cryptocurrency": "cryptomonnaie",
+            "free-no-ads": "gratuit-sans-pubs",
+            "1 Player": "1 Joueur",
+            "1-player": "1-joueur",
+            "Multiplayer": "Multijoueur",
+            "multiplayer": "multijoueur",
+            "Play": "Jouer",
+            "Learn more": "En savoir plus",
+            "More": "Plus",
+            "Wishlist on Steam": "Ajouter à la liste de souhaits Steam",
+            "Follow on Twitter": "Suivre sur Twitter",
+            "Buy on Steam": "Acheter sur Steam",
+            "Support on Patreon": "Soutenir sur Patreon",
+            "Follow on itch.io": "Suivre sur itch.io",
+            "Join the Discord": "Rejoindre le Discord",
+            "This game is 100% free and has no ads.": "Ce jeu est 100% gratuit et sans pubs.",
+            "This ad-free demo is highly replayable.": "Cette démo sans pubs est très rejouable.",
+            "This is a free promotional game.": "Ce jeu promotionnel est gratuit.",
+            "This game contains few ads.": "Ce jeu contient peu de publicités.",
+            "Game monetized with cosmetics.": "Jeu monétisé avec des cosmétiques.",
+            "Content warning": "Avertissement de contenu",
+            "Preorder": "Précommander",
+            "on ": "sur ",
+            "Expand": "Agrandir",
+            "Fullscreen": "Plein écran",
+            "Play fullscreen": "Jouer en plein écran",
+            "Close": "Fermer",
+            "You will lose your progress. Close the game?": "Vous perdrez votre progression. Fermer le jeu ?",
+            "Cancel": "Annuler",
+            "How to play %s?": "Comment jouer à %s ?",
+            "Who created %s?": "Qui a créé %s ?",
+            "Similar to:": "Similaire à :",
+            "Engine:": "Moteur :",
+            "Website": "Site web",
+            "Developer:": "Développeur :",
+            "Open-source license:": "Licence open-source :",
+            "Share": "Partager",
+            "Something went wrong!": "Cela n'a pas fonctionné !",
+            "Link copied!": "Lien copié !",
+            "Games by %s": "Jeux par %s",
+            "Powered by": "Propulsé par",
+            "This game is no longer available.": "Ce jeu n’est plus disponible."
+        },
+        "headTitle": "SUMMONERS.IO 🎮 Jouer à Summoners.io sur WebGamer",
+        "headDescription": "Summoners.io est un jeu de cartes stratégique où vous utilisez des créatures, des sorts et des bâtiments pour battre votre adversaire en détruisant son quartier général. Choisissez une faction et gagn...",
+        "socialImage": "https://webgamer.io/games/summoners-io/summoners-io.1280x.85pc.webp",
+        "url": "https://webgamer.io/fr/g/summoners-io"
+    },
+    "__N_SSG": true
+}

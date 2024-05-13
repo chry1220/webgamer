@@ -1,0 +1,329 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "tir",
+                "name": "Tir",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "aventure",
+                "name": "Aventure",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "strategie",
+                "name": "Stratégie",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "detente",
+                "name": "Détente",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "conduite",
+                "name": "Conduite",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "cartes",
+                "name": "Cartes",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "puzzle",
+                "name": "Puzzle",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "musique",
+                "name": "Musique",
+                "iconKey": "music"
+            },
+            {
+                "slug": "plateforme",
+                "name": "Plateforme",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "course",
+                "name": "Course",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "combinaisons",
+                "name": "Combinaisons",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "amusant",
+                "name": "Amusant",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "dactylographie",
+                "name": "Dactylographie",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "sports",
+                "name": "Sports",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "À propos de ce portail",
+            "Terms of Use": "Conditions d’utilisation",
+            "Privacy Policy": "Politique de confidentialité",
+            "All": "Tout",
+            "Shortcut:": "Raccourci :",
+            "Close": "Fermer",
+            "More": "Plus",
+            "Search for a game": "Rechercher un jeu",
+            "Install WebGamer": "Installer WebGamer",
+            "All categories": "Toutes les catégories",
+            "Categories": "Catégories",
+            "Favorites": "Favoris"
+        },
+        "lang": "fr",
+        "game": {
+            "uuid": "95532106-1204-49c0-a3d3-171dafd4ac97",
+            "slug": "double-dodgers",
+            "name": "Double Dodgers",
+            "score": 51,
+            "description": null,
+            "allowIframe": true,
+            "externalPlayUrl": "https://doubledodgers.com",
+            "superficialEngine": {
+                "slug": "three-js",
+                "name": "Three.js"
+            },
+            "superficialSimilars": [],
+            "superficialTags": [
+                {
+                    "slug": "amusant",
+                    "name": "Amusant",
+                    "iconKey": "fun"
+                },
+                {
+                    "slug": "detente",
+                    "name": "Détente",
+                    "iconKey": "casual"
+                }
+            ],
+            "superficialMonetizations": [],
+            "detailedDeveloper": {
+                "name": "Pelican Party",
+                "url": "https://pelicanparty.co",
+                "superficialGames": [
+                    {
+                        "slug": "narrow-one",
+                        "name": "Narrow One",
+                        "score": 53,
+                        "allowIframe": true,
+                        "preferredOrientation": "LANDSCAPE",
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "double-dodgers",
+                        "name": "Double Dodgers",
+                        "score": 51,
+                        "allowIframe": true,
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "ducklings",
+                        "name": "Ducklings",
+                        "score": 48,
+                        "allowIframe": true,
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "raccoon-retail",
+                        "name": "Raccoon Retail",
+                        "score": 51,
+                        "allowIframe": true,
+                        "preferredOrientation": "LANDSCAPE",
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "nugget-royale",
+                        "name": "Nugget Royale",
+                        "score": 47,
+                        "allowIframe": true,
+                        "preferredOrientation": "LANDSCAPE",
+                        "mobileSupport": 2
+                    }
+                ]
+            },
+            "discordUrl": "https://discord.com/invite/hKZFs57",
+            "mobileSupport": 2,
+            "fullscreenPositionTop": "42px",
+            "players": [
+                {
+                    "label": "1 Joueur",
+                    "slug": "1-joueur",
+                    "iconKey": "person"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "raccoon-retail",
+                    "name": "Raccoon Retail",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "summer-afternoon",
+                    "name": "Summer Afternoon",
+                    "score": 51,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "egg-hunt",
+                    "name": "Egg Hunt",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "i-want-it-all",
+                    "name": "I Want It All",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "ducklings",
+                    "name": "Ducklings",
+                    "score": 48,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "crazy-pumpkin",
+                    "name": "Crazy Pumpkin",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "keep-the-hype-up",
+                    "name": "Keep the Hype UP!",
+                    "score": 47,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "swooop",
+                    "name": "Swooop",
+                    "score": 45,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "slash-saber",
+                    "name": "Slash Saber",
+                    "score": 44,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "modd-io",
+                    "name": "Modd.io",
+                    "score": 41,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Jeu introuvable",
+            "Play %s on WebGamer": "Jouer à %s sur WebGamer",
+            "Free with no ads": "Gratuit sans pubs",
+            "Cryptocurrency": "Cryptomonnaie",
+            "cryptocurrency": "cryptomonnaie",
+            "free-no-ads": "gratuit-sans-pubs",
+            "1 Player": "1 Joueur",
+            "1-player": "1-joueur",
+            "Multiplayer": "Multijoueur",
+            "multiplayer": "multijoueur",
+            "Play": "Jouer",
+            "Learn more": "En savoir plus",
+            "More": "Plus",
+            "Wishlist on Steam": "Ajouter à la liste de souhaits Steam",
+            "Follow on Twitter": "Suivre sur Twitter",
+            "Buy on Steam": "Acheter sur Steam",
+            "Support on Patreon": "Soutenir sur Patreon",
+            "Follow on itch.io": "Suivre sur itch.io",
+            "Join the Discord": "Rejoindre le Discord",
+            "This game is 100% free and has no ads.": "Ce jeu est 100% gratuit et sans pubs.",
+            "This ad-free demo is highly replayable.": "Cette démo sans pubs est très rejouable.",
+            "This is a free promotional game.": "Ce jeu promotionnel est gratuit.",
+            "This game contains few ads.": "Ce jeu contient peu de publicités.",
+            "Game monetized with cosmetics.": "Jeu monétisé avec des cosmétiques.",
+            "Content warning": "Avertissement de contenu",
+            "Preorder": "Précommander",
+            "on ": "sur ",
+            "Expand": "Agrandir",
+            "Fullscreen": "Plein écran",
+            "Play fullscreen": "Jouer en plein écran",
+            "Close": "Fermer",
+            "You will lose your progress. Close the game?": "Vous perdrez votre progression. Fermer le jeu ?",
+            "Cancel": "Annuler",
+            "How to play %s?": "Comment jouer à %s ?",
+            "Who created %s?": "Qui a créé %s ?",
+            "Similar to:": "Similaire à :",
+            "Engine:": "Moteur :",
+            "Website": "Site web",
+            "Developer:": "Développeur :",
+            "Open-source license:": "Licence open-source :",
+            "Share": "Partager",
+            "Something went wrong!": "Cela n'a pas fonctionné !",
+            "Link copied!": "Lien copié !",
+            "Games by %s": "Jeux par %s",
+            "Powered by": "Propulsé par",
+            "This game is no longer available.": "Ce jeu n’est plus disponible."
+        },
+        "headTitle": "DOUBLE DODGERS 🎮 Jouer à Double Dodgers sur WebGamer",
+        "headDescription": null,
+        "socialImage": "https://webgamer.io/games/double-dodgers/double-dodgers.1280x.85pc.webp",
+        "url": "https://webgamer.io/fr/g/double-dodgers"
+    },
+    "__N_SSG": true
+}

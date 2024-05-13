@@ -48,7 +48,7 @@ export default function Home({ allGamesData, pageData, lang }) {
                         >
                             {gamesData.map((datum, i) => (
                                 <GridItem
-                                    area={i % 11 == 0 ? "b" + (i / 11 + 1) : ''}
+                                    area={i % 11 == 0 && i < 66 ? "b" + (i / 11 + 1) : ''}
                                     key={datum.gameSlug}
                                 >
                                     <Link href={`/${lang}/g/${datum.gameSlug}`}>
@@ -118,7 +118,7 @@ export default function Home({ allGamesData, pageData, lang }) {
                         >
                             {gamesData.map((datum, i) => (
                                 <GridItem
-                                    area={i % 12 == 0 ? "b" + (i / 12 + 1) : ''}
+                                    area={i % 12 == 0 && i < 67 ? "b" + (i / 12 + 1) : ''}
                                     key={datum.gameSlug}
                                 >
                                     <Link href={`/${lang}/g/${datum.gameSlug}`}>
@@ -155,7 +155,7 @@ export default function Home({ allGamesData, pageData, lang }) {
                         >
                             {gamesData.map((datum, i) => (
                                 <GridItem
-                                    area={i % 6 == 0 ? "b" + (i / 6 + 1) : ''}
+                                    area={i % 6 == 0 && i < 36 ?  "b" + (i / 6 + 1) : ''}
                                     key={datum.gameSlug}
                                 >
                                     <Link href={`/${lang}/g/${datum.gameSlug}`}>

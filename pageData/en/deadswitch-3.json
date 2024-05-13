@@ -1,0 +1,350 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "shooting",
+                "name": "Shooting",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "adventure",
+                "name": "Adventure",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "strategy",
+                "name": "Strategy",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "casual",
+                "name": "Casual",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "driving",
+                "name": "Driving",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "cards",
+                "name": "Cards",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "puzzle",
+                "name": "Puzzle",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "music",
+                "name": "Music",
+                "iconKey": "music"
+            },
+            {
+                "slug": "platform",
+                "name": "Platform",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "racing",
+                "name": "Racing",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "tile-matching",
+                "name": "Tile-matching",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "fun",
+                "name": "Fun",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "typing",
+                "name": "Typing",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "sports",
+                "name": "Sports",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "About this portal",
+            "Terms of Use": "Terms of Use",
+            "Privacy Policy": "Privacy Policy",
+            "All": "All",
+            "Shortcut:": "Shortcut:",
+            "Close": "Close",
+            "More": "More",
+            "Search for a game": "Search for a game",
+            "Install WebGamer": "Install WebGamer",
+            "All categories": "All categories",
+            "Categories": "Categories",
+            "Favorites": "Favorites"
+        },
+        "lang": "en",
+        "game": {
+            "uuid": "84377eb1-7d3e-4bef-9736-768cca46f047",
+            "slug": "deadswitch-3",
+            "name": "Deadswitch 3",
+            "score": 48,
+            "description": "Deadswitch 3 is a 2D multiplayer side-scroller shooting game. It has multiple game modes and maps, such as ranked progression, objective-based missions, co-op survival against zombies or terrorists, many weapons and equipment, and customizable characters.",
+            "instructions": "- Use WASD to move and climb, Shift to sprint\n- Space to jump, Ctrl to crouch\n- Left click to shoot, Right click to aim\n- E to interact, R to reload, Q to switch weapons\n- G to use equipment, V to melee attack\n- Z to use Killstreak, F for weapon function\n- M to view the map",
+            "allowIframe": true,
+            "externalPlayUrl": "https://deadswitch3.com/play/",
+            "superficialEngine": {
+                "slug": "phaser",
+                "name": "Phaser"
+            },
+            "superficialSimilars": [
+                {
+                    "name": "Counter-Strike: Global Offensive",
+                    "slug": "counter-strike-global-offensive"
+                },
+                {
+                    "name": "Counter-Strike 2",
+                    "slug": "counter-strike-2"
+                }
+            ],
+            "superficialTags": [
+                {
+                    "slug": "shooting",
+                    "name": "Shooting",
+                    "iconKey": "shooting"
+                }
+            ],
+            "superficialMonetizations": [],
+            "detailedDeveloper": {
+                "name": "Wilkin Games",
+                "url": "https://wilkingames.com",
+                "superficialGames": [
+                    {
+                        "slug": "deadswitch-3",
+                        "name": "Deadswitch 3",
+                        "score": 48,
+                        "allowIframe": true
+                    },
+                    {
+                        "slug": "dinogen-online",
+                        "name": "Dinogen Online",
+                        "score": 48,
+                        "allowIframe": true
+                    },
+                    {
+                        "slug": "arsenal-online",
+                        "name": "Arsenal Online",
+                        "score": 48,
+                        "allowIframe": true
+                    }
+                ]
+            },
+            "discordUrl": "https://discord.com/invite/deadswitch-3-777337069214105600",
+            "players": [
+                {
+                    "label": "1 Player",
+                    "slug": "1-player",
+                    "iconKey": "person"
+                },
+                {
+                    "label": "Multiplayer",
+                    "slug": "multiplayer",
+                    "iconKey": "people"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "venge-io",
+                    "name": "Venge.io",
+                    "score": 54,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "narrow-one",
+                    "name": "Narrow One",
+                    "score": 53,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "cryzen-io",
+                    "name": "Cryzen.io",
+                    "score": 53,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "deadshot-io",
+                    "name": "Deadshot.io",
+                    "score": 52,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "redead-io",
+                    "name": "reDEAD",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "ev-io",
+                    "name": "ev.io",
+                    "score": 50,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "jamir",
+                    "name": "Jamir",
+                    "score": 50,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "slay-one",
+                    "name": "Slay.one",
+                    "score": 50,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "smash-karts",
+                    "name": "Smash Karts",
+                    "score": 49,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "shell-shockers",
+                    "name": "Shell Shockers",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "dinogen-online",
+                    "name": "Dinogen Online",
+                    "score": 48,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "arsenal-online",
+                    "name": "Arsenal Online",
+                    "score": 48,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "bad-egg",
+                    "name": "Bad Egg",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 1
+                },
+                {
+                    "slug": "earths-greatest-defender",
+                    "name": "Earth's Greatest Defender",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "rocket-bot-royale",
+                    "name": "Rocket Bot Royale",
+                    "score": 47,
+                    "allowIframe": true
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Game Not Found",
+            "Play %s on WebGamer": "Play %s on WebGamer",
+            "Free with no ads": "Free with no ads",
+            "Cryptocurrency": "Cryptocurrency",
+            "cryptocurrency": "cryptocurrency",
+            "free-no-ads": "free-no-ads",
+            "1 Player": "1 Player",
+            "1-player": "1-player",
+            "Multiplayer": "Multiplayer",
+            "multiplayer": "multiplayer",
+            "Play": "Play",
+            "Learn more": "Learn more",
+            "More": "More",
+            "Wishlist on Steam": "Wishlist on Steam",
+            "Follow on Twitter": "Follow on Twitter",
+            "Buy on Steam": "Buy on Steam",
+            "Support on Patreon": "Support on Patreon",
+            "Follow on itch.io": "Follow on itch.io",
+            "Join the Discord": "Join the Discord",
+            "This game is 100% free and has no ads.": "This game is 100% free and has no ads.",
+            "This ad-free demo is highly replayable.": "This ad-free demo is highly replayable.",
+            "This is a free promotional game.": "This is a free promotional game.",
+            "This game contains few ads.": "This game contains few ads.",
+            "Game monetized with cosmetics.": "Game monetized with cosmetics.",
+            "Content warning": "Content warning",
+            "Preorder": "Preorder",
+            "on ": "on ",
+            "Expand": "Expand",
+            "Fullscreen": "Fullscreen",
+            "Play fullscreen": "Play fullscreen",
+            "Close": "Close",
+            "You will lose your progress. Close the game?": "You will lose your progress. Close the game?",
+            "Cancel": "Cancel",
+            "How to play %s?": "How to play %s?",
+            "Who created %s?": "Who created %s?",
+            "Similar to:": "Similar to:",
+            "Engine:": "Engine:",
+            "Website": "Website",
+            "Developer:": "Developer:",
+            "Open-source license:": "Open-source license:",
+            "Share": "Share",
+            "Something went wrong!": "Something went wrong!",
+            "Link copied!": "Link copied!",
+            "Games by %s": "Games by %s",
+            "Powered by": "Powered by",
+            "This game is no longer available.": "This game is no longer available."
+        },
+        "headTitle": "DEADSWITCH 3 🎮 Play Deadswitch 3 on WebGamer",
+        "headDescription": "Deadswitch 3 is a 2D multiplayer side-scroller shooting game. It has multiple game modes and maps, such as ranked progression, objective-based missions, co-op survival against zombies or terrorists, m...",
+        "socialImage": "https://webgamer.io/games/deadswitch-3/deadswitch-3.1280x.85pc.webp",
+        "url": "https://webgamer.io/en/g/deadswitch-3"
+    },
+    "__N_SSG": true
+}

@@ -1,0 +1,410 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "disparos",
+                "name": "Disparos",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "aventura",
+                "name": "Aventura",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "estrategia",
+                "name": "Estrategia",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "casual",
+                "name": "Casual",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "conducir",
+                "name": "Conducir",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "cartas",
+                "name": "Cartas",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "puzzle",
+                "name": "Puzzle",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "musica",
+                "name": "Música",
+                "iconKey": "music"
+            },
+            {
+                "slug": "plataformas",
+                "name": "Plataformas",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "carreras",
+                "name": "Carreras",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "combinacion",
+                "name": "Combinación",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "divertido",
+                "name": "Divertido",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "mecanografia",
+                "name": "Mecanografía",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "deportes",
+                "name": "Deportes",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "Acerca de este portal",
+            "Terms of Use": "Términos de uso",
+            "Privacy Policy": "Política de privacidad",
+            "All": "Todo",
+            "Shortcut:": "Atajo:",
+            "Close": "Cerrar",
+            "More": "Más",
+            "Search for a game": "Buscar un juego",
+            "Install WebGamer": "Instalar WebGamer",
+            "All categories": "Todas las categorías",
+            "Categories": "Categorías",
+            "Favorites": "Favoritos"
+        },
+        "lang": "es",
+        "game": {
+            "uuid": "39f130a3-7cc4-4469-8d08-71df7967f81d",
+            "slug": "bubbly-tim",
+            "name": "Bubbly Tim's Time Bubble Trouble",
+            "score": 45,
+            "description": "Bubbly Tim's Time Bubble Trouble es un juego de plataformas y rompecabezas en el que juegas como Bubbly Tim, quien se ha metido en problemas al congelar el tiempo. ¡Ayúdalo a escapar a través de más de 20 divertidos rompecabezas!",
+            "instructions": "Usa la burbuja del tiempo de Bubbly Tim para resolver rompecabezas y superar obstáculos. Usa las teclas de flecha para disparar la burbuja del tiempo en cualquier dirección. La burbuja del tiempo se puede redirigir una vez usando las teclas de flecha nuevamente, y un tercer uso devuelve la burbuja. Las teclas A y D mueven a Bubbly Tim hacia la izquierda y hacia la derecha, y W salta. Si estás atascado, se puede usar R para reiniciar el nivel actual y N para saltar al siguiente nivel.",
+            "credits": "Este juego fue creado por los primos Faisal Kubba y Hamza Kubba en 3 días para el Mini-Jam 126.",
+            "websiteUrl": "https://perplexgg.itch.io/bubbly-tims-time-bubble-trouble",
+            "allowIframe": true,
+            "externalPlayUrl": "https://games.webgamer.io/bubbly-tim/",
+            "superficialEngine": {
+                "slug": "react-three-fiber",
+                "name": "React Three Fiber"
+            },
+            "superficialSimilars": [],
+            "superficialTags": [
+                {
+                    "slug": "puzzle",
+                    "name": "Puzzle",
+                    "iconKey": "puzzle"
+                },
+                {
+                    "slug": "plataformas",
+                    "name": "Plataformas",
+                    "iconKey": "platform"
+                },
+                {
+                    "slug": "casual",
+                    "name": "Casual",
+                    "iconKey": "casual"
+                }
+            ],
+            "superficialMonetizations": [
+                {
+                    "label": "Gratis sin anuncios",
+                    "slug": "gratis-sin-anuncios",
+                    "iconKey": "money-off",
+                    "iconColor": "green"
+                }
+            ],
+            "detailedDeveloper": {
+                "name": "perplexgg & fdkubba",
+                "url": "https://itch.io/profile/perplexgg",
+                "superficialGames": [
+                    {
+                        "slug": "bubbly-tim",
+                        "name": "Bubbly Tim's Time Bubble Trouble",
+                        "score": 45,
+                        "allowIframe": true
+                    }
+                ]
+            },
+            "playerFriendlyType": "100-FREE",
+            "players": [
+                {
+                    "label": "1 Jugador",
+                    "slug": "1-jugador",
+                    "iconKey": "person"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "simply-up",
+                    "name": "Simply Up",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "ninja-vs-evilcorp",
+                    "name": "Ninja vs EVILCORP",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "up-together",
+                    "name": "Up Together",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "summer-afternoon",
+                    "name": "Summer Afternoon",
+                    "score": 51,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "egg-hunt",
+                    "name": "Egg Hunt",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "i-want-it-all",
+                    "name": "I Want It All",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "finns-ascent",
+                    "name": "Finn's Ascent",
+                    "score": 50,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "zoo-drop",
+                    "name": "ZooDrop",
+                    "score": 49,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "edelweiss",
+                    "name": "Edelweiss",
+                    "score": 49,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "tower-stack",
+                    "name": "Tower Stack",
+                    "score": 48,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "monster-match",
+                    "name": "Monster Match",
+                    "score": 48,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "ducklings",
+                    "name": "Ducklings",
+                    "score": 48,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "crazy-pumpkin",
+                    "name": "Crazy Pumpkin",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "pipedown",
+                    "name": "Pipedown",
+                    "score": 47,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "eggsolotl",
+                    "name": "Eggsolotl",
+                    "score": 47,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true
+                },
+                {
+                    "slug": "earths-greatest-defender",
+                    "name": "Earth's Greatest Defender",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "robocalypse",
+                    "name": "Robocalypse",
+                    "score": 47,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "keep-the-hype-up",
+                    "name": "Keep the Hype UP!",
+                    "score": 47,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "chroma",
+                    "name": "Chroma",
+                    "score": 46,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "miu-vie-star",
+                    "name": "Miu-Vie Star",
+                    "score": 46,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "swooop",
+                    "name": "Swooop",
+                    "score": 45,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "slash-saber",
+                    "name": "Slash Saber",
+                    "score": 44,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "modd-io",
+                    "name": "Modd.io",
+                    "score": 41,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Juego no encontrado",
+            "Play %s on WebGamer": "Jugar a %s en WebGamer",
+            "Free with no ads": "Gratis sin anuncios",
+            "Cryptocurrency": "Criptomoneda",
+            "cryptocurrency": "criptomoneda",
+            "free-no-ads": "gratis-sin-anuncios",
+            "1 Player": "1 Jugador",
+            "1-player": "1-jugador",
+            "Multiplayer": "Multijugador",
+            "multiplayer": "multijugador",
+            "Play": "Jugar",
+            "Learn more": "Aprende más",
+            "More": "Más",
+            "Wishlist on Steam": "Añadir a tu lista de deseos en Steam",
+            "Follow on Twitter": "Seguir en Twitter",
+            "Buy on Steam": "Comprar en Steam",
+            "Support on Patreon": "Apoyar en Patreon",
+            "Follow on itch.io": "Seguir en itch.io",
+            "Join the Discord": "Únete al Discord",
+            "This game is 100% free and has no ads.": "Este juego es 100% gratis y sin anuncios.",
+            "This ad-free demo is highly replayable.": "Esta demo sin anuncios es muy rejugable.",
+            "This is a free promotional game.": "Este juego promocional es gratis.",
+            "This game contains few ads.": "Este juego contiene pocos anuncios.",
+            "Game monetized with cosmetics.": "Juego monetizado con cosméticos.",
+            "Content warning": "Advertencia de contenido",
+            "Preorder": "Preordenar",
+            "on ": "en ",
+            "Expand": "Expandir",
+            "Fullscreen": "Pantalla completa",
+            "Play fullscreen": "Jugar en pantalla completa",
+            "Close": "Cerrar",
+            "You will lose your progress. Close the game?": "Perderás tu progreso. ¿Cerrar el juego?",
+            "Cancel": "Cancelar",
+            "How to play %s?": "¿Cómo jugar a %s?",
+            "Who created %s?": "¿Quién creó %s?",
+            "Similar to:": "Similar a:",
+            "Engine:": "Motor:",
+            "Website": "Sitio web",
+            "Developer:": "Desarrollador:",
+            "Open-source license:": "Licencia de código abierto:",
+            "Share": "Compartir",
+            "Something went wrong!": "Algo salió mal!",
+            "Link copied!": "¡Enlace copiado!",
+            "Games by %s": "Juegos por %s",
+            "Powered by": "Desarrollado por",
+            "This game is no longer available.": "Este juego ya no está disponible."
+        },
+        "headTitle": "BUBBLY TIM'S TIME BUBBLE TROUBLE 🎮 Jugar a Bubbly Tim's Time Bubble Trouble en WebGamer",
+        "headDescription": "Bubbly Tim's Time Bubble Trouble es un juego de plataformas y rompecabezas en el que juegas como Bubbly Tim, quien se ha metido en problemas al congelar el tiempo. ¡Ayúdalo a escapar a través de más d...",
+        "socialImage": "https://webgamer.io/games/bubbly-tim/bubbly-tim.1280x.85pc.webp",
+        "url": "https://webgamer.io/es/g/bubbly-tim"
+    },
+    "__N_SSG": true
+}

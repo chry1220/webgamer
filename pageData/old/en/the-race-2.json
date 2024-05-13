@@ -1,0 +1,302 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "shooting",
+                "name": "Shooting",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "adventure",
+                "name": "Adventure",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "strategy",
+                "name": "Strategy",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "casual",
+                "name": "Casual",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "driving",
+                "name": "Driving",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "cards",
+                "name": "Cards",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "puzzle",
+                "name": "Puzzle",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "music",
+                "name": "Music",
+                "iconKey": "music"
+            },
+            {
+                "slug": "platform",
+                "name": "Platform",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "racing",
+                "name": "Racing",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "tile-matching",
+                "name": "Tile-matching",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "fun",
+                "name": "Fun",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "typing",
+                "name": "Typing",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "sports",
+                "name": "Sports",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "About this portal",
+            "Terms of Use": "Terms of Use",
+            "Privacy Policy": "Privacy Policy",
+            "All": "All",
+            "Shortcut:": "Shortcut:",
+            "Close": "Close",
+            "More": "More",
+            "Search for a game": "Search for a game",
+            "Install WebGamer": "Install WebGamer",
+            "All categories": "All categories",
+            "Categories": "Categories",
+            "Favorites": "Favorites"
+        },
+        "lang": "en",
+        "game": {
+            "uuid": "6a9e0289-12b6-4598-8a27-e688319f9a1c",
+            "slug": "the-race-2",
+            "name": "The Race – Season 2",
+            "score": 52,
+            "description": "A promotional racing game by Merci Michel for Interparfums - Montblanc.",
+            "instructions": "Follow the line in the middle of the road to increase your boost gauge, and try to beat your best time.\n\nOn a computer, press ▲  ▲  ▼  ▼  ◀  ▶  ◀  ▶  B  A to control the car with your phone!",
+            "websiteUrl": "https://www.montblanc.com/en-us",
+            "allowIframe": true,
+            "externalPlayUrl": "https://therace.montblancexplorer.com",
+            "superficialEngine": {
+                "slug": "three-js",
+                "name": "Three.js"
+            },
+            "superficialSimilars": [],
+            "superficialTags": [
+                {
+                    "slug": "racing",
+                    "name": "Racing",
+                    "iconKey": "racing"
+                },
+                {
+                    "slug": "driving",
+                    "name": "Driving",
+                    "iconKey": "driving"
+                }
+            ],
+            "superficialMonetizations": [],
+            "detailedDeveloper": {
+                "name": "Merci Michel",
+                "url": "https://www.merci-michel.com/projects/",
+                "superficialGames": [
+                    {
+                        "slug": "the-race",
+                        "name": "The Race",
+                        "score": 52,
+                        "allowIframe": true,
+                        "preferredOrientation": "LANDSCAPE",
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "egg-hunt",
+                        "name": "Egg Hunt",
+                        "score": 51,
+                        "allowIframe": true,
+                        "preferredOrientation": "PORTRAIT",
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "i-want-it-all",
+                        "name": "I Want It All",
+                        "score": 51,
+                        "allowIframe": true,
+                        "preferredOrientation": "PORTRAIT",
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "the-race-2",
+                        "name": "The Race – Season 2",
+                        "score": 52,
+                        "allowIframe": true,
+                        "preferredOrientation": "LANDSCAPE",
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "miu-vie-star",
+                        "name": "Miu-Vie Star",
+                        "score": 46,
+                        "allowIframe": true,
+                        "preferredOrientation": "PORTRAIT",
+                        "mobileSupport": 2
+                    }
+                ]
+            },
+            "playerFriendlyType": "PROMO",
+            "cta": "TWITTER-FOLLOW",
+            "ctaUrl": "https://twitter.com/MerciMichel",
+            "mobileSupport": 2,
+            "preferredOrientation": "LANDSCAPE",
+            "players": [
+                {
+                    "label": "1 Player",
+                    "slug": "1-player",
+                    "iconKey": "person"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "polytrack",
+                    "name": "PolyTrack",
+                    "score": 53,
+                    "allowIframe": true,
+                    "fullscreenLock": true
+                },
+                {
+                    "slug": "drift-io",
+                    "name": "Drift.io",
+                    "score": 53,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "the-race",
+                    "name": "The Race",
+                    "score": 52,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "smash-karts",
+                    "name": "Smash Karts",
+                    "score": 49,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "threltemania",
+                    "name": "Threltemania",
+                    "score": 43,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "slow-roads",
+                    "name": "Slow Roads",
+                    "score": 34
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Game Not Found",
+            "Play %s on WebGamer": "Play %s on WebGamer",
+            "Free with no ads": "Free with no ads",
+            "Cryptocurrency": "Cryptocurrency",
+            "cryptocurrency": "cryptocurrency",
+            "free-no-ads": "free-no-ads",
+            "1 Player": "1 Player",
+            "1-player": "1-player",
+            "Multiplayer": "Multiplayer",
+            "multiplayer": "multiplayer",
+            "Play": "Play",
+            "Learn more": "Learn more",
+            "More": "More",
+            "Wishlist on Steam": "Wishlist on Steam",
+            "Follow on Twitter": "Follow on Twitter",
+            "Buy on Steam": "Buy on Steam",
+            "Support on Patreon": "Support on Patreon",
+            "Follow on itch.io": "Follow on itch.io",
+            "Join the Discord": "Join the Discord",
+            "This game is 100% free and has no ads.": "This game is 100% free and has no ads.",
+            "This ad-free demo is highly replayable.": "This ad-free demo is highly replayable.",
+            "This is a free promotional game.": "This is a free promotional game.",
+            "This game contains few ads.": "This game contains few ads.",
+            "Game monetized with cosmetics.": "Game monetized with cosmetics.",
+            "Content warning": "Content warning",
+            "Preorder": "Preorder",
+            "on ": "on ",
+            "Expand": "Expand",
+            "Fullscreen": "Fullscreen",
+            "Play fullscreen": "Play fullscreen",
+            "Close": "Close",
+            "You will lose your progress. Close the game?": "You will lose your progress. Close the game?",
+            "Cancel": "Cancel",
+            "How to play %s?": "How to play %s?",
+            "Who created %s?": "Who created %s?",
+            "Similar to:": "Similar to:",
+            "Engine:": "Engine:",
+            "Website": "Website",
+            "Developer:": "Developer:",
+            "Open-source license:": "Open-source license:",
+            "Share": "Share",
+            "Something went wrong!": "Something went wrong!",
+            "Link copied!": "Link copied!",
+            "Games by %s": "Games by %s",
+            "Powered by": "Powered by",
+            "This game is no longer available.": "This game is no longer available."
+        },
+        "headTitle": "THE RACE – SEASON 2 🎮 Play The Race – Season 2 on WebGamer",
+        "headDescription": "A promotional racing game by Merci Michel for Interparfums - Montblanc.",
+        "socialImage": "https://webgamer.io/games/the-race-2/the-race-2.1280x.85pc.webp",
+        "url": "https://webgamer.io/en/g/the-race-2"
+    },
+    "__N_SSG": true
+}

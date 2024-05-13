@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-iframe {
-  aspect-ratio: 16 / 9;
+* {
+  box-sizing: border-box;
+}
+
+.full-iframe {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
@@ -43,4 +51,29 @@ body {
   background-position: 50%;
   background-size: cover;
   position: relative;
+}
+
+.my-icon {
+  display: inline-block !important;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+}
+
+.detail-icon {
+  display: inline-block !important;
+}
+
+.logo-svg {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  -webkit-animation: spin 0.5s ease-in-out;
+  animation: spin 0.5s ease-in-out;
+}
+.logo-svg:hover {
+  transform: rotate(360deg);
+}
+
+.ctrl-no-line {
+  text-decoration: none !important;
 }

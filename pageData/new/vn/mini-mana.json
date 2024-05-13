@@ -1,0 +1,404 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "bắn-súng",
+                "name": "Bắn súng",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "phiêu-lưu",
+                "name": "Phiêu lưu",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "chiến-thuật",
+                "name": "Chiến thuật",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "giải-trí",
+                "name": "Giải trí",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "lái-xe",
+                "name": "Lái xe",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "thẻ-bài",
+                "name": "Thẻ bài",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "giải-đố",
+                "name": "Giải đố",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "âm-nhạc",
+                "name": "Âm nhạc",
+                "iconKey": "music"
+            },
+            {
+                "slug": "nền-tảng",
+                "name": "Nền tảng",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "đua-xe",
+                "name": "Đua xe",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "ghép-các-ô",
+                "name": "Ghép các ô",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "vui-nhộn",
+                "name": "Vui nhộn",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "đánh-máy",
+                "name": "Đánh Máy",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "thể-thao",
+                "name": "Thể thao",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "Về trang web này",
+            "Terms of Use": "Điều khoản sử dụng",
+            "Privacy Policy": "Chính sách bảo mật",
+            "All": "Tất cả",
+            "Shortcut:": "Phím tắt:",
+            "Close": "Đóng",
+            "More": "Thêm",
+            "Search for a game": "Tìm kiếm một trò chơi",
+            "Install WebGamer": "Cài đặt WebGamer",
+            "All categories": "Tất cả các loại",
+            "Categories": "Thể loại",
+            "Favorites": "Yêu thích"
+        },
+        "lang": "vn",
+        "game": {
+            "uuid": "78dfd789-61e6-4527-97a5-3d6d0151930a",
+            "slug": "mini-mana",
+            "name": "Mini Mana",
+            "score": 48,
+            "description": "MiniMana.io là một trò chơi Hack & Slash Action-RPG đang ở giai đoạn truy cập sớm. Chiến đấu với kẻ thù để kiếm kinh nghiệm và mở khóa khả năng mới.",
+            "instructions": "Đăng nhập bằng Google hoặc Discord để tạo nhân vật. Sử dụng điểm để chuyên môn hóa nhân vật của bạn với cây kỹ năng tại HLV. Đánh bại kẻ địch để lên cấp và kiếm điểm để chi tiêu cho các khả năng mới.\n\nSau khi mở khóa kỹ năng, gán chúng vào các phím từ 1-9 của bạn. Trò chơi có thể được chơi bằng tay cầm hoặc trên điện thoại di động.",
+            "allowIframe": true,
+            "externalPlayUrl": "https://minimana.io",
+            "fullscreenLock": true,
+            "superficialEngine": {
+                "slug": "react-three-fiber",
+                "name": "React Three Fiber"
+            },
+            "superficialSimilars": [
+                {
+                    "name": "World of Warcraft",
+                    "slug": "world-of-warcraft"
+                }
+            ],
+            "superficialTags": [
+                {
+                    "slug": "phiêu-lưu",
+                    "name": "Phiêu lưu",
+                    "iconKey": "adventure"
+                },
+                {
+                    "slug": "chiến-thuật",
+                    "name": "Chiến thuật",
+                    "iconKey": "strategy"
+                }
+            ],
+            "superficialMonetizations": [
+                {
+                    "label": "Hoàn toàn miễn phí",
+                    "slug": "miễn-phí-không-quảng-cáo",
+                    "iconKey": "money-off",
+                    "iconColor": "green"
+                }
+            ],
+            "detailedDeveloper": {
+                "name": "Verekia",
+                "url": "https://twitter.com/verekia",
+                "superficialGames": [
+                    {
+                        "slug": "mini-mana",
+                        "name": "Mini Mana",
+                        "score": 48,
+                        "allowIframe": true,
+                        "preferredOrientation": "LANDSCAPE",
+                        "fullscreenLock": true,
+                        "mobileSupport": 2
+                    }
+                ]
+            },
+            "playerFriendlyType": "EXTENSIVE-DEMO",
+            "discordUrl": "https://discord.com/invite/XuJ7MBzVmz",
+            "mobileSupport": 2,
+            "fullscreenPosition": "Top Right",
+            "fullscreenPositionTop": "100",
+            "preferredOrientation": "LANDSCAPE",
+            "players": [
+                {
+                    "label": "1 Người chơi",
+                    "slug": "1-người",
+                    "iconKey": "person"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "tribals-io",
+                    "name": "Tribals.io",
+                    "score": 53,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "vectaria-io",
+                    "name": "Vectaria.io",
+                    "score": 52,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "starblast",
+                    "name": "Starblast",
+                    "score": 50,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "hole-io",
+                    "name": "Hole.io",
+                    "score": 50,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "captain-forever-io",
+                    "name": "CaptainForever.io",
+                    "score": 50,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true
+                },
+                {
+                    "slug": "dungeon-survivors",
+                    "name": "Dungeon Survivors",
+                    "score": 49,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "lurkers-io",
+                    "name": "Lurkers.io",
+                    "score": 49,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "conq-io",
+                    "name": "Conq.io",
+                    "score": 49,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "army-clash-io",
+                    "name": "ArmyClash.io",
+                    "score": 49,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "roams-io",
+                    "name": "Roams.io",
+                    "score": 49,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "path-to-glory",
+                    "name": "Path to Glory",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "konkr-io",
+                    "name": "Konkr.io",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "athena-crisis",
+                    "name": "Athena Crisis",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "evoworld-io",
+                    "name": "EvoWorld.io (FlyOrDie.io)",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "swordbattle-io",
+                    "name": "Swordbattle.io",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "mine-blocks",
+                    "name": "Mine Blocks",
+                    "score": 46,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "realmz-io",
+                    "name": "Realmz.io",
+                    "score": 45,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "candy-riot",
+                    "name": "Candy Riot",
+                    "score": 45,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "pvpz-io",
+                    "name": "PvPz.io",
+                    "score": 45,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "cybernetic-serenade",
+                    "name": "Cybernetic Serenade",
+                    "score": 43,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "dragon-joust",
+                    "name": "Dragon Joust",
+                    "score": 43,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "lord-of-the-harvest",
+                    "name": "Lord of the Harvest",
+                    "score": 43,
+                    "allowIframe": true
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Không tìm thấy trò chơi",
+            "Play %s on WebGamer": "Chơi %s trên WebGamer",
+            "Free with no ads": "Hoàn toàn miễn phí",
+            "Cryptocurrency": "Tiền điện tử",
+            "cryptocurrency": "tiền-điện-tử",
+            "free-no-ads": "miễn-phí-không-quảng-cáo",
+            "1 Player": "1 Người chơi",
+            "1-player": "1-người",
+            "Multiplayer": "Nhiều người chơi",
+            "multiplayer": "đa-người",
+            "Play": "Chơi",
+            "Learn more": "Tìm hiểu thêm",
+            "More": "Thêm",
+            "Wishlist on Steam": "Thêm vào danh sách mong muốn trên Steam",
+            "Follow on Twitter": "Theo dõi trên Twitter",
+            "Buy on Steam": "Mua trên Steam",
+            "Support on Patreon": "Ủng hộ trên Patreon",
+            "Follow on itch.io": "Theo dõi trên itch.io",
+            "Join the Discord": "Tham gia Discord",
+            "This game is 100% free and has no ads.": "Trò chơi 100% miễn phí, không quảng cáo.",
+            "This ad-free demo is highly replayable.": "Démo miễn phí chơi lại nhiều lần.",
+            "This is a free promotional game.": "Đây là một trò chơi quảng cáo miễn phí.",
+            "This game contains few ads.": "Trò chơi này có rất ít quảng cáo.",
+            "Game monetized with cosmetics.": "Trò chơi được tiếp thị với mỹ phẩm.",
+            "Content warning": "Cảnh báo nội dung",
+            "Preorder": "Đặt hàng trước",
+            "on ": "trên ",
+            "Expand": "Mở rộng",
+            "Fullscreen": "Toàn màn hình",
+            "Play fullscreen": "Chơi toàn màn hình",
+            "Close": "Đóng",
+            "You will lose your progress. Close the game?": "Bạn sẽ mất tiến trình của mình. Đóng trò chơi?",
+            "Cancel": "Hủy",
+            "How to play %s?": "Làm thế nào để chơi %s?",
+            "Who created %s?": "Ai đã tạo %s?",
+            "Similar to:": "Tương tự:",
+            "Engine:": "Động cơ:",
+            "Website": "Trang web",
+            "Developer:": "Nhà phát triển:",
+            "Open-source license:": "Giấy phép mã nguồn mở:",
+            "Share": "Chia sẻ",
+            "Something went wrong!": "Đã xảy ra lỗi!",
+            "Link copied!": "Đã sao chép liên kết!",
+            "Games by %s": "Trò chơi bởi %s",
+            "Powered by": "Được hỗ trợ bởi",
+            "This game is no longer available.": "Trò chơi này không còn nữa."
+        },
+        "headTitle": "MINI MANA 🎮 Chơi Mini Mana trên WebGamer",
+        "headDescription": "MiniMana.io là một trò chơi Hack & Slash Action-RPG đang ở giai đoạn truy cập sớm. Chiến đấu với kẻ thù để kiếm kinh nghiệm và mở khóa khả năng mới.",
+        "socialImage": "https://webgamer.io/games/mini-mana/mini-mana.1280x.85pc.webp",
+        "url": "https://webgamer.io/vn/g/mini-mana"
+    },
+    "__N_SSG": true
+}

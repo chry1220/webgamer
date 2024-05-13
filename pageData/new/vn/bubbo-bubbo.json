@@ -1,0 +1,325 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "bắn-súng",
+                "name": "Bắn súng",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "phiêu-lưu",
+                "name": "Phiêu lưu",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "chiến-thuật",
+                "name": "Chiến thuật",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "giải-trí",
+                "name": "Giải trí",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "lái-xe",
+                "name": "Lái xe",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "thẻ-bài",
+                "name": "Thẻ bài",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "giải-đố",
+                "name": "Giải đố",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "âm-nhạc",
+                "name": "Âm nhạc",
+                "iconKey": "music"
+            },
+            {
+                "slug": "nền-tảng",
+                "name": "Nền tảng",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "đua-xe",
+                "name": "Đua xe",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "ghép-các-ô",
+                "name": "Ghép các ô",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "vui-nhộn",
+                "name": "Vui nhộn",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "đánh-máy",
+                "name": "Đánh Máy",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "thể-thao",
+                "name": "Thể thao",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "Về trang web này",
+            "Terms of Use": "Điều khoản sử dụng",
+            "Privacy Policy": "Chính sách bảo mật",
+            "All": "Tất cả",
+            "Shortcut:": "Phím tắt:",
+            "Close": "Đóng",
+            "More": "Thêm",
+            "Search for a game": "Tìm kiếm một trò chơi",
+            "Install WebGamer": "Cài đặt WebGamer",
+            "All categories": "Tất cả các loại",
+            "Categories": "Thể loại",
+            "Favorites": "Yêu thích"
+        },
+        "lang": "vn",
+        "game": {
+            "uuid": "e41b1a63-8ee5-49ab-a82e-550c14e291eb",
+            "slug": "bubbo-bubbo",
+            "name": "Bubbo Bubbo",
+            "score": 44,
+            "description": "Bubbo Bubbo là một trò chơi mẫu mã nguồn mở dựa trên PixiJS lấy cảm hứng từ Puzzle Bobble. Hãy nhắm và bắn những viên bi cùng màu để làm chúng rơi xuống trước khi chúng chạm đáy màn hình.",
+            "websiteUrl": "https://github.com/pixijs/open-games",
+            "allowIframe": true,
+            "externalPlayUrl": "https://pixijs.io/open-games/bubbo-bubbo/",
+            "superficialEngine": {
+                "slug": "pixi-js",
+                "name": "PixiJS"
+            },
+            "superficialSimilars": [
+                {
+                    "name": "Puzzle Bobble",
+                    "slug": "puzzle-bobble"
+                }
+            ],
+            "superficialTags": [
+                {
+                    "slug": "ghép-các-ô",
+                    "name": "Ghép các ô",
+                    "iconKey": "tile-matching"
+                },
+                {
+                    "slug": "giải-đố",
+                    "name": "Giải đố",
+                    "iconKey": "puzzle"
+                }
+            ],
+            "superficialMonetizations": [
+                {
+                    "label": "Hoàn toàn miễn phí",
+                    "slug": "miễn-phí-không-quảng-cáo",
+                    "iconKey": "money-off",
+                    "iconColor": "green"
+                }
+            ],
+            "detailedDeveloper": {
+                "name": "PixiJS",
+                "url": "https://github.com/pixijs/open-games",
+                "superficialGames": [
+                    {
+                        "slug": "bubbo-bubbo",
+                        "name": "Bubbo Bubbo",
+                        "score": 44,
+                        "allowIframe": true,
+                        "preferredOrientation": "PORTRAIT",
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "puzzling-potions",
+                        "name": "Puzzling Potions",
+                        "score": 43,
+                        "allowIframe": true,
+                        "preferredOrientation": "PORTRAIT",
+                        "mobileSupport": 2
+                    }
+                ]
+            },
+            "playerFriendlyType": "100-FREE",
+            "cta": "TWITTER-FOLLOW",
+            "ctaUrl": "https://twitter.com/PixiJS",
+            "mobileSupport": 2,
+            "license": "MIT",
+            "sourceUrl": "https://github.com/pixijs/open-games",
+            "preferredOrientation": "PORTRAIT",
+            "players": [
+                {
+                    "label": "1 Người chơi",
+                    "slug": "1-người",
+                    "iconKey": "person"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "zoo-drop",
+                    "name": "ZooDrop",
+                    "score": 49,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "2048",
+                    "name": "2048",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "tower-stack",
+                    "name": "Tower Stack",
+                    "score": 48,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "monster-match",
+                    "name": "Monster Match",
+                    "score": 48,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "pipedown",
+                    "name": "Pipedown",
+                    "score": 47,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "eggsolotl",
+                    "name": "Eggsolotl",
+                    "score": 47,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true
+                },
+                {
+                    "slug": "chroma",
+                    "name": "Chroma",
+                    "score": 46,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "bubbly-tim",
+                    "name": "Bubbly Tim's Time Bubble Trouble",
+                    "score": 45,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "match-city",
+                    "name": "Match City",
+                    "score": 43,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "puzzling-potions",
+                    "name": "Puzzling Potions",
+                    "score": 43,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Không tìm thấy trò chơi",
+            "Play %s on WebGamer": "Chơi %s trên WebGamer",
+            "Free with no ads": "Hoàn toàn miễn phí",
+            "Cryptocurrency": "Tiền điện tử",
+            "cryptocurrency": "tiền-điện-tử",
+            "free-no-ads": "miễn-phí-không-quảng-cáo",
+            "1 Player": "1 Người chơi",
+            "1-player": "1-người",
+            "Multiplayer": "Nhiều người chơi",
+            "multiplayer": "đa-người",
+            "Play": "Chơi",
+            "Learn more": "Tìm hiểu thêm",
+            "More": "Thêm",
+            "Wishlist on Steam": "Thêm vào danh sách mong muốn trên Steam",
+            "Follow on Twitter": "Theo dõi trên Twitter",
+            "Buy on Steam": "Mua trên Steam",
+            "Support on Patreon": "Ủng hộ trên Patreon",
+            "Follow on itch.io": "Theo dõi trên itch.io",
+            "Join the Discord": "Tham gia Discord",
+            "This game is 100% free and has no ads.": "Trò chơi 100% miễn phí, không quảng cáo.",
+            "This ad-free demo is highly replayable.": "Démo miễn phí chơi lại nhiều lần.",
+            "This is a free promotional game.": "Đây là một trò chơi quảng cáo miễn phí.",
+            "This game contains few ads.": "Trò chơi này có rất ít quảng cáo.",
+            "Game monetized with cosmetics.": "Trò chơi được tiếp thị với mỹ phẩm.",
+            "Content warning": "Cảnh báo nội dung",
+            "Preorder": "Đặt hàng trước",
+            "on ": "trên ",
+            "Expand": "Mở rộng",
+            "Fullscreen": "Toàn màn hình",
+            "Play fullscreen": "Chơi toàn màn hình",
+            "Close": "Đóng",
+            "You will lose your progress. Close the game?": "Bạn sẽ mất tiến trình của mình. Đóng trò chơi?",
+            "Cancel": "Hủy",
+            "How to play %s?": "Làm thế nào để chơi %s?",
+            "Who created %s?": "Ai đã tạo %s?",
+            "Similar to:": "Tương tự:",
+            "Engine:": "Động cơ:",
+            "Website": "Trang web",
+            "Developer:": "Nhà phát triển:",
+            "Open-source license:": "Giấy phép mã nguồn mở:",
+            "Share": "Chia sẻ",
+            "Something went wrong!": "Đã xảy ra lỗi!",
+            "Link copied!": "Đã sao chép liên kết!",
+            "Games by %s": "Trò chơi bởi %s",
+            "Powered by": "Được hỗ trợ bởi",
+            "This game is no longer available.": "Trò chơi này không còn nữa."
+        },
+        "headTitle": "BUBBO BUBBO 🎮 Chơi Bubbo Bubbo trên WebGamer",
+        "headDescription": "Bubbo Bubbo là một trò chơi mẫu mã nguồn mở dựa trên PixiJS lấy cảm hứng từ Puzzle Bobble. Hãy nhắm và bắn những viên bi cùng màu để làm chúng rơi xuống trước khi chúng chạm đáy màn hình.",
+        "socialImage": "https://webgamer.io/games/bubbo-bubbo/bubbo-bubbo.1280x.85pc.webp",
+        "url": "https://webgamer.io/vn/g/bubbo-bubbo"
+    },
+    "__N_SSG": true
+}

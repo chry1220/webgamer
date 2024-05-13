@@ -1,0 +1,122 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "tir",
+                "name": "Tir",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "aventure",
+                "name": "Aventure",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "strategie",
+                "name": "Stratégie",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "detente",
+                "name": "Détente",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "conduite",
+                "name": "Conduite",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "cartes",
+                "name": "Cartes",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "puzzle",
+                "name": "Puzzle",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "musique",
+                "name": "Musique",
+                "iconKey": "music"
+            },
+            {
+                "slug": "plateforme",
+                "name": "Plateforme",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "course",
+                "name": "Course",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "combinaisons",
+                "name": "Combinaisons",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "amusant",
+                "name": "Amusant",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "dactylographie",
+                "name": "Dactylographie",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "sports",
+                "name": "Sports",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "À propos de ce portail",
+            "Terms of Use": "Conditions d’utilisation",
+            "Privacy Policy": "Politique de confidentialité",
+            "All": "Tout",
+            "Shortcut:": "Raccourci :",
+            "Close": "Fermer",
+            "More": "Plus",
+            "Search for a game": "Rechercher un jeu",
+            "Install WebGamer": "Installer WebGamer",
+            "All categories": "Toutes les catégories",
+            "Categories": "Catégories",
+            "Favorites": "Favoris"
+        },
+        "lang": "fr",
+        "headTitle": "Jeux gratuits en ligne 🎮 WebGamer",
+        "url": "https://webgamer.io/fr",
+        "headDescription": "Jouez gratuitement à des jeux en ligne instantanément dans votre navigateur. WebGamer est un portail de jeux web de nouvelle génération que vous pouvez jouer maintenant sans installer quoi que ce soit !"
+    },
+    "__N_SSG": true
+}

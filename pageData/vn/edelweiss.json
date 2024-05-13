@@ -1,0 +1,375 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "bắn-súng",
+                "name": "Bắn súng",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "phiêu-lưu",
+                "name": "Phiêu lưu",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "chiến-thuật",
+                "name": "Chiến thuật",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "giải-trí",
+                "name": "Giải trí",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "lái-xe",
+                "name": "Lái xe",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "thẻ-bài",
+                "name": "Thẻ bài",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "giải-đố",
+                "name": "Giải đố",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "âm-nhạc",
+                "name": "Âm nhạc",
+                "iconKey": "music"
+            },
+            {
+                "slug": "nền-tảng",
+                "name": "Nền tảng",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "đua-xe",
+                "name": "Đua xe",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "ghép-các-ô",
+                "name": "Ghép các ô",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "vui-nhộn",
+                "name": "Vui nhộn",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "đánh-máy",
+                "name": "Đánh Máy",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "thể-thao",
+                "name": "Thể thao",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "Về trang web này",
+            "Terms of Use": "Điều khoản sử dụng",
+            "Privacy Policy": "Chính sách bảo mật",
+            "All": "Tất cả",
+            "Shortcut:": "Phím tắt:",
+            "Close": "Đóng",
+            "More": "Thêm",
+            "Search for a game": "Tìm kiếm một trò chơi",
+            "Install WebGamer": "Cài đặt WebGamer",
+            "All categories": "Tất cả các loại",
+            "Categories": "Thể loại",
+            "Favorites": "Yêu thích"
+        },
+        "lang": "vn",
+        "game": {
+            "uuid": "35e9c4c3-267e-4a1b-be5d-b5d8b9755097",
+            "slug": "edelweiss",
+            "name": "Edelweiss",
+            "score": 49,
+            "description": "Edelweiss là một trò chơi nền tảng khám phá 3D thư giãn, nơi bạn leo lên núi và thu thập hoa Edelweiss để mở khóa các khả năng mới.",
+            "instructions": "- Di chuyển và leo núi bằng các phím mũi tên hoặc WASD. Nhảy bằng cách sử dụng thanh dấu cách.\n- Bạn có thể nhảy tường bằng cách nhảy trong khi chạm vào tường.\n- Khi bạn mở khóa Dash, giữ nút nhảy và một hướng trong khi leo.\n- Khi bạn mở khóa Glide, giữ nút nhảy trong khi rơi để lướt.\n- Khi bạn mở khóa Double Jump, nhấn nhanh đúp nút nhảy.\n\nTăng sức chịu đựng và tốc độ leo núi của bạn bằng cách thu thập hoa Edelweiss.\n\nNói chuyện với bà cụ để học mẹo và nói chuyện với người cắm trại để lưu tiến trình của bạn. Nếu bạn chết, bạn sẽ hồi sinh tại điểm kiểm tra Camper cuối cùng. Tuy nhiên, đừng làm mới trang, nếu không bạn sẽ phải bắt đầu lại từ đầu.\n\nHãy cố gắng có được 9 thanh năng lượng trước khi đến đỉnh núi!",
+            "websiteUrl": "https://felixmariotto.itch.io/edelweiss",
+            "allowIframe": true,
+            "externalPlayUrl": "https://games.webgamer.io/edelweiss/",
+            "isTheaterMode": true,
+            "superficialEngine": {
+                "slug": "three-js",
+                "name": "Three.js"
+            },
+            "superficialSimilars": [],
+            "superficialTags": [
+                {
+                    "slug": "nền-tảng",
+                    "name": "Nền tảng",
+                    "iconKey": "platform"
+                },
+                {
+                    "slug": "phiêu-lưu",
+                    "name": "Phiêu lưu",
+                    "iconKey": "adventure"
+                }
+            ],
+            "superficialMonetizations": [
+                {
+                    "label": "Hoàn toàn miễn phí",
+                    "slug": "miễn-phí-không-quảng-cáo",
+                    "iconKey": "money-off",
+                    "iconColor": "green"
+                }
+            ],
+            "detailedDeveloper": {
+                "name": "Félix Mariotto",
+                "url": "https://twitter.com/felix_mariotto",
+                "superficialGames": [
+                    {
+                        "slug": "edelweiss",
+                        "name": "Edelweiss",
+                        "score": 49,
+                        "allowIframe": true,
+                        "mobileSupport": 2
+                    }
+                ]
+            },
+            "playerFriendlyType": "100-FREE",
+            "cta": "TWITTER-FOLLOW",
+            "ctaUrl": "https://twitter.com/felix_mariotto",
+            "mobileSupport": 2,
+            "license": "CC0",
+            "sourceUrl": "https://github.com/felixmariotto/Edelweiss",
+            "fullscreenPositionTop": "60px",
+            "players": [
+                {
+                    "label": "1 Người chơi",
+                    "slug": "1-người",
+                    "iconKey": "person"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "tribals-io",
+                    "name": "Tribals.io",
+                    "score": 53,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "vectaria-io",
+                    "name": "Vectaria.io",
+                    "score": 52,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "simply-up",
+                    "name": "Simply Up",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "ninja-vs-evilcorp",
+                    "name": "Ninja vs EVILCORP",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "up-together",
+                    "name": "Up Together",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "finns-ascent",
+                    "name": "Finn's Ascent",
+                    "score": 50,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "dungeon-survivors",
+                    "name": "Dungeon Survivors",
+                    "score": 49,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "lurkers-io",
+                    "name": "Lurkers.io",
+                    "score": 49,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "mini-mana",
+                    "name": "Mini Mana",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "fullscreenLock": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "path-to-glory",
+                    "name": "Path to Glory",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "earths-greatest-defender",
+                    "name": "Earth's Greatest Defender",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "robocalypse",
+                    "name": "Robocalypse",
+                    "score": 47,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "miu-vie-star",
+                    "name": "Miu-Vie Star",
+                    "score": 46,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "mine-blocks",
+                    "name": "Mine Blocks",
+                    "score": 46,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "bubbly-tim",
+                    "name": "Bubbly Tim's Time Bubble Trouble",
+                    "score": 45,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "realmz-io",
+                    "name": "Realmz.io",
+                    "score": 45,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "cybernetic-serenade",
+                    "name": "Cybernetic Serenade",
+                    "score": 43,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "dragon-joust",
+                    "name": "Dragon Joust",
+                    "score": 43,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Không tìm thấy trò chơi",
+            "Play %s on WebGamer": "Chơi %s trên WebGamer",
+            "Free with no ads": "Hoàn toàn miễn phí",
+            "Cryptocurrency": "Tiền điện tử",
+            "cryptocurrency": "tiền-điện-tử",
+            "free-no-ads": "miễn-phí-không-quảng-cáo",
+            "1 Player": "1 Người chơi",
+            "1-player": "1-người",
+            "Multiplayer": "Nhiều người chơi",
+            "multiplayer": "đa-người",
+            "Play": "Chơi",
+            "Learn more": "Tìm hiểu thêm",
+            "More": "Thêm",
+            "Wishlist on Steam": "Thêm vào danh sách mong muốn trên Steam",
+            "Follow on Twitter": "Theo dõi trên Twitter",
+            "Buy on Steam": "Mua trên Steam",
+            "Support on Patreon": "Ủng hộ trên Patreon",
+            "Follow on itch.io": "Theo dõi trên itch.io",
+            "Join the Discord": "Tham gia Discord",
+            "This game is 100% free and has no ads.": "Trò chơi 100% miễn phí, không quảng cáo.",
+            "This ad-free demo is highly replayable.": "Démo miễn phí chơi lại nhiều lần.",
+            "This is a free promotional game.": "Đây là một trò chơi quảng cáo miễn phí.",
+            "This game contains few ads.": "Trò chơi này có rất ít quảng cáo.",
+            "Game monetized with cosmetics.": "Trò chơi được tiếp thị với mỹ phẩm.",
+            "Content warning": "Cảnh báo nội dung",
+            "Preorder": "Đặt hàng trước",
+            "on ": "trên ",
+            "Expand": "Mở rộng",
+            "Fullscreen": "Toàn màn hình",
+            "Play fullscreen": "Chơi toàn màn hình",
+            "Close": "Đóng",
+            "You will lose your progress. Close the game?": "Bạn sẽ mất tiến trình của mình. Đóng trò chơi?",
+            "Cancel": "Hủy",
+            "How to play %s?": "Làm thế nào để chơi %s?",
+            "Who created %s?": "Ai đã tạo %s?",
+            "Similar to:": "Tương tự:",
+            "Engine:": "Động cơ:",
+            "Website": "Trang web",
+            "Developer:": "Nhà phát triển:",
+            "Open-source license:": "Giấy phép mã nguồn mở:",
+            "Share": "Chia sẻ",
+            "Something went wrong!": "Đã xảy ra lỗi!",
+            "Link copied!": "Đã sao chép liên kết!",
+            "Games by %s": "Trò chơi bởi %s",
+            "Powered by": "Được hỗ trợ bởi",
+            "This game is no longer available.": "Trò chơi này không còn nữa."
+        },
+        "headTitle": "EDELWEISS 🎮 Chơi Edelweiss trên WebGamer",
+        "headDescription": "Edelweiss là một trò chơi nền tảng khám phá 3D thư giãn, nơi bạn leo lên núi và thu thập hoa Edelweiss để mở khóa các khả năng mới.",
+        "socialImage": "https://webgamer.io/games/edelweiss/edelweiss.1280x.85pc.webp",
+        "url": "https://webgamer.io/vn/g/edelweiss"
+    },
+    "__N_SSG": true
+}

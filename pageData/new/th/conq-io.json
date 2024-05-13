@@ -1,0 +1,334 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "ยิง",
+                "name": "ยิง",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "ผจญภัย",
+                "name": "ผจญภัย",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "กลยุทธ์",
+                "name": "กลยุทธ์",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "เบาๆ",
+                "name": "เบาๆ",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "ขับขี่",
+                "name": "ขับขี่",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "ไพ่",
+                "name": "ไพ่",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "ปริศนา",
+                "name": "ปริศนา",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "เพลง",
+                "name": "เพลง",
+                "iconKey": "music"
+            },
+            {
+                "slug": "แพลตฟอร์ม",
+                "name": "แพลตฟอร์ม",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "แบทเทิลโรแยล",
+                "name": "แบทเทิลโรแยล",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "แข่งรถ",
+                "name": "แข่งรถ",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "จับคู่ชิ้นเม็ด",
+                "name": "จับคู่ชิ้นเม็ด",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "ส์สนุก",
+                "name": "ส์สนุก",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "การพิมพ์",
+                "name": "การพิมพ์",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "กีฬา",
+                "name": "กีฬา",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "เกี่ยวกับพอร์ทัลนี้",
+            "Terms of Use": "ข้อกำหนดการใช้งาน",
+            "Privacy Policy": "นโยบายความเป็นส่วนตัว",
+            "All": "ทั้งหมด",
+            "Shortcut:": "ทางลัด:",
+            "Close": "ปิด",
+            "More": "เพิ่มเติม",
+            "Search for a game": "ค้นหาเกม",
+            "Install WebGamer": "ติดตั้ง WebGamer",
+            "All categories": "ทุกหมวดหมู่",
+            "Categories": "หมวดหมู่",
+            "Favorites": "รายการโปรด"
+        },
+        "lang": "th",
+        "game": {
+            "uuid": "f98d5f42-4c4a-4bd5-ae75-744ff68992b9",
+            "slug": "conq-io",
+            "name": "Conq.io",
+            "score": 49,
+            "description": "Conq.io เป็นเกมกลยุทธ์แบบกระเบื้องที่คุณขยายอาณาจักร สะสมทรัพยากร สร้างอาคาร และจัดการหน่วยเพื่อเอาชนะคู่แข่ง!",
+            "instructions": "- คลิกที่ช่องของคุณเพื่อรับสมัครหน่วยหรือสร้างอาคาร\n- ย้ายหน่วยเพื่อยึดครองช่องให้มากที่สุดเพื่อรับอาหารเพิ่ม\n- ใช้อาหารในการซื้อหน่วยและอาคาร\n- ติดตามบทแนะนำในเกมเพื่อเรียนรู้กลไกของเกม",
+            "pokiUrl": "https://poki.com/en/g/conq-io",
+            "allowIframe": true,
+            "externalPlayUrl": "https://www.conq.io/",
+            "superficialEngine": {
+                "slug": "godot",
+                "name": "Godot"
+            },
+            "superficialSimilars": [],
+            "superficialTags": [
+                {
+                    "slug": "กลยุทธ์",
+                    "name": "กลยุทธ์",
+                    "iconKey": "strategy"
+                }
+            ],
+            "superficialMonetizations": [
+                {
+                    "label": "ฟรีและไม่มีโฆษณา",
+                    "slug": "ฟรี-ไม่มีโฆษณา",
+                    "iconKey": "money-off",
+                    "iconColor": "green"
+                }
+            ],
+            "detailedDeveloper": {
+                "name": "Modd.io",
+                "url": "https://www.modd.io/",
+                "superficialGames": [
+                    {
+                        "slug": "modd-io",
+                        "name": "Modd.io",
+                        "score": 41,
+                        "allowIframe": true,
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "conq-io",
+                        "name": "Conq.io",
+                        "score": 49,
+                        "allowIframe": true,
+                        "mobileSupport": 2
+                    }
+                ]
+            },
+            "playerFriendlyType": "100-FREE",
+            "discordUrl": "https://discord.com/invite/jc9fJdy7db",
+            "mobileSupport": 2,
+            "players": [
+                {
+                    "label": "1 คน",
+                    "slug": "1-คน",
+                    "iconKey": "person"
+                },
+                {
+                    "label": "หลายคน",
+                    "slug": "หลายคน",
+                    "iconKey": "people"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "starblast",
+                    "name": "Starblast",
+                    "score": 50,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "hole-io",
+                    "name": "Hole.io",
+                    "score": 50,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "captain-forever-io",
+                    "name": "CaptainForever.io",
+                    "score": 50,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true
+                },
+                {
+                    "slug": "army-clash-io",
+                    "name": "ArmyClash.io",
+                    "score": 49,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "roams-io",
+                    "name": "Roams.io",
+                    "score": 49,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "mini-mana",
+                    "name": "Mini Mana",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "fullscreenLock": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "konkr-io",
+                    "name": "Konkr.io",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "athena-crisis",
+                    "name": "Athena Crisis",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "evoworld-io",
+                    "name": "EvoWorld.io (FlyOrDie.io)",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "swordbattle-io",
+                    "name": "Swordbattle.io",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "candy-riot",
+                    "name": "Candy Riot",
+                    "score": 45,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "pvpz-io",
+                    "name": "PvPz.io",
+                    "score": 45,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "lord-of-the-harvest",
+                    "name": "Lord of the Harvest",
+                    "score": 43,
+                    "allowIframe": true
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "ไม่พบเกม",
+            "Play %s on WebGamer": "เล่น %s บน WebGamer",
+            "Free with no ads": "ฟรีและไม่มีโฆษณา",
+            "Cryptocurrency": "สกุลเงินดิจิทัล",
+            "cryptocurrency": "สกุลเงินดิจิทัล",
+            "free-no-ads": "ฟรี-ไม่มีโฆษณา",
+            "1 Player": "1 คน",
+            "1-player": "1-คน",
+            "Multiplayer": "หลายคน",
+            "multiplayer": "หลายคน",
+            "Play": "เล่น",
+            "Learn more": "เรียนรู้เพิ่มเติม",
+            "More": "เพิ่มเติม",
+            "Wishlist on Steam": "เพิ่มไปยังรายการที่ต้องการบน Steam",
+            "Follow on Twitter": "ติดตามบน Twitter",
+            "Buy on Steam": "ซื้อบน Steam",
+            "Support on Patreon": "สนับสนุนใน Patreon",
+            "Follow on itch.io": "ติดตามบน itch.io",
+            "Join the Discord": "เข้าร่วม Discord",
+            "This game is 100% free and has no ads.": "เกมนี้เป็นฟรี 100% และไม่มีโฆษณา",
+            "This ad-free demo is highly replayable.": "ตัวอย่างเกมฟรีนี้สามารถเล่นซ้ำได้มากครับ",
+            "This is a free promotional game.": "นี่เป็นเกมโปรโมชั่นฟรี",
+            "This game contains few ads.": "เกมนี้มีโฆษณาน้อย",
+            "Game monetized with cosmetics.": "เกมที่มีรายได้จากเครื่องสำอาง",
+            "Content warning": "คำเตือนเนื้อหา",
+            "Preorder": "สั่งซื้อล่วงหน้า",
+            "on ": "บน ",
+            "Expand": "ขยาย",
+            "Fullscreen": "เต็มจอ",
+            "Play fullscreen": "เล่นเต็มจอ",
+            "Close": "ปิด",
+            "You will lose your progress. Close the game?": "คุณจะสูญเสียความคืบหน้าของคุณ ปิดเกม?",
+            "Cancel": "ยกเลิก",
+            "How to play %s?": "วิธีเล่น %s อย่างไร?",
+            "Who created %s?": "ใครสร้าง %s นี้?",
+            "Similar to:": "คล้ายกัน:",
+            "Engine:": "เครื่องยนต์:",
+            "Website": "เว็บไซต์",
+            "Developer:": "นักพัฒนา:",
+            "Open-source license:": "ใบอนุญาตโค้ดเปิด:",
+            "Share": "แบ่งปัน",
+            "Something went wrong!": "บางอย่างผิดพลาด!",
+            "Link copied!": "คัดลอกลิงก์แล้ว!",
+            "Games by %s": "เกมโดย %s",
+            "Powered by": "ขับเคลื่อนโดย",
+            "This game is no longer available.": "เกมนี้ไม่มีอยู่แล้ว"
+        },
+        "headTitle": "CONQ.IO 🎮 เล่น Conq.io บน WebGamer",
+        "headDescription": "Conq.io เป็นเกมกลยุทธ์แบบกระเบื้องที่คุณขยายอาณาจักร สะสมทรัพยากร สร้างอาคาร และจัดการหน่วยเพื่อเอาชนะคู่แข่ง!",
+        "socialImage": "https://webgamer.io/games/conq-io/conq-io.1280x.85pc.webp",
+        "url": "https://webgamer.io/th/g/conq-io"
+    },
+    "__N_SSG": true
+}

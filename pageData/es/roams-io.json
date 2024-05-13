@@ -1,0 +1,319 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "disparos",
+                "name": "Disparos",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "aventura",
+                "name": "Aventura",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "estrategia",
+                "name": "Estrategia",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "casual",
+                "name": "Casual",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "conducir",
+                "name": "Conducir",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "cartas",
+                "name": "Cartas",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "puzzle",
+                "name": "Puzzle",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "musica",
+                "name": "Música",
+                "iconKey": "music"
+            },
+            {
+                "slug": "plataformas",
+                "name": "Plataformas",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "carreras",
+                "name": "Carreras",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "combinacion",
+                "name": "Combinación",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "divertido",
+                "name": "Divertido",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "mecanografia",
+                "name": "Mecanografía",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "deportes",
+                "name": "Deportes",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "Acerca de este portal",
+            "Terms of Use": "Términos de uso",
+            "Privacy Policy": "Política de privacidad",
+            "All": "Todo",
+            "Shortcut:": "Atajo:",
+            "Close": "Cerrar",
+            "More": "Más",
+            "Search for a game": "Buscar un juego",
+            "Install WebGamer": "Instalar WebGamer",
+            "All categories": "Todas las categorías",
+            "Categories": "Categorías",
+            "Favorites": "Favoritos"
+        },
+        "lang": "es",
+        "game": {
+            "uuid": "434f2b2e-e4eb-4e2f-8f40-2ab8eed46c96",
+            "slug": "roams-io",
+            "name": "Roams.io",
+            "score": 49,
+            "description": "Roams.io es un juego de supervivencia donde evolucionas tu animal subiendo en la cadena alimenticia. ¡Come alimentos y otros jugadores en varios biomas para hacerte más fuerte y alcanzar la cima de la tabla de clasificación!",
+            "instructions": "- Mueve tu ratón para ir en esa dirección.\n- Come objetos rodeados de verde y evita a los jugadores rodeados de rojo.\n- Clic izquierdo o Espacio: Acelera (consume agua).\n- W: Acciones especiales cuando estén disponibles.",
+            "allowIframe": true,
+            "externalPlayUrl": "https://roams.io/",
+            "superficialEngine": {
+                "slug": "javascript",
+                "name": "JavaScript"
+            },
+            "superficialSimilars": [
+                {
+                    "name": "Mope.io",
+                    "slug": null
+                }
+            ],
+            "superficialTags": [
+                {
+                    "slug": "estrategia",
+                    "name": "Estrategia",
+                    "iconKey": "strategy"
+                }
+            ],
+            "superficialMonetizations": [],
+            "detailedDeveloper": {
+                "name": "Roams Team",
+                "url": "https://discord.com/invite/roams-io-1064222211537379388",
+                "superficialGames": [
+                    {
+                        "slug": "roams-io",
+                        "name": "Roams.io",
+                        "score": 49,
+                        "allowIframe": true,
+                        "preferredOrientation": "LANDSCAPE",
+                        "mobileSupport": 2
+                    }
+                ]
+            },
+            "discordUrl": "https://discord.com/invite/roams-io-1064222211537379388",
+            "mobileSupport": 2,
+            "preferredOrientation": "LANDSCAPE",
+            "players": [
+                {
+                    "label": "Multijugador",
+                    "slug": "multijugador",
+                    "iconKey": "people"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "starblast",
+                    "name": "Starblast",
+                    "score": 50,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "hole-io",
+                    "name": "Hole.io",
+                    "score": 50,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "captain-forever-io",
+                    "name": "CaptainForever.io",
+                    "score": 50,
+                    "specialAttribute": "NEW",
+                    "allowIframe": true
+                },
+                {
+                    "slug": "conq-io",
+                    "name": "Conq.io",
+                    "score": 49,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "army-clash-io",
+                    "name": "ArmyClash.io",
+                    "score": 49,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "mini-mana",
+                    "name": "Mini Mana",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "fullscreenLock": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "konkr-io",
+                    "name": "Konkr.io",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "athena-crisis",
+                    "name": "Athena Crisis",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "evoworld-io",
+                    "name": "EvoWorld.io (FlyOrDie.io)",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "swordbattle-io",
+                    "name": "Swordbattle.io",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "candy-riot",
+                    "name": "Candy Riot",
+                    "score": 45,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "pvpz-io",
+                    "name": "PvPz.io",
+                    "score": 45,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "lord-of-the-harvest",
+                    "name": "Lord of the Harvest",
+                    "score": 43,
+                    "allowIframe": true
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Juego no encontrado",
+            "Play %s on WebGamer": "Jugar a %s en WebGamer",
+            "Free with no ads": "Gratis sin anuncios",
+            "Cryptocurrency": "Criptomoneda",
+            "cryptocurrency": "criptomoneda",
+            "free-no-ads": "gratis-sin-anuncios",
+            "1 Player": "1 Jugador",
+            "1-player": "1-jugador",
+            "Multiplayer": "Multijugador",
+            "multiplayer": "multijugador",
+            "Play": "Jugar",
+            "Learn more": "Aprende más",
+            "More": "Más",
+            "Wishlist on Steam": "Añadir a tu lista de deseos en Steam",
+            "Follow on Twitter": "Seguir en Twitter",
+            "Buy on Steam": "Comprar en Steam",
+            "Support on Patreon": "Apoyar en Patreon",
+            "Follow on itch.io": "Seguir en itch.io",
+            "Join the Discord": "Únete al Discord",
+            "This game is 100% free and has no ads.": "Este juego es 100% gratis y sin anuncios.",
+            "This ad-free demo is highly replayable.": "Esta demo sin anuncios es muy rejugable.",
+            "This is a free promotional game.": "Este juego promocional es gratis.",
+            "This game contains few ads.": "Este juego contiene pocos anuncios.",
+            "Game monetized with cosmetics.": "Juego monetizado con cosméticos.",
+            "Content warning": "Advertencia de contenido",
+            "Preorder": "Preordenar",
+            "on ": "en ",
+            "Expand": "Expandir",
+            "Fullscreen": "Pantalla completa",
+            "Play fullscreen": "Jugar en pantalla completa",
+            "Close": "Cerrar",
+            "You will lose your progress. Close the game?": "Perderás tu progreso. ¿Cerrar el juego?",
+            "Cancel": "Cancelar",
+            "How to play %s?": "¿Cómo jugar a %s?",
+            "Who created %s?": "¿Quién creó %s?",
+            "Similar to:": "Similar a:",
+            "Engine:": "Motor:",
+            "Website": "Sitio web",
+            "Developer:": "Desarrollador:",
+            "Open-source license:": "Licencia de código abierto:",
+            "Share": "Compartir",
+            "Something went wrong!": "Algo salió mal!",
+            "Link copied!": "¡Enlace copiado!",
+            "Games by %s": "Juegos por %s",
+            "Powered by": "Desarrollado por",
+            "This game is no longer available.": "Este juego ya no está disponible."
+        },
+        "headTitle": "ROAMS.IO 🎮 Jugar a Roams.io en WebGamer",
+        "headDescription": "Roams.io es un juego de supervivencia donde evolucionas tu animal subiendo en la cadena alimenticia. ¡Come alimentos y otros jugadores en varios biomas para hacerte más fuerte y alcanzar la cima de la...",
+        "socialImage": "https://webgamer.io/games/roams-io/roams-io.1280x.85pc.webp",
+        "url": "https://webgamer.io/es/g/roams-io"
+    },
+    "__N_SSG": true
+}

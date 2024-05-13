@@ -5,7 +5,7 @@ import Layout from "../../../components/layout";
 import Link from "next/link";
 import clsx from "clsx";
 import ImageTilt from "../../../components/TiltComponent/ImageTilt";
-import { ThemeProvider } from "@material-tailwind/react";
+import { DialogHeader, ThemeProvider } from "@material-tailwind/react";
 
 import {
     Drawer,
@@ -18,6 +18,7 @@ import {
 } from "@material-tailwind/react";
 import MyContext from "../../../components/MyContext";
 import { SlideFade } from "@chakra-ui/react";
+import { InitialIcons } from "../../../components/InitialIcons";
 export default function Game({ pageData, allGamesData }) {
     const theme = {
         dialog: {
@@ -37,6 +38,7 @@ export default function Game({ pageData, allGamesData }) {
     const [playing, setPlaying] = useState(true);
     const [openImg, setOpenImg] = useState(false);
     const [openImg1, setOpenImg1] = useState(false);
+    const [openDeveloper, setOpenDeveloper] = useState(false);
     const [expand, setExpand] = useState(false);
     const [openClose, setOpenClose] = useState(false);
     const handleCloseGame = () => {
@@ -47,6 +49,7 @@ export default function Game({ pageData, allGamesData }) {
     const handleExpand = () => setExpand((cur) => !cur);
     const handlePlaying = () => setPlaying((cur) => !cur);
     const handleOpenImg = () => { setOpenImg((cur) => !cur) };
+    const handleOpenDeveloper = () => { setOpenDeveloper((cur) => !cur) };
     const handleOpenImg1 = () => { setOpenImg1((cur) => !cur) };
     useEffect(() => {
         const storedData = localStorage.getItem('fav');
@@ -77,7 +80,7 @@ export default function Game({ pageData, allGamesData }) {
                     <iframe
                         title={gameData.name}
                         src={gameData.externalPlayUrl}
-                        className='absolute w-full h-full'
+                        className='full-iframe'
                         allow="fullscreen; allow-orientation-lock; autoplay; camera; midi; gyroscope; accelerometer; monetization; clipboard-read; clipboard-write; xr; xr-spatial-tracking; gamepad; geolocation; microphone; cross-origin-isolated; focus-without-user-activation *; keyboard-map *; payment; screen-wake-lock"
                     /> :
                     <MyContext.Provider value={favs}>
@@ -108,8 +111,8 @@ export default function Game({ pageData, allGamesData }) {
                                         <div className="grid xl:grid-cols-4 gap-10">
                                             <div className="xl:col-span-3 text-white">
                                                 <div className="md:flex md:justify-between pb-4">
-                                                    <div className="justify-start text-4xl text-center p-3 md:p-0">{gameData.name}</div>
-                                                    <div className="justify-end">
+                                                    <div className="justify-start text-4xl font-bold text-center p-3 md:p-0">{gameData.name}</div>
+                                                    <div className="justify-end flex items-center flex-row gap-3">
                                                         <button
                                                             type="button"
                                                             className="text-[#ffa500] px-2 py-2 hover:bg-gray-900"
@@ -124,15 +127,19 @@ export default function Game({ pageData, allGamesData }) {
                                                         {
                                                             playing ?
                                                                 <>
-                                                                    <button type="button" className="text-white bg-gray-700 font-medium rounded-md text-sm px-4 py-2 mx-1 text-center" onClick={handleExpand}>
-                                                                        <i className="fa-solid fa-maximize pr-3"></i>
+                                                                    <button type="button" className="inline-flex appearance-none items-center justify-center align-middle leading-5 font-semibold h-10 min-w-10 px-4 rounded-lg bg-gray-700 text-base" onClick={handleExpand}>
+                                                                        <span className="self-center inline-flex shrink-0 mr-2">
+                                                                            <svg className="inline-block w-5 h-5 leading-4 shrink-0" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" height="1em" width="1em" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+                                                                        </span>
                                                                         {pageData.pageTr["Expand"]}
                                                                     </button>
-                                                                    <button type="button" className="text-black bg-white font-medium rounded-md text-sm px-4 py-2 mx-1 text-center" onClick={handleExpand}>
-                                                                        <i className="fa-solid fa-expand pr-3"></i>
+                                                                    <button type="button" className="text-black bg-white inline-flex appearance-none items-center justify-center align-middle leading-5 font-semibold h-10 min-w-10 px-4 rounded-lg bg-gray-700 text-base" onClick={handleExpand}>
+                                                                        <span className="self-center inline-flex shrink-0 mr-2">
+                                                                            <svg className="inline-block w-7 h-7 leading-4 shrink-0" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" stroke="currentColor" height="1em" width="1em" aria-hidden="true" focusable="false"><path fill="none" d="M0 0h24v24H0z"></path><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"></path></svg>
+                                                                        </span>
                                                                         {pageData.pageTr["Fullscreen"]}
                                                                     </button>
-                                                                    <button type="button" className="text-white bg-transparent font-medium text-sm px-4 py-2 mx-1 text-center" onClick={handleOpenClose}>
+                                                                    <button type="button" className="text-white bg-transparent font-medium text-base px-4 py-2 mx-1 text-center" onClick={handleOpenClose}>
                                                                         <i className="fa-solid fa-close pr-3"></i>
                                                                         {pageData.pageTr["Close"]}
                                                                     </button>
@@ -156,7 +163,7 @@ export default function Game({ pageData, allGamesData }) {
                                                         <iframe
                                                             title={gameData.name}
                                                             src={gameData.externalPlayUrl}
-                                                            className='w-full aspect-w-16 aspect-h-9 rounded-lg'
+                                                            className='w-full aspect-video rounded-lg'
                                                             allow="fullscreen; allow-orientation-lock; autoplay; camera; midi; gyroscope; accelerometer; monetization; clipboard-read; clipboard-write; xr; xr-spatial-tracking; gamepad; geolocation; microphone; cross-origin-isolated; focus-without-user-activation *; keyboard-map *; payment; screen-wake-lock"
                                                         /> :
                                                         <div className="grid grid-cols-2 gap-4">
@@ -188,7 +195,16 @@ export default function Game({ pageData, allGamesData }) {
                                                             {
                                                                 gameData.superficialTags.map(tag => (
                                                                     <Link href={`/en/${tag.slug}`} className="border border-gray-600 text-white bg-transparent hover:bg-gray-900 rounded-full text-sm px-5 py-1 me-2 mb-2" key={tag.slug}>
+                                                                        <span className='pr-1'>{InitialIcons[tag.iconKey]}</span>
                                                                         {tag.name}
+                                                                    </Link>
+                                                                ))
+                                                            }
+                                                            {
+                                                                gameData.players.map(player => (
+                                                                    <Link href={`/en/player/${player.slug}`} className="border border-gray-600 text-white bg-transparent hover:bg-gray-900 rounded-full text-sm px-5 py-1 me-2 mb-2" key={player.slug}>
+                                                                        <span className='pr-1'>{InitialIcons[player.slug]}</span>
+                                                                        {player.label}
                                                                     </Link>
                                                                 ))
                                                             }
@@ -197,7 +213,7 @@ export default function Game({ pageData, allGamesData }) {
                                                         {
                                                             instructions.length > 0 ?
                                                                 <>
-                                                                    <div className="text-lg font-bold py-4">{pageData.pageTr["How to play %s?"].replace('%s', gameData.name)}</div>
+                                                                    <div className="text-4xl font-bold py-4">{pageData.pageTr["How to play %s?"].replace('%s', gameData.name)}</div>
                                                                     <div className="text-sm">
                                                                         <ul role="list" className="list-disc px-3">
                                                                             {
@@ -215,37 +231,95 @@ export default function Game({ pageData, allGamesData }) {
                                                     </div>
                                                     <div>
                                                         <div className="flex justify-end mb-3">
-                                                            <button type="button" className="text-black bg-white font-medium rounded-md text-sm px-4 py-2 mx-1 text-center">
-                                                                <i className="fa-solid fa-share-alt-square pr-3"></i>
+                                                            <button type="button" className="text-black bg-white inline-flex appearance-none items-center justify-center align-middle leading-5 font-semibold h-10 min-w-10 px-4 rounded-lg bg-gray-700 text-base" onClick={handleExpand}>
+                                                                <span className="self-center inline-flex shrink-0 mr-2">
+                                                                    <svg className="inline-block w-6 h-6 leading-4 shrink-0" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" stroke="currentColor" height="1em" width="1em" aria-hidden="true" focusable="false"><path fill="none" d="M0 0h24v24H0z"></path><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"></path></svg>
+                                                                </span>
                                                                 {pageData.pageTr["Share"]}
                                                             </button>
                                                         </div>
                                                         <div className="md:border-l-2 md:border-gray-800 md:pl-4">
                                                             {
-                                                                gameData.detailedDeveloper ?
-                                                                    <div className="text-sm">{pageData.pageTr["Developer:"]} <strong>{gameData.detailedDeveloper.name}</strong></div> : null
+                                                                gameData.pokiUrl ?
+                                                                    <div className="text-sm flex items-center gap-1.5 pb-2">
+                                                                        <div>{pageData.pageTr["Powered by"]} </div>
+                                                                        <Link href={`https://poki.com/${pageData.lang}/g/${gameData.slug}`} className="inline-block">
+                                                                            <img alt="Poki logo" src="https://webgamer.io/poki-white.webp" className="w-10" />
+                                                                        </Link>
+                                                                    </div> : null
                                                             }
                                                             {
-                                                                gameData.superficialSimilars ?
-                                                                    <div className="text-sm">{pageData.pageTr["Similar to:"]}
-                                                                        <strong className="py-1 pl-1">
-                                                                            {gameData.superficialSimilars.map(si => (si.name))}
-                                                                        </strong>
+                                                                gameData.detailedDeveloper ?
+                                                                    <div className="text-sm pb-2">
+                                                                        {pageData.pageTr["Developer:"]}
+                                                                        <span className="font-semibold hover:border-b cursor-pointer" onClick={handleOpenDeveloper}>{gameData.detailedDeveloper.name}</span>
+                                                                        <Dialog
+                                                                            size="lg"
+                                                                            open={openDeveloper}
+                                                                            handler={handleOpenDeveloper}
+                                                                            className='bg-[#181818] p-3 fixed top-11'
+                                                                        >
+                                                                            <DialogHeader className='p-2 text-white text-sm flex items-center justify-between'>
+                                                                                <h1>{pageData.pageTr["Games by %s"].replace('%s', gameData.detailedDeveloper.longName ? gameData.detailedDeveloper.longName : gameData.detailedDeveloper.name)}</h1>
+                                                                                <IconButton variant="text" color="blue-gray" onClick={handleOpenDeveloper}>
+                                                                                    <svg
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        fill="none"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        strokeWidth={2}
+                                                                                        stroke="currentColor"
+                                                                                        className="h-4 w-4"
+                                                                                    >
+                                                                                        <path
+                                                                                            strokeLinecap="round"
+                                                                                            strokeLinejoin="round"
+                                                                                            d="M6 18L18 6M6 6l12 12"
+                                                                                        />
+                                                                                    </svg>
+                                                                                </IconButton>
+                                                                            </DialogHeader>
+                                                                            <DialogBody className='p-2 text-white text-sm'>
+                                                                                <div className="grid gap-2 grid-cols-4">
+                                                                                    {gameData.detailedDeveloper.superficialGames.map(({ slug }) => (
+                                                                                        <Link href={`/en/g/${slug}`} key={slug}>
+                                                                                            <ImageTilt slug={slug} />
+                                                                                        </Link>
+                                                                                    ))}
+                                                                                </div>
+                                                                            </DialogBody>
+                                                                            <DialogFooter className='p-0'>
+                                                                                <Button className='bg-[#4a4a4a] py-2 px-3 mx-1 text-xs' variant="text" color="white" onClick={handleOpenDeveloper} >
+                                                                                    Close
+                                                                                </Button>
+                                                                            </DialogFooter>
+                                                                        </Dialog>
+                                                                    </div> : null
+                                                            }
+                                                            {
+                                                                gameData.superficialSimilars && gameData.superficialSimilars.length > 0 ?
+                                                                    <div className="text-sm pb-2">{pageData.pageTr["Similar to:"]}
+                                                                        <span className="py-1 pl-1 font-semibold">
+                                                                            {gameData.superficialSimilars.map(si => (si.name)).join(", ")}
+                                                                        </span>
                                                                     </div> : null
                                                             }
 
                                                             {
                                                                 gameData.superficialEngine ?
-                                                                    <div className="text-sm">{pageData.pageTr["Engine:"]} <strong>{gameData.superficialEngine.name}</strong></div> : null
+                                                                    <div className="text-sm pb-2">{pageData.pageTr["Engine:"]}
+                                                                        <Link href={`/${pageData.lang}/engine/${gameData.superficialEngine.slug}`} className="pl-1 font-semibold hover:border-b cursor-pointer">
+                                                                            {gameData.superficialEngine.name}
+                                                                        </Link>
+                                                                    </div> : null
                                                             }
-                                                            <span className="font-bold text-sm px-1">
+                                                            <Link href={`${gameData.externalPlayUrl}`} className="font-semibold text-sm px-1">
                                                                 <i className="fa-solid fa-earth pr-2"></i>
-                                                                Website
-                                                            </span>
-                                                            <span className="font-bold text-sm px-1">
+                                                                <span className="hover:border-b cursor-pointer">Website</span>
+                                                            </Link>
+                                                            <Link href={`${gameData.discordUrl}`} className="font-semibold text-sm px-1">
                                                                 <i className="fa-brands fa-discord pr-2"></i>
-                                                                Discord
-                                                            </span>
+                                                                <span className="hover:border-b cursor-pointer">Discord</span>
+                                                            </Link>
                                                         </div>
 
 

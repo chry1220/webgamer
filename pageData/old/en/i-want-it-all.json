@@ -1,0 +1,323 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "shooting",
+                "name": "Shooting",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "adventure",
+                "name": "Adventure",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "strategy",
+                "name": "Strategy",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "casual",
+                "name": "Casual",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "driving",
+                "name": "Driving",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "cards",
+                "name": "Cards",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "puzzle",
+                "name": "Puzzle",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "music",
+                "name": "Music",
+                "iconKey": "music"
+            },
+            {
+                "slug": "platform",
+                "name": "Platform",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "racing",
+                "name": "Racing",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "tile-matching",
+                "name": "Tile-matching",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "fun",
+                "name": "Fun",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "typing",
+                "name": "Typing",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "sports",
+                "name": "Sports",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "About this portal",
+            "Terms of Use": "Terms of Use",
+            "Privacy Policy": "Privacy Policy",
+            "All": "All",
+            "Shortcut:": "Shortcut:",
+            "Close": "Close",
+            "More": "More",
+            "Search for a game": "Search for a game",
+            "Install WebGamer": "Install WebGamer",
+            "All categories": "All categories",
+            "Categories": "Categories",
+            "Favorites": "Favorites"
+        },
+        "lang": "en",
+        "game": {
+            "uuid": "34275b2c-5d1c-4daa-9cda-421c2ab485a0",
+            "slug": "i-want-it-all",
+            "name": "I Want It All",
+            "score": 51,
+            "description": "A promotional brick-breaker game by Merci Michel for MSI.",
+            "instructions": "- Scale: gives a larger paddle- Simultaneity: adds an extra ball\n- Power: makes your paddle shoot lasers\n- Future Shield: prevents losing temporarily\n- BattleReady: the ball goes through bricks\n- Personalization: neon lights!",
+            "websiteUrl": "https://msi.com",
+            "allowIframe": true,
+            "externalPlayUrl": "https://iwantitall.merci-michel.com/",
+            "superficialEngine": {
+                "slug": "three-js",
+                "name": "Three.js"
+            },
+            "superficialSimilars": [
+                {
+                    "name": "Breakout",
+                    "slug": "breakout"
+                },
+                {
+                    "name": "Arkanoid",
+                    "slug": "arkanoid"
+                }
+            ],
+            "superficialTags": [
+                {
+                    "slug": "casual",
+                    "name": "Casual",
+                    "iconKey": "casual"
+                }
+            ],
+            "superficialMonetizations": [],
+            "detailedDeveloper": {
+                "name": "Merci Michel",
+                "url": "https://www.merci-michel.com/projects/",
+                "superficialGames": [
+                    {
+                        "slug": "the-race",
+                        "name": "The Race",
+                        "score": 52,
+                        "allowIframe": true,
+                        "preferredOrientation": "LANDSCAPE",
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "egg-hunt",
+                        "name": "Egg Hunt",
+                        "score": 51,
+                        "allowIframe": true,
+                        "preferredOrientation": "PORTRAIT",
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "i-want-it-all",
+                        "name": "I Want It All",
+                        "score": 51,
+                        "allowIframe": true,
+                        "preferredOrientation": "PORTRAIT",
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "the-race-2",
+                        "name": "The Race – Season 2",
+                        "score": 52,
+                        "allowIframe": true,
+                        "preferredOrientation": "LANDSCAPE",
+                        "mobileSupport": 2
+                    },
+                    {
+                        "slug": "miu-vie-star",
+                        "name": "Miu-Vie Star",
+                        "score": 46,
+                        "allowIframe": true,
+                        "preferredOrientation": "PORTRAIT",
+                        "mobileSupport": 2
+                    }
+                ]
+            },
+            "playerFriendlyType": "PROMO",
+            "cta": "TWITTER-FOLLOW",
+            "ctaUrl": "https://twitter.com/MerciMichel",
+            "mobileSupport": 2,
+            "preferredOrientation": "PORTRAIT",
+            "players": [
+                {
+                    "label": "1 Player",
+                    "slug": "1-player",
+                    "iconKey": "person"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "summer-afternoon",
+                    "name": "Summer Afternoon",
+                    "score": 51,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "egg-hunt",
+                    "name": "Egg Hunt",
+                    "score": 51,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "ducklings",
+                    "name": "Ducklings",
+                    "score": 48,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "crazy-pumpkin",
+                    "name": "Crazy Pumpkin",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "keep-the-hype-up",
+                    "name": "Keep the Hype UP!",
+                    "score": 47,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "swooop",
+                    "name": "Swooop",
+                    "score": 45,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "slash-saber",
+                    "name": "Slash Saber",
+                    "score": 44,
+                    "allowIframe": true,
+                    "preferredOrientation": "PORTRAIT",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "modd-io",
+                    "name": "Modd.io",
+                    "score": 41,
+                    "allowIframe": true,
+                    "mobileSupport": 2
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Game Not Found",
+            "Play %s on WebGamer": "Play %s on WebGamer",
+            "Free with no ads": "Free with no ads",
+            "Cryptocurrency": "Cryptocurrency",
+            "cryptocurrency": "cryptocurrency",
+            "free-no-ads": "free-no-ads",
+            "1 Player": "1 Player",
+            "1-player": "1-player",
+            "Multiplayer": "Multiplayer",
+            "multiplayer": "multiplayer",
+            "Play": "Play",
+            "Learn more": "Learn more",
+            "More": "More",
+            "Wishlist on Steam": "Wishlist on Steam",
+            "Follow on Twitter": "Follow on Twitter",
+            "Buy on Steam": "Buy on Steam",
+            "Support on Patreon": "Support on Patreon",
+            "Follow on itch.io": "Follow on itch.io",
+            "Join the Discord": "Join the Discord",
+            "This game is 100% free and has no ads.": "This game is 100% free and has no ads.",
+            "This ad-free demo is highly replayable.": "This ad-free demo is highly replayable.",
+            "This is a free promotional game.": "This is a free promotional game.",
+            "This game contains few ads.": "This game contains few ads.",
+            "Game monetized with cosmetics.": "Game monetized with cosmetics.",
+            "Content warning": "Content warning",
+            "Preorder": "Preorder",
+            "on ": "on ",
+            "Expand": "Expand",
+            "Fullscreen": "Fullscreen",
+            "Play fullscreen": "Play fullscreen",
+            "Close": "Close",
+            "You will lose your progress. Close the game?": "You will lose your progress. Close the game?",
+            "Cancel": "Cancel",
+            "How to play %s?": "How to play %s?",
+            "Who created %s?": "Who created %s?",
+            "Similar to:": "Similar to:",
+            "Engine:": "Engine:",
+            "Website": "Website",
+            "Developer:": "Developer:",
+            "Open-source license:": "Open-source license:",
+            "Share": "Share",
+            "Something went wrong!": "Something went wrong!",
+            "Link copied!": "Link copied!",
+            "Games by %s": "Games by %s",
+            "Powered by": "Powered by",
+            "This game is no longer available.": "This game is no longer available."
+        },
+        "headTitle": "I WANT IT ALL 🎮 Play I Want It All on WebGamer",
+        "headDescription": "A promotional brick-breaker game by Merci Michel for MSI.",
+        "socialImage": "https://webgamer.io/games/i-want-it-all/i-want-it-all.1280x.85pc.webp",
+        "url": "https://webgamer.io/en/g/i-want-it-all"
+    },
+    "__N_SSG": true
+}
