@@ -77,7 +77,7 @@ export default function HomeWithTag() {
 
 
         mainContent = (
-            <Layout home pageData={pageData} allGamesData={allGamesData}>
+            <Layout pageData={pageData} allGamesData={allGamesData}>
                 <AnimateLayout key={tagSlug}>
                     <div className="bg-[#181818] py-2 text-white">
 

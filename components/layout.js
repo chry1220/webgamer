@@ -14,7 +14,7 @@ export default function Layout({ children, home, pageData, allGamesData }) {
           referrerpolicy="no-referrer"
         />
       </Head>
-      <Navbar pageData={pageData} lang={pageData.lang} allGamesData={allGamesData} />
+      <Navbar home={home} pageData={pageData} lang={pageData.lang} allGamesData={allGamesData} />
       {children}
       <Footer pageData={pageData} />
     </div>
