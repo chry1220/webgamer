@@ -1,0 +1,333 @@
+{
+    "pageProps": {
+        "navTags": [
+            {
+                "slug": "bắn-súng",
+                "name": "Bắn súng",
+                "iconKey": "shooting"
+            },
+            {
+                "slug": "phiêu-lưu",
+                "name": "Phiêu lưu",
+                "iconKey": "adventure"
+            },
+            {
+                "slug": "chiến-thuật",
+                "name": "Chiến thuật",
+                "iconKey": "strategy"
+            },
+            {
+                "slug": "giải-trí",
+                "name": "Giải trí",
+                "iconKey": "casual"
+            },
+            {
+                "slug": "lái-xe",
+                "name": "Lái xe",
+                "iconKey": "driving"
+            }
+        ],
+        "moreTags": [
+            {
+                "slug": "mmorpg",
+                "name": "MMORPG",
+                "iconKey": "mmorpg"
+            },
+            {
+                "slug": "thẻ-bài",
+                "name": "Thẻ bài",
+                "iconKey": "cards"
+            },
+            {
+                "slug": "moba",
+                "name": "MOBA",
+                "iconKey": "moba"
+            },
+            {
+                "slug": "giải-đố",
+                "name": "Giải đố",
+                "iconKey": "puzzle"
+            },
+            {
+                "slug": "âm-nhạc",
+                "name": "Âm nhạc",
+                "iconKey": "music"
+            },
+            {
+                "slug": "nền-tảng",
+                "name": "Nền tảng",
+                "iconKey": "platform"
+            },
+            {
+                "slug": "battle-royale",
+                "name": "Battle Royale",
+                "iconKey": "battle-royale"
+            },
+            {
+                "slug": "đua-xe",
+                "name": "Đua xe",
+                "iconKey": "racing"
+            },
+            {
+                "slug": "ghép-các-ô",
+                "name": "Ghép các ô",
+                "iconKey": "tile-matching"
+            },
+            {
+                "slug": "vui-nhộn",
+                "name": "Vui nhộn",
+                "iconKey": "fun"
+            },
+            {
+                "slug": "tower-defense",
+                "name": "Tower Defense",
+                "iconKey": "tower-defense"
+            },
+            {
+                "slug": "đánh-máy",
+                "name": "Đánh Máy",
+                "iconKey": "typing"
+            },
+            {
+                "slug": "thể-thao",
+                "name": "Thể thao",
+                "iconKey": "sports"
+            },
+            {
+                "slug": "rpg",
+                "name": "RPG",
+                "iconKey": "rpg"
+            }
+        ],
+        "layoutTr": {
+            "About this portal": "Về trang web này",
+            "Terms of Use": "Điều khoản sử dụng",
+            "Privacy Policy": "Chính sách bảo mật",
+            "All": "Tất cả",
+            "Shortcut:": "Phím tắt:",
+            "Close": "Đóng",
+            "More": "Thêm",
+            "Search for a game": "Tìm kiếm một trò chơi",
+            "Install WebGamer": "Cài đặt WebGamer",
+            "All categories": "Tất cả các loại",
+            "Categories": "Thể loại",
+            "Favorites": "Yêu thích"
+        },
+        "lang": "vn",
+        "game": {
+            "uuid": "abf43ba9-5cee-4697-814e-c95cc78a9092",
+            "slug": "redead-io",
+            "name": "reDEAD",
+            "score": 51,
+            "description": "reDEAD.io là một trò chơi bắn súng sinh tồn nơi bạn phòng thủ căn cứ của mình chống lại làn sóng xác sống và quái vật với nhiều loại vũ khí khác nhau. Nâng cấp nhân vật của bạn và tồn tại càng lâu càng tốt!",
+            "instructions": "- WASD hoặc mũi tên: Di chuyển\n- Nhấp chuột trái: Bắn\n- 1 đến 4: Đổi vũ khí",
+            "allowIframe": true,
+            "externalPlayUrl": "https://redead.io",
+            "superficialEngine": {
+                "slug": "three-js",
+                "name": "Three.js"
+            },
+            "superficialSimilars": [
+                {
+                    "name": "Vampire Survivors",
+                    "slug": "vampire-survivors"
+                }
+            ],
+            "superficialTags": [
+                {
+                    "slug": "bắn-súng",
+                    "name": "Bắn súng",
+                    "iconKey": "shooting"
+                }
+            ],
+            "superficialMonetizations": [],
+            "detailedDeveloper": {
+                "name": "TheoTheDev",
+                "longName": "TheoTheDev (Bohdan Horpynchuk)",
+                "url": "https://twitter.com/theo_the_dev",
+                "superficialGames": [
+                    {
+                        "slug": "redead-io",
+                        "name": "reDEAD",
+                        "score": 51,
+                        "allowIframe": true,
+                        "preferredOrientation": "LANDSCAPE",
+                        "mobileSupport": 2
+                    }
+                ]
+            },
+            "playerFriendlyType": "100-FREE",
+            "discordUrl": "https://discord.gg/SaAfCFjm8C",
+            "mobileSupport": 2,
+            "preferredOrientation": "LANDSCAPE",
+            "players": [
+                {
+                    "label": "Nhiều người chơi",
+                    "slug": "đa-người",
+                    "iconKey": "people"
+                }
+            ],
+            "relatedGames": [
+                {
+                    "slug": "venge-io",
+                    "name": "Venge.io",
+                    "score": 54,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "narrow-one",
+                    "name": "Narrow One",
+                    "score": 53,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "cryzen-io",
+                    "name": "Cryzen.io",
+                    "score": 53,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "deadshot-io",
+                    "name": "Deadshot.io",
+                    "score": 52,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "ev-io",
+                    "name": "ev.io",
+                    "score": 50,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "jamir",
+                    "name": "Jamir",
+                    "score": 50,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "slay-one",
+                    "name": "Slay.one",
+                    "score": 50,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "smash-karts",
+                    "name": "Smash Karts",
+                    "score": 49,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "shell-shockers",
+                    "name": "Shell Shockers",
+                    "score": 48,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "deadswitch-3",
+                    "name": "Deadswitch 3",
+                    "score": 48,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "dinogen-online",
+                    "name": "Dinogen Online",
+                    "score": 48,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "arsenal-online",
+                    "name": "Arsenal Online",
+                    "score": 48,
+                    "allowIframe": true
+                },
+                {
+                    "slug": "bad-egg",
+                    "name": "Bad Egg",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 1
+                },
+                {
+                    "slug": "earths-greatest-defender",
+                    "name": "Earth's Greatest Defender",
+                    "score": 47,
+                    "allowIframe": true,
+                    "preferredOrientation": "LANDSCAPE",
+                    "mobileSupport": 2
+                },
+                {
+                    "slug": "rocket-bot-royale",
+                    "name": "Rocket Bot Royale",
+                    "score": 47,
+                    "allowIframe": true
+                }
+            ]
+        },
+        "pageTr": {
+            "Game Not Found": "Không tìm thấy trò chơi",
+            "Play %s on WebGamer": "Chơi %s trên WebGamer",
+            "Free with no ads": "Hoàn toàn miễn phí",
+            "Cryptocurrency": "Tiền điện tử",
+            "cryptocurrency": "tiền-điện-tử",
+            "free-no-ads": "miễn-phí-không-quảng-cáo",
+            "1 Player": "1 Người chơi",
+            "1-player": "1-người",
+            "Multiplayer": "Nhiều người chơi",
+            "multiplayer": "đa-người",
+            "Play": "Chơi",
+            "Learn more": "Tìm hiểu thêm",
+            "More": "Thêm",
+            "Wishlist on Steam": "Thêm vào danh sách mong muốn trên Steam",
+            "Follow on Twitter": "Theo dõi trên Twitter",
+            "Buy on Steam": "Mua trên Steam",
+            "Support on Patreon": "Ủng hộ trên Patreon",
+            "Follow on itch.io": "Theo dõi trên itch.io",
+            "Join the Discord": "Tham gia Discord",
+            "This game is 100% free and has no ads.": "Trò chơi 100% miễn phí, không quảng cáo.",
+            "This ad-free demo is highly replayable.": "Démo miễn phí chơi lại nhiều lần.",
+            "This is a free promotional game.": "Đây là một trò chơi quảng cáo miễn phí.",
+            "This game contains few ads.": "Trò chơi này có rất ít quảng cáo.",
+            "Game monetized with cosmetics.": "Trò chơi được tiếp thị với mỹ phẩm.",
+            "Content warning": "Cảnh báo nội dung",
+            "Preorder": "Đặt hàng trước",
+            "on ": "trên ",
+            "Expand": "Mở rộng",
+            "Fullscreen": "Toàn màn hình",
+            "Play fullscreen": "Chơi toàn màn hình",
+            "Close": "Đóng",
+            "You will lose your progress. Close the game?": "Bạn sẽ mất tiến trình của mình. Đóng trò chơi?",
+            "Cancel": "Hủy",
+            "How to play %s?": "Làm thế nào để chơi %s?",
+            "Who created %s?": "Ai đã tạo %s?",
+            "Similar to:": "Tương tự:",
+            "Engine:": "Động cơ:",
+            "Website": "Trang web",
+            "Developer:": "Nhà phát triển:",
+            "Open-source license:": "Giấy phép mã nguồn mở:",
+            "Share": "Chia sẻ",
+            "Something went wrong!": "Đã xảy ra lỗi!",
+            "Link copied!": "Đã sao chép liên kết!",
+            "Games by %s": "Trò chơi bởi %s",
+            "Powered by": "Được hỗ trợ bởi",
+            "This game is no longer available.": "Trò chơi này không còn nữa."
+        },
+        "headTitle": "REDEAD 🎮 Chơi reDEAD trên WebGamer",
+        "headDescription": "reDEAD.io là một trò chơi bắn súng sinh tồn nơi bạn phòng thủ căn cứ của mình chống lại làn sóng xác sống và quái vật với nhiều loại vũ khí khác nhau. Nâng cấp nhân vật của bạn và tồn tại càng lâu càn...",
+        "socialImage": "https://webgamer.io/games/redead-io/redead-io.1280x.85pc.webp",
+        "url": "https://webgamer.io/vn/g/redead-io"
+    },
+    "__N_SSG": true
+}

@@ -9,7 +9,7 @@ export default function Footer({ home, pageData }) {
     const changeLanguage = (newLang) => {
 
         let { lang, ...query } = router.query;
-        if (query.tag == null && lang) {
+        if (query.tagSlug == null && lang) {
             const updatedQuery = { ...query, lang: newLang };
             const newUrl = {
                 pathname: router.pathname,
@@ -35,13 +35,13 @@ export default function Footer({ home, pageData }) {
                                     <i className="fa-brands fa-twitter"></i>
                                 </Link>
                             </div>
-                            <Link href={`/`} className='md:px-4 text-lg font-bold'>
+                            <Link href={`/${lang}/about`} className='md:px-4 text-lg font-bold'>
                                 {pageData.layoutTr["About this portal"]}
                             </Link>
                         </div>
                         <div className="md:justify-end text-center md:mt-0 mt-3">
-                            <Link href={`/`} className='px-2 block sm:inline'>{pageData.layoutTr["Terms of Use"]}</Link>
-                            <Link href={`/`} className='px-2 block sm:inline'>{pageData.layoutTr["Privacy Policy"]}</Link>
+                            <Link href={`/${lang}/terms`} className='px-2 block sm:inline'>{pageData.layoutTr["Terms of Use"]}</Link>
+                            <Link href={`/${lang}/privacy`} className='px-2 block sm:inline'>{pageData.layoutTr["Privacy Policy"]}</Link>
                             {
                                 shortLangs.map(sl => (
                                     lang == sl ? null : <div key={sl} onClick={() => changeLanguage(sl)} className='px-2 block sm:inline cursor-pointer'>{enableLang[sl]}</div>
