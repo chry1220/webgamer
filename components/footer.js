@@ -7,7 +7,6 @@ export default function Footer({ home, pageData }) {
     let { lang, ...query } = router.query;
     const shortLangs = Object.keys(enableLang);
     const changeLanguage = (newLang) => {
-
         let { lang, ...query } = router.query;
         if (query.tagSlug == null && lang) {
             const updatedQuery = { ...query, lang: newLang };

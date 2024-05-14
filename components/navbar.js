@@ -30,6 +30,7 @@ export default function Navbar({ pageData, allGamesData }) {
         }
         setSearchedGame(allGamesData.filter(g => g.slug.indexOf(target.value) > -1));
     }
+
     const [favs, setFavs] = useState([]);
     useEffect(() => {
         const storedData = localStorage.getItem('fav');
@@ -41,9 +42,41 @@ export default function Navbar({ pageData, allGamesData }) {
         setOpenSearch((cur) => !cur)
         setSearchedGame([]);
     };
+
     const openDrawer = () => setOpen(true);
     const closeDrawer = () => setOpen(false);
-
+    const closeSearch = () => setSearchedGame(false);
+    const onClickHome = () => {
+        router.push(`/${pageData.lang}`);
+    }
+    const onClickTag = (tag) => {
+        closeDrawer();
+        let { tagSlug, ...query } = router.query;
+        if (tagSlug == null) {
+            router.push(`/${pageData.lang}/${tag}`);
+        } else {
+            const updatedQuery = { ...query, tagSlug: tag };
+            const newUrl = {
+                pathname: router.pathname,
+                query: updatedQuery,
+            };
+            router.push(newUrl);
+        }
+    }
+    const onClickSearchGame = (gameslug) => {
+        setOpenSearch((cur) => !cur);
+        let { slug, ...query } = router.query;
+        if (slug == null) {
+            router.push(`/${pageData.lang}/g/${gameslug}`);
+        } else {
+            const updatedQuery = { ...query, slug: gameslug };
+            const newUrl = {
+                pathname: router.pathname,
+                query: updatedQuery,
+            };
+            router.push(newUrl);
+        }
+    }
     const theme = {
         dialog: {
             styles: {
@@ -165,12 +198,16 @@ export default function Navbar({ pageData, allGamesData }) {
                                 size="md"
                                 onChange={onSearchValue}
                             />
-                            <div className=''>
+                            <div className='mt-2'>
                                 {searchedGame.map(game => (
-                                    <Link href={`/en/g/${game.slug}`} key={game.slug} className='p-2 hover:bg-gray-900 cursor-pointer grid grid-cols-4 gap-4'>
+                                    // <Link href={`/en/g/${game.slug}`} key={game.slug} className='p-2 hover:bg-gray-900 cursor-pointer grid grid-cols-4 gap-4'>
+                                    //     <img className='rounded-lg h-10' alt="" src={`https://webgamer.io/games/${game.slug}/${game.slug}.240x.85pc.webp`} loading="eager" />
+                                    //     <div className='col-span-3 leading-10 text-white'>{game.name}</div>
+                                    // </Link>
+                                    <button onClick={() => onClickSearchGame(game.slug)} key={game.slug} className='rounded-lg p-2 hover:bg-[#2b2b2b] cursor-pointer grid grid-cols-4 gap-4 w-full'>
                                         <img className='rounded-lg h-10' alt="" src={`https://webgamer.io/games/${game.slug}/${game.slug}.240x.85pc.webp`} loading="eager" />
-                                        <div className='col-span-3 leading-10 text-white'>{game.name}</div>
-                                    </Link>
+                                        <div className='col-span-3 leading-10 text-white text-left'>{game.name}</div>
+                                    </button>
                                 ))}
                             </div>
                         </DialogBody>
@@ -220,17 +257,15 @@ export default function Navbar({ pageData, allGamesData }) {
                             </IconButton>
                         </div>
 
-                        <Link href='/' key={'all'} className="block xl:hidden inline-flex items-center relative align-middle leading-5 h-10 min-w-10 px-4 w-full justify-start hover:bg-[#191919]">
+                        <button onClick={() => onClickHome()} key={'all'} className="block xl:hidden inline-flex items-center relative align-middle leading-5 h-10 min-w-10 px-4 w-full justify-start hover:bg-[#191919]">
                             {/* <i className={`fa-solid w-7 ` + MyIcons["all"]}></i> */}
                             <span className='inline-flex self-center shrink-0 mr-2'>{InitialIcons["all"]}</span>
                             All
-                        </Link>
+                        </button>
                         {
                             navbarData.map(({ slug, name, iconKey }) => (
-                                <Link
-                                    href={
-                                        slug == tagSlug ? `/${pageData.lang}` : `/${pageData.lang}/${slug}`
-                                    }
+                                <button
+                                    onClick={() => onClickTag(slug)}
                                     key={slug}
                                     className={
                                         slug == tagSlug ?
@@ -240,15 +275,13 @@ export default function Navbar({ pageData, allGamesData }) {
                                 >
                                     <span className='inline-flex self-center shrink-0 mr-2'>{InitialIcons[iconKey]}</span>
                                     {name}
-                                </Link>
+                                </button>
                             ))
                         }
                         {
                             moreTags.map(({ slug, name, iconKey }) => (
-                                <Link
-                                    href={
-                                        slug == tagSlug ? `/${pageData.lang}` : `/${pageData.lang}/${slug}`
-                                    }
+                                <button
+                                    onClick={() => onClickTag(slug)}
                                     key={slug}
                                     className={
                                         slug == tagSlug ?
@@ -257,7 +290,7 @@ export default function Navbar({ pageData, allGamesData }) {
                                     }>
                                     <span className='inline-flex self-center shrink-0 mr-2'>{InitialIcons[iconKey]}</span>
                                     {name}
-                                </Link>
+                                </button>
                             ))
                         }
                     </Drawer>
