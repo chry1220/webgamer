@@ -19,7 +19,7 @@ import { InitialIcons } from './InitialIcons';
 export default function Navbar({ pageData, allGamesData }) {
     const parentFavs = useContext(MyContext);
     const router = useRouter();
-    const tag = router.query.tag;
+    const tagSlug = router.query.tagSlug;
     const [open, setOpen] = useState(false);
     const [openSearch, setOpenSearch] = useState(false);
     const [searchedGame, setSearchedGame] = useState([]);
@@ -97,10 +97,10 @@ export default function Navbar({ pageData, allGamesData }) {
                                                 <li key={slug} className='flex items-start'>
                                                     <Link
                                                         href={
-                                                            slug == tag ? `/${pageData.lang}` : `/${pageData.lang}/${slug}`
+                                                            slug == tagSlug ? `/${pageData.lang}` : `/${pageData.lang}/${slug}`
                                                         }
                                                         className={
-                                                            slug == tag ? "border hover:bg-[#0c0c0c] rounded-full h-10 min-w-10 text-base px-4 cursor-pointer inline-flex items-center justify-center relative align-middle leading-5 font-semibold" :
+                                                            slug == tagSlug ? "border hover:bg-[#0c0c0c] rounded-full h-10 min-w-10 text-base px-4 cursor-pointer inline-flex items-center justify-center relative align-middle leading-5 font-semibold" :
                                                                 "hover:bg-[#0c0c0c] rounded-full h-10 min-w-10 text-base px-4 cursor-pointer inline-flex items-center justify-center relative align-middle leading-5 font-semibold"
                                                         }
                                                     >
@@ -229,11 +229,11 @@ export default function Navbar({ pageData, allGamesData }) {
                             navbarData.map(({ slug, name, iconKey }) => (
                                 <Link
                                     href={
-                                        slug == tag ? `/${pageData.lang}` : `/${pageData.lang}/${slug}`
+                                        slug == tagSlug ? `/${pageData.lang}` : `/${pageData.lang}/${slug}`
                                     }
                                     key={slug}
                                     className={
-                                        slug == tag ?
+                                        slug == tagSlug ?
                                             "block xl:hidden inline-flex items-center relative align-middle leading-5 h-10 min-w-10 px-4 w-full justify-start bg-[#191919]" :
                                             "block xl:hidden inline-flex items-center relative align-middle leading-5 h-10 min-w-10 px-4 w-full justify-start hover:bg-[#191919]"
                                     }
@@ -247,11 +247,11 @@ export default function Navbar({ pageData, allGamesData }) {
                             moreTags.map(({ slug, name, iconKey }) => (
                                 <Link
                                     href={
-                                        slug == tag ? `/${pageData.lang}` : `/${pageData.lang}/${slug}`
+                                        slug == tagSlug ? `/${pageData.lang}` : `/${pageData.lang}/${slug}`
                                     }
                                     key={slug}
                                     className={
-                                        slug == tag ?
+                                        slug == tagSlug ?
                                             "inline-flex items-center relative align-middle leading-5 h-10 min-w-10 px-4 w-full justify-start bg-[#191919]" :
                                             "inline-flex items-center relative align-middle leading-5 h-10 min-w-10 px-4 w-full justify-start hover:bg-[#191919]"
                                     }>
