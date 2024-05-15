@@ -6,6 +6,8 @@ import ImageTilt from "../../../components/TiltComponent/ImageTilt";
 import AnimateLayout from "../../../components/AnimateLayout";
 import { DialogHeader, ThemeProvider } from "@material-tailwind/react";
 
+import { motion } from "framer-motion";
+
 import {
     Drawer,
     Button,
@@ -37,7 +39,6 @@ export default function Game() {
     const { lang, slug } = router.query;
     const { globalState } = useGlobalContext();
     const loading = (globalState.allPageData == null);
-
     const [favs, setFavs] = useState([]);
     const [playing, setPlaying] = useState(true);
     const [openImg, setOpenImg] = useState(false);
@@ -55,14 +56,12 @@ export default function Game() {
     const handleOpenImg = () => { setOpenImg((cur) => !cur) };
     const handleOpenDeveloper = () => { setOpenDeveloper((cur) => !cur) };
     const handleOpenImg1 = () => { setOpenImg1((cur) => !cur) };
-
     useEffect(() => {
         const storedData = localStorage.getItem('fav');
         let temp = []
         if (storedData) temp = storedData.split(',');
         setFavs(temp)
     }, []);
-
     const toggleToFavorite = () => {
         let preFavs = favs;
         if (favs.includes(gameData.slug)) {
@@ -170,6 +169,7 @@ export default function Game() {
 
                                                 {
                                                     playing ?
+
                                                         <iframe
                                                             title={gameData.name}
                                                             src={gameData.externalPlayUrl}
@@ -200,7 +200,7 @@ export default function Game() {
                                                         </div>
                                                 }
                                                 <div className="grid md:grid-cols-3 gap-4 mt-6">
-                                                    <div className="col-span-2">
+                                                    <div className="md:col-span-2">
                                                         <div className="mb-6">
                                                             {
                                                                 gameData.superficialTags.map(tag => (
@@ -240,7 +240,7 @@ export default function Game() {
 
                                                     </div>
                                                     <div>
-                                                        <div className="flex justify-end mb-3">
+                                                        <div className="md:flex md:justify-end mb-3 text-center">
                                                             <button type="button" className="text-black bg-white inline-flex appearance-none items-center justify-center align-middle leading-5 font-semibold h-10 min-w-10 px-4 rounded-lg bg-gray-700 text-base">
                                                                 <span className="self-center inline-flex shrink-0 mr-2">
                                                                     <svg className="inline-block w-6 h-6 leading-4 shrink-0" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" stroke="currentColor" height="1em" width="1em" aria-hidden="true" focusable="false"><path fill="none" d="M0 0h24v24H0z"></path><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"></path></svg>
@@ -349,7 +349,9 @@ export default function Game() {
                                             <div className="bg-black rounded-xl p-3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-1 gap-3">
                                                 {gameData.relatedGames.slice(0, 6).map((game) => (
                                                     <div className="rounded-lg relatedgame" key={game.slug}>
-                                                        <ImageTilt game={game} />
+                                                        <Link href={`/en/g/${game.slug}`} key={game.slug}>
+                                                            <ImageTilt game={game} />
+                                                        </Link>
                                                     </div>
                                                 ))}
                                             </div>
@@ -360,7 +362,9 @@ export default function Game() {
                                             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3">
                                                 {gameData.relatedGames.slice(6).map((game) => (
                                                     <div className="rounded-lg relatedgame" key={game.slug}>
-                                                        <ImageTilt game={game} />
+                                                        <Link href={`/en/g/${game.slug}`} key={game.slug}>
+                                                            <ImageTilt game={game} />
+                                                        </Link>
                                                     </div>
                                                 ))}
                                             </div>
