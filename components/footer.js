@@ -34,16 +34,16 @@ export default function Footer({ home, pageData }) {
                                     <i className="fa-brands fa-twitter"></i>
                                 </Link>
                             </div>
-                            <Link href={`/${lang}/about`} className='md:px-4 text-lg font-bold'>
+                            <Link href={`/${lang}/about`} className='md:mx-4 text-lg font-bold hover:border-b'>
                                 {pageData.layoutTr["About this portal"]}
                             </Link>
                         </div>
                         <div className="md:justify-end text-center md:mt-0 mt-3">
-                            <Link href={`/${lang}/terms`} className='px-2 block sm:inline'>{pageData.layoutTr["Terms of Use"]}</Link>
-                            <Link href={`/${lang}/privacy`} className='px-2 block sm:inline'>{pageData.layoutTr["Privacy Policy"]}</Link>
+                            <Link href={`/${lang}/terms`} className='mx-2 block sm:inline hover:border-b'>{pageData.layoutTr["Terms of Use"]}</Link>
+                            <Link href={`/${lang}/privacy`} className='mx-2 block sm:inline hover:border-b'>{pageData.layoutTr["Privacy Policy"]}</Link>
                             {
                                 shortLangs.map(sl => (
-                                    lang == sl ? null : <div key={sl} onClick={() => changeLanguage(sl)} className='px-2 block sm:inline cursor-pointer'>{enableLang[sl]}</div>
+                                    lang == sl ? null : <div key={sl} onClick={() => changeLanguage(sl)} className='mx-2 block sm:inline cursor-pointer hover:border-b'>{enableLang[sl]}</div>
                                 ))
                             }
                         </div>
