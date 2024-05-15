@@ -105,6 +105,7 @@ export default function Game() {
                         <Head>
                             <title>{pageData.headTitle}</title>
                             <link rel="icon" href="https://webgamer.io/favicon.ico" />
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
                         </Head>
                         <AnimateLayout>
                             <ThemeProvider value={theme}>
@@ -159,7 +160,7 @@ export default function Game() {
                                                                         </span>
                                                                         {pageData.pageTr["Fullscreen"]}
                                                                     </button>
-                                                                    <button type="button" className="text-white bg-transparent font-medium text-base px-4 py-2 mx-1 text-center" onClick={handleOpenClose}>
+                                                                    <button type="button" className="sm:block hidden text-white bg-transparent font-medium text-base px-4 py-2 mx-1 text-center" onClick={handleOpenClose}>
                                                                         <i className="fa-solid fa-close pr-3"></i>
                                                                         <span className="hover:border-b">{pageData.pageTr["Close"]}</span>
                                                                     </button>
@@ -180,11 +181,10 @@ export default function Game() {
 
                                                 {
                                                     playing ?
-
                                                         <iframe
                                                             title={gameData.name}
                                                             src={gameData.externalPlayUrl}
-                                                            className='w-full aspect-video rounded-lg'
+                                                            className='w-full aspect-video rounded-lg max-w-full'
                                                             allow="fullscreen; allow-orientation-lock; autoplay; camera; midi; gyroscope; accelerometer; monetization; clipboard-read; clipboard-write; xr; xr-spatial-tracking; gamepad; geolocation; microphone; cross-origin-isolated; focus-without-user-activation *; keyboard-map *; payment; screen-wake-lock"
                                                         /> :
                                                         <div className="grid grid-cols-2 gap-4">
