@@ -21,7 +21,13 @@ module.exports = withMT({
 
       'favbtn': '420px',
 
-      'discordbtn': '400px',
+      'discordbtn': '286px',
+
+      'logoText': '400px',
+
+      'xsm': '350px',
+
+      'mysm': '540px',
       // => @media (min-width: 640px) { ... }
     },
   }

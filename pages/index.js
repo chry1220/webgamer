@@ -161,10 +161,19 @@ export default function Home() {
                   ))}
                 </Grid>
               </div>
-              <div className='sm:hidden'>
+              <div className='hidden xsm:block mysm:hidden'>
                 <div className="grid gap-2 grid-cols-2">
                   {gamesData.map((game) => (
                     <Link href={`/${lang}/g/${game.slug}`} key={game.slug} className='game'>
+                      <ImageTilt game={game} />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <div className='xsm:hidden'>
+                <div className="grid grid-cols-1 gap-2">
+                  {gamesData.map((game) => (
+                    <Link href={`/${lang}/g/${game.slug}`} key={game.slug} className='xsm-game'>
                       <ImageTilt game={game} />
                     </Link>
                   ))}

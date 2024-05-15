@@ -352,7 +352,7 @@ export default function Game() {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="bg-black rounded-xl p-3 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-1 gap-3">
+                                            <div className="xl:grid hidden bg-black rounded-xl p-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-1 gap-3">
                                                 {gameData.relatedGames.slice(0, 6).map((game) => (
                                                     <div className="rounded-lg relatedgame" key={game.slug}>
                                                         <Link href={`/en/g/${game.slug}`} key={game.slug}>
@@ -365,7 +365,16 @@ export default function Game() {
                                     </div>
                                     <div className="bg-black px-6 py-3">
                                         <div className="max-w-[1280px] mx-auto">
-                                            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3">
+                                            <div className="xl:hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3">
+                                                {gameData.relatedGames.map((game) => (
+                                                    <div className="rounded-lg relatedgame" key={game.slug}>
+                                                        <Link href={`/en/g/${game.slug}`} key={game.slug}>
+                                                            <ImageTilt game={game} />
+                                                        </Link>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            <div className="hidden xl:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3">
                                                 {gameData.relatedGames.slice(6).map((game) => (
                                                     <div className="rounded-lg relatedgame" key={game.slug}>
                                                         <Link href={`/en/g/${game.slug}`} key={game.slug}>
