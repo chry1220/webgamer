@@ -7,6 +7,7 @@ import { InitialIcons } from "../../components/InitialIcons";
 import { useGlobalContext } from "../../context";
 import { useRouter } from "next/router";
 import AnimateLayout from "../../components/AnimateLayout";
+import Head from "next/head";
 
 const players = [
     {
@@ -27,9 +28,10 @@ export default function HomeWithTag() {
     const { globalState } = useGlobalContext();
     const loading = (globalState.allPageData == null);
 
-    let pageData, allGamesData = [], mainContent = null, tag, gamesData = [], subTitle;
+    let pageData, allGamesData = [], mainContent = null, tag, gamesData = [], subTitle, pageTitle;
     if (!loading) {
         pageData = globalState.allPageData[lang].index;
+        const pageDataEn = globalState.allPageData["en"].index;
         const allGamesPageData = globalState.allPageData[lang].games;
         allGamesData = allGamesPageData.map(g => g.game);
         let pageType = "";
@@ -78,6 +80,10 @@ export default function HomeWithTag() {
 
         mainContent = (
             <Layout pageData={pageData} allGamesData={allGamesData}>
+                <Head>
+                    <title>{pageData.headTitle}</title>
+                    <link rel="icon" href="https://webgamer.io/favicon.ico" />
+                </Head>
                 <AnimateLayout key={tagSlug}>
                     <div className="bg-[#181818] py-2 text-white">
 

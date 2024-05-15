@@ -5,6 +5,7 @@ import { Grid, GridItem, SlideFade } from '@chakra-ui/react'
 import { useGlobalContext } from '../context';
 
 import AnimateLayout from '../components/AnimateLayout';
+import Head from 'next/head';
 export default function Home() {
   const lang = "en";
   const { globalState } = useGlobalContext();
@@ -16,6 +17,10 @@ export default function Home() {
     gamesData = allGamesData;
     mainContent = (
       <Layout home pageData={pageData} allGamesData={allGamesData}>
+        <Head>
+          <title>{pageData.headTitle}</title>
+          <link rel="icon" href="https://webgamer.io/favicon.ico" />
+        </Head>
         <AnimateLayout>
           <div className='bg-black'>
             <div className="max-w-[1420px] mx-auto mt-14 mb-3 p-3 animate-fadeIn">

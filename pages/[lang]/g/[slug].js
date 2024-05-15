@@ -21,6 +21,7 @@ import MyContext from "../../../components/MyContext";
 import { SlideFade } from "@chakra-ui/react";
 import { InitialIcons } from "../../../components/InitialIcons";
 import { useGlobalContext } from "../../../context";
+import Head from "next/head";
 const theme = {
     dialog: {
         styles: {
@@ -101,6 +102,10 @@ export default function Game() {
             mainContent = (
                 <MyContext.Provider value={favs}>
                     <Layout pageData={pageData} allGamesData={allGamesData}>
+                        <Head>
+                            <title>{pageData.headTitle}</title>
+                            <link rel="icon" href="https://webgamer.io/favicon.ico" />
+                        </Head>
                         <AnimateLayout>
                             <ThemeProvider value={theme}>
                                 <Dialog

@@ -26,6 +26,10 @@ export default function Home() {
         pageData = globalState.allPageData[lang].index;
         allGamesData = globalState.allPageData[lang].games.map(g => g.game);
         mainContent = <Layout home pageData={pageData} allGamesData={allGamesData}>
+            <Head>
+                <title>WebGamer 🎮 Play Free Online Games</title>
+                <link rel="icon" href="https://webgamer.io/favicon.ico" />
+            </Head>
             <div className="bg-[#181818] py-2">
                 <div className="max-w-[1280px] mx-auto mt-14 mb-3 px-3">
                     <div className="text-3xl font-bold pt-4 pb-6 text-white">

@@ -5,6 +5,7 @@ import { Grid, GridItem, SlideFade } from '@chakra-ui/react'
 import { useGlobalContext } from '../../context';
 import { useRouter } from 'next/router';
 import AnimateLayout from '../../components/AnimateLayout';
+import Head from 'next/head';
 export default function Home() {
     const router = useRouter();
     const { lang } = router.query;
@@ -18,6 +19,10 @@ export default function Home() {
         console.log(gamesData);
         mainContent = (
             <Layout home pageData={pageData} allGamesData={allGamesData}>
+                <Head>
+                    <title>{pageData.headTitle}</title>
+                    <link rel="icon" href="https://webgamer.io/favicon.ico" />
+                </Head>
                 <AnimateLayout key={lang}>
                     <div className='bg-black'>
                         <div className="max-w-[1420px] mx-auto mt-14 mb-3 p-3 animate-fadeIn">
@@ -25,17 +30,17 @@ export default function Home() {
                                 <Grid
                                     templateAreas={
                                         `".. .. .. .. b1 b1 .."
-                  ".. .. .. .. b1 b1 .."
-                  ".. b2 b2 .. .. .. .."
-                  ".. b2 b2 .. .. .. .."
-                  ".. .. .. .. b3 b3 .."
-                  ".. .. .. .. b3 b3 .."
-                  ".. b4 b4 .. .. .. .."
-                  ".. b4 b4 .. .. .. .."
-                  ".. .. .. .. b5 b5 .."
-                  ".. .. .. .. b5 b5 .."
-                  ".. b6 b6 .. .. .. .."
-                  ".. b6 b6 .. .. .. .."`
+                                        ".. .. .. .. b1 b1 .."
+                                        ".. b2 b2 .. .. .. .."
+                                        ".. b2 b2 .. .. .. .."
+                                        ".. .. .. .. b3 b3 .."
+                                        ".. .. .. .. b3 b3 .."
+                                        ".. b4 b4 .. .. .. .."
+                                        ".. b4 b4 .. .. .. .."
+                                        ".. .. .. .. b5 b5 .."
+                                        ".. .. .. .. b5 b5 .."
+                                        ".. b6 b6 .. .. .. .."
+                                        ".. b6 b6 .. .. .. .."`
                                     }
                                     templateColumns='repeat(7, 1fr)'
                                     gap={3}

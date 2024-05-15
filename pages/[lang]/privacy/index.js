@@ -5,6 +5,7 @@ import { Grid, GridItem, SlideFade } from '@chakra-ui/react'
 import { useGlobalContext } from '../../../context';
 import { useRouter } from 'next/router';
 import AnimateLayout from '../../../components/AnimateLayout';
+import Head from 'next/head';
 export default function Home() {
     const router = useRouter();
     const { lang } = router.query;
@@ -17,6 +18,10 @@ export default function Home() {
 
         mainContent = (
             <Layout home pageData={pageData} allGamesData={allGamesData}>
+                <Head>
+                    <title>Privacy Policy 🎮 WebGamer</title>
+                    <link rel="icon" href="https://webgamer.io/favicon.ico" />
+                </Head>
                 <AnimateLayout>
                     <div className="bg-[#181818] py-2 text-white">
                         <div className="max-w-[768px] mx-auto mt-20 mb-3 px-3 terms">

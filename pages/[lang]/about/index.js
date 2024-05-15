@@ -5,6 +5,7 @@ import { Grid, GridItem, SlideFade } from "@chakra-ui/react"
 import { useGlobalContext } from "../../../context";
 import { useRouter } from "next/router";
 import AnimateLayout from "../../../components/AnimateLayout";
+import Head from "next/head";
 export default function Home() {
     const router = useRouter();
     const { lang } = router.query;
@@ -14,11 +15,15 @@ export default function Home() {
     if (!loading) {
         pageData = globalState.allPageData[lang].index;
         allGamesData = globalState.allPageData[lang].games.map(g => g.game);
-
+        
         switch (lang) {
             case "en":
                 mainContent = (
                     <Layout home pageData={pageData} allGamesData={allGamesData}>
+                        <Head>
+                            <title>About 🎮 WebGamer</title>
+                            <link rel="icon" href="https://webgamer.io/favicon.ico" />
+                        </Head>
                         <AnimateLayout>
                             <div className="bg-[#181818] py-2 text-white">
                                 <div className="max-w-[768px] mx-auto mt-20 mb-3 px-3 terms">
@@ -74,7 +79,7 @@ export default function Home() {
                         <AnimateLayout>
                             <div className="bg-[#181818] py-2 text-white">
                                 <div className="max-w-[768px] mx-auto mt-20 mb-3 px-3 terms">
-                                <div class="chakra-container css-tq74si"><h2 class="chakra-heading css-qw7hye">Về WebGamer</h2><p class="chakra-text css-0">Trang web này giới thiệu những trò chơi web tuyệt vời nhất có sẵn trên trình duyệt với trải nghiệm dành cho người dùng. Các tiêu chí để được liệt kê và xếp hạng các trò chơi là:</p><ul role="list" class="css-159ak93"><li class="css-0"><b>Hình ảnh:</b> Những trò chơi có hình ảnh tuyệt vời và được làm đẹp sẽ được xếp hạng cao hơn.</li><li class="css-0"><b>Hiệu suất:</b> Những trò chơi chạy mượt mà và tải nhanh sẽ được xếp hạng cao hơn.</li><li class="css-0"><b>Gameplay và nội dung:</b> Những trò chơi đầy đủ với nội dung sẽ được xếp hạng cao hơn so với những trò chơi demo.</li><li class="css-0"><b>Ít khó khăn:</b> Những trò chơi có con đường ngắn đến gameplay, không có tường đăng ký và tiền tệ mềm mại sẽ được xếp hạng cao hơn.</li></ul><p class="chakra-text css-rszk63">Tôi có thể lưu trữ trò chơi của bạn tại: <b>games.webgamer.io/trò-chơi-của-bạn</b>.</p><p class="chakra-text css-0">Trò chơi không cần phải tương thích với thiết bị di động (những trò chơi chỉ dành cho máy tính sẽ bị lọc ra trên thiết bị di động). Hãy liên hệ với tôi tại <a class="chakra-link css-18ktbam" href="mailto:contact@webgamer.io">contact@webgamer.io</a>!</p></div>
+                                    <div class="chakra-container css-tq74si"><h2 class="chakra-heading css-qw7hye">Về WebGamer</h2><p class="chakra-text css-0">Trang web này giới thiệu những trò chơi web tuyệt vời nhất có sẵn trên trình duyệt với trải nghiệm dành cho người dùng. Các tiêu chí để được liệt kê và xếp hạng các trò chơi là:</p><ul role="list" class="css-159ak93"><li class="css-0"><b>Hình ảnh:</b> Những trò chơi có hình ảnh tuyệt vời và được làm đẹp sẽ được xếp hạng cao hơn.</li><li class="css-0"><b>Hiệu suất:</b> Những trò chơi chạy mượt mà và tải nhanh sẽ được xếp hạng cao hơn.</li><li class="css-0"><b>Gameplay và nội dung:</b> Những trò chơi đầy đủ với nội dung sẽ được xếp hạng cao hơn so với những trò chơi demo.</li><li class="css-0"><b>Ít khó khăn:</b> Những trò chơi có con đường ngắn đến gameplay, không có tường đăng ký và tiền tệ mềm mại sẽ được xếp hạng cao hơn.</li></ul><p class="chakra-text css-rszk63">Tôi có thể lưu trữ trò chơi của bạn tại: <b>games.webgamer.io/trò-chơi-của-bạn</b>.</p><p class="chakra-text css-0">Trò chơi không cần phải tương thích với thiết bị di động (những trò chơi chỉ dành cho máy tính sẽ bị lọc ra trên thiết bị di động). Hãy liên hệ với tôi tại <a class="chakra-link css-18ktbam" href="mailto:contact@webgamer.io">contact@webgamer.io</a>!</p></div>
                                 </div>
                             </div>
                         </AnimateLayout>
