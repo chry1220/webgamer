@@ -14,7 +14,15 @@ module.exports = withMT({
   ],
   theme: {
     fontFamily: {
-      'heading': ["-apple-system","BlinkMacSystemFont","Segoe UI","Helvetica","Arial","sans-serif","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"]
-    }
+      'heading': ["-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"]
+    },
+    screens: {
+      'searchbtn': '450px',
+
+      'favbtn': '420px',
+
+      'discordbtn': '400px',
+      // => @media (min-width: 640px) { ... }
+    },
   }
 });

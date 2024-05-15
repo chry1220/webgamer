@@ -161,26 +161,26 @@ export default function Navbar({ pageData, allGamesData, home }) {
                             </div>
                             <div className='flex items-center flex-row gap-1'>
                                 <button className='hover:bg-[#0c0c0c] rounded-full inline-flex items-center justify-center relative align-middle leading-5 font-semibold h-10 min-w-10 text-base xl:hidden px-4' onClick={openDrawer}>
-                                    <span className='inline-flex self-center shrink-0 mr-2'>
+                                    <span className='inline-flex self-center shrink-0 sm:mr-2'>
                                         <svg fill="currentColor" stroke-width="0" viewBox="0 0 24 24" stroke="currentColor" height="1em" width="1em" aria-hidden="true" focusable="false" class="w-6 h-6 inline-block leading-4 shrink-0"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M3 18h13v-2H3v2zm0-5h10v-2H3v2zm0-7v2h13V6H3zm18 9.59L17.42 12 21 8.41 19.59 7l-5 5 5 5L21 15.59z"></path></svg>
                                     </span>
                                     <span className='sm:block hidden'>Categories</span>
                                 </button>
-                                <button className='hover:bg-[#0c0c0c] rounded-full inline-flex items-center justify-center relative align-middle leading-5 font-semibold h-10 min-w-10 text-base px-4' onClick={handleOpenSearch}>
+                                <button className='hidden searchbtn:inline-flex hover:bg-[#0c0c0c] rounded-full  items-center justify-center relative align-middle leading-5 font-semibold h-10 min-w-10 text-base px-4' onClick={handleOpenSearch}>
                                     <svg fill="currentColor" stroke-width="0" viewBox="0 0 24 24" stroke="currentColor" height="1em" width="1em" aria-hidden="true" focusable="false" class="w-6 h-6 inline-block leading-4 shrink-0 absolute ml-px mt-0.5"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
                                 </button>
                                 {
                                     (parentFavs ? parentFavs.length > 0 : favs.length > 0) ?
-                                        <Link href={`/${pageData.lang}/fav`} className='hover:bg-[#0c0c0c] rounded-full inline-flex items-center justify-center relative align-middle leading-5 font-semibold h-10 min-w-10 text-base px-4'>
+                                        <Link href={`/${pageData.lang}/fav`} className='hidden favbtn:inline-flex hover:bg-[#0c0c0c] rounded-full inline-flex items-center justify-center relative align-middle leading-5 font-semibold h-10 min-w-10 text-base px-4'>
                                             <svg fill="currentColor" stroke-width="0" viewBox="0 0 576 512" stroke="currentColor" height="1em" width="1em" aria-hidden="true" focusable="false"
                                                 class="w-5 h-5 inline-block leading-4 shrink-0 text-[#ffa500] absolute"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
                                         </Link> :
-                                        <button className='cursor-no-drop hover:bg-[#0c0c0c] rounded-full inline-flex items-center justify-center relative align-middle leading-5 font-semibold h-10 min-w-10 text-base px-4'>
+                                        <button className='hidden favbtn:inline-flex cursor-no-drop hover:bg-[#0c0c0c] rounded-full inline-flex items-center justify-center relative align-middle leading-5 font-semibold h-10 min-w-10 text-base px-4'>
                                             <svg fill="currentColor" stroke-width="0" viewBox="0 0 576 512" stroke="currentColor" height="1em" width="1em" aria-hidden="true" focusable="false"
                                                 class="w-5 h-5 inline-block leading-4 shrink-0 text-[#ffa6004a] absolute"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
                                         </button>
                                 }
-                                <Link href={"/"} className='relative'>
+                                <Link href={"/"} className='hidden discordbtn:block relative'>
                                     <button className='hover:bg-[#0c0c0c] rounded-full inline-flex items-center justify-center relative align-middle leading-5 font-semibold h-10 min-w-10 text-base ps-4 pe-4'>
                                         <i className="fa-brands fa-discord absolute mt-2"></i>
                                     </button>
