@@ -215,7 +215,7 @@ export default function Game() {
                                                         <div className="mb-6">
                                                             {
                                                                 gameData.superficialTags.map(tag => (
-                                                                    <Link href={`/en/${tag.slug}`} className="border border-gray-600 text-white bg-transparent hover:bg-gray-900 rounded-full text-base inline-flex items-center justify-center relative align-middle leading-5 min-w-8 h-8 px-3 mr-3" key={tag.slug}>
+                                                                    <Link href={`/${pageData.lang}/${tag.slug}`} className="border border-gray-600 text-white bg-transparent hover:bg-gray-900 rounded-full text-base inline-flex items-center justify-center relative align-middle leading-5 min-w-8 h-8 px-3 mr-3" key={tag.slug}>
                                                                         <span className='inline-flex self-center shrink-0 mr-2'>{InitialIcons[tag.iconKey]}</span>
                                                                         {tag.name}
                                                                     </Link>
@@ -223,7 +223,7 @@ export default function Game() {
                                                             }
                                                             {
                                                                 gameData.players.map(player => (
-                                                                    <Link href={`/en/${player.slug}`} className="border border-gray-600 text-white bg-transparent hover:bg-gray-900 rounded-full text-base inline-flex items-center justify-center relative align-middle leading-5 min-w-8 h-8 px-3 mr-3" key={player.slug}>
+                                                                    <Link href={`/${pageData.lang}/${player.slug}`} className="border border-gray-600 text-white bg-transparent hover:bg-gray-900 rounded-full text-base inline-flex items-center justify-center relative align-middle leading-5 min-w-8 h-8 px-3 mr-3" key={player.slug}>
                                                                         <span className='inline-flex self-center shrink-0 mr-2'>{InitialIcons[player.iconKey]}</span>
                                                                         {player.label}
                                                                     </Link>
@@ -312,7 +312,7 @@ export default function Game() {
 
                                                                                 <div className="grid gap-2 grid-cols-4 relatedgame">
                                                                                     {gameData.detailedDeveloper.superficialGames.map((game) => (
-                                                                                        <Link href={`/en/g/${game.slug}`} key={game.slug}>
+                                                                                        <Link href={`/${pageData.lang}/g/${game.slug}`} key={game.slug}>
                                                                                             <ImageTilt game={game} />
                                                                                         </Link>
                                                                                     ))}
@@ -360,7 +360,7 @@ export default function Game() {
                                             <div className="xl:grid hidden bg-black rounded-xl p-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-1 gap-3">
                                                 {gameData.relatedGames.slice(0, 6).map((game) => (
                                                     <div className="rounded-lg relatedgame" key={game.slug}>
-                                                        <Link href={`/en/g/${game.slug}`} key={game.slug}>
+                                                        <Link href={`/${pageData.lang}/g/${game.slug}`} key={game.slug}>
                                                             <ImageTilt game={game} />
                                                         </Link>
                                                     </div>
@@ -373,7 +373,7 @@ export default function Game() {
                                             <div className="xl:hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3">
                                                 {gameData.relatedGames.map((game) => (
                                                     <div className="rounded-lg relatedgame" key={game.slug}>
-                                                        <Link href={`/en/g/${game.slug}`} key={game.slug}>
+                                                        <Link href={`/${pageData.lang}/g/${game.slug}`} key={game.slug}>
                                                             <ImageTilt game={game} />
                                                         </Link>
                                                     </div>
@@ -382,7 +382,7 @@ export default function Game() {
                                             <div className="hidden xl:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3">
                                                 {gameData.relatedGames.slice(6).map((game) => (
                                                     <div className="rounded-lg relatedgame" key={game.slug}>
-                                                        <Link href={`/en/g/${game.slug}`} key={game.slug}>
+                                                        <Link href={`/${pageData.lang}/g/${game.slug}`} key={game.slug}>
                                                             <ImageTilt game={game} />
                                                         </Link>
                                                     </div>

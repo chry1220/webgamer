@@ -38,7 +38,7 @@ export default function Home() {
                     </div>
                     <div className='grid gap-2 grid-cols-2 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3'>
                         {allGamesData.filter(game => favs.includes(game.slug)).map((game) => (
-                            <Link href={`/${"en"}/g/${game.slug}`} className="rounded-lg relatedgame" key={game.slug}>
+                            <Link href={`/${pageData.lang}/g/${game.slug}`} className="rounded-lg relatedgame" key={game.slug}>
                                 <ImageTilt game={game} />
                             </Link>
                         ))}
