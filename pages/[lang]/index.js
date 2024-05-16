@@ -87,7 +87,7 @@ export default function Home() {
                                             className={i % 15 == 0 ? "big-game relative" : 'game relative'}
                                         >
                                             <Link href={`/${lang}/g/${datum.slug}`} className='w-full h-full inline-block'>
-                                                <ImageTilt game={datum} />
+                                                <ImageTilt game={datum} smallScale/>
                                             </Link>
                                         </GridItem>
                                     ))}
@@ -124,7 +124,7 @@ export default function Home() {
                                             className={i % 12 == 0 && i < 67 ? "big-game relative" : 'game relative'}
                                         >
                                             <Link href={`/${lang}/g/${datum.slug}`} className='w-full h-full inline-block'>
-                                                <ImageTilt game={datum} />
+                                                <ImageTilt game={datum} smallScale/>
                                             </Link>
                                         </GridItem>
                                     ))}
@@ -162,7 +162,7 @@ export default function Home() {
                                             className={i % 6 == 0 && i < 36 ? "big-game relative" : 'game relative'}
                                         >
                                             <Link href={`/${lang}/g/${datum.slug}`} className='w-full h-full inline-block'>
-                                                <ImageTilt game={datum} />
+                                                <ImageTilt game={datum} smallScale/>
                                             </Link>
                                         </GridItem>
                                     ))}
@@ -172,7 +172,7 @@ export default function Home() {
                                 <div className="grid gap-2 grid-cols-2">
                                     {gamesData.map((game) => (
                                         <Link href={`/${lang}/g/${game.slug}`} key={game.slug} className='game'>
-                                            <ImageTilt game={game} />
+                                            <ImageTilt game={game} smallScale/>
                                         </Link>
                                     ))}
                                 </div>
@@ -181,7 +181,7 @@ export default function Home() {
                                 <div className="grid grid-cols-1 gap-2">
                                     {gamesData.map((game) => (
                                         <Link href={`/${lang}/g/${game.slug}`} key={game.slug} className='xsm-game'>
-                                            <ImageTilt game={game} />
+                                            <ImageTilt game={game} smallScale/>
                                         </Link>
                                     ))}
                                 </div>

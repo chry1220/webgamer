@@ -94,10 +94,17 @@ export default function HomeWithTag() {
                             <div className="text-xl font-bold pt-3 pb-5 shrink-0">
                                 {subTitle}
                             </div>
-                            <div className="grid gap-3 grid-cols-1 mylg:grid-cols-5 mymd:grid-cols-4 mysm:grid-cols-3 myxsm:grid-cols-2">
+                            <div className="mylg:grid gap-3 grid-cols-1 mylg:grid-cols-5 hidden">
                                 {gamesData.map((game) => (
                                     <Link href={`/${lang}/g/${game.slug}`} className="rounded-lg relatedgame" key={game.slug}>
                                         <ImageTilt game={game} />
+                                    </Link>
+                                ))}
+                            </div>
+                            <div className="grid gap-3 grid-cols-1 mylg:hidden mymd:grid-cols-4 mysm:grid-cols-3 myxsm:grid-cols-2">
+                                {gamesData.map((game) => (
+                                    <Link href={`/${lang}/g/${game.slug}`} className="rounded-lg relatedgame" key={game.slug}>
+                                        <ImageTilt game={game} smallScale/>
                                     </Link>
                                 ))}
                             </div>

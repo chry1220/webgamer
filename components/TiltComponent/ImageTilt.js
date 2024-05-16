@@ -27,7 +27,7 @@ const ImageTilt = ({game, smallScale}) => {
         tiltMaxAngleY={10}
         glareEnable={true}
         glareMaxOpacity={0.8}
-        scale={smallScale ? 1.05 : 1.5}
+        scale={smallScale ? 1.03 : 1.5}
         className='w-full, h-full'
       >
         {
