@@ -112,7 +112,7 @@ export default function Navbar({ pageData, allGamesData, home }) {
         <div>
             <div className='text-white'>
                 <div className='fixed w-full top-0 z-10 bg-black py-2.5'>
-                    <div className='w-full max-w-[1388px] mx-auto'>
+                    <div className='w-full max-w-[1388px] mx-auto px-4'>
                         <div className='flex items-center justify-between relative'>
                             <div className='flex items-center relative z-10'>
                                 <div className='inline-block pt-1 pb-1 relative'>
