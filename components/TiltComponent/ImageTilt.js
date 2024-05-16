@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import React, { useState } from 'react';
 import Tilt from 'react-parallax-tilt';
-const ImageTilt = ({game}) => {
+const ImageTilt = ({game, smallScale}) => {
   const [isHovered, setIsHovered] = useState(false);
   const [showImage2, setShowImage2] = useState(false);
   const [zIndex, setZIndex] = useState(0);
@@ -27,7 +27,7 @@ const ImageTilt = ({game}) => {
         tiltMaxAngleY={10}
         glareEnable={true}
         glareMaxOpacity={0.8}
-        scale={1.5}
+        scale={smallScale ? 1.05 : 1.5}
         className='w-full, h-full'
       >
         {
