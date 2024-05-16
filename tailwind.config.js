@@ -27,11 +27,15 @@ module.exports = withMT({
 
       'xsm': '350px',
 
+      "re-480px": "480px",
+
+      "myxsm": "400px",
+
       'mysm': '540px',
 
       'mymd': '768px',
 
-      "re-480px": "480px"
+      "mylg": "1024px",
       // => @media (min-width: 640px) { ... }
     },
   }

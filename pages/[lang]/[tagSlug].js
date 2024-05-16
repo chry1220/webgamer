@@ -37,8 +37,11 @@ export default function HomeWithTag() {
         let pageType = "";
         allGamesData.forEach(gameData => {
             if (gameData.superficialTags.filter(stag => stag.slug == tagSlug).length > 0) {
-                gamesData.push(gameData)
+                gamesData.push(gameData);
                 pageType = "Tag";
+                const iconKey = gameData.superficialTags.find(stag => stag.slug == tagSlug).iconKey;
+                const gameTagName = pageDataEn.navTags.find(t => t.iconKey == iconKey) ? pageDataEn.navTags.find(t => t.iconKey == iconKey).name : pageDataEn.moreTags.find(t => t.iconKey == iconKey).name;
+                pageTitle = gameTagName + " Games 🎮 Play for Free on WebGame";
             } else if (gameData.superficialEngine && gameData.superficialEngine.slug == tagSlug) {
                 gamesData.push(gameData)
                 pageType = "Engine";
@@ -81,7 +84,7 @@ export default function HomeWithTag() {
         mainContent = (
             <Layout pageData={pageData} allGamesData={allGamesData}>
                 <Head>
-                    <title>{pageData.headTitle}</title>
+                    <title>{pageTitle}</title>
                     <link rel="icon" href="https://webgamer.io/favicon.ico" />
                 </Head>
                 <AnimateLayout key={tagSlug}>
@@ -91,7 +94,7 @@ export default function HomeWithTag() {
                             <div className="text-xl font-bold pt-3 pb-5 shrink-0">
                                 {subTitle}
                             </div>
-                            <div className="grid gap-3 grid-cols-2 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3">
+                            <div className="grid gap-3 grid-cols-1 mylg:grid-cols-5 mymd:grid-cols-4 mysm:grid-cols-3 myxsm:grid-cols-2">
                                 {gamesData.map((game) => (
                                     <Link href={`/${lang}/g/${game.slug}`} className="rounded-lg relatedgame" key={game.slug}>
                                         <ImageTilt game={game} />
