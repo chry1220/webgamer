@@ -36,7 +36,14 @@ export default function Home() {
                         <i className={`fa-solid w-7 mr-6 fa-star text-[#ffa500]`}></i>
                         {pageData.layoutTr["Favorites"]}
                     </div>
-                    <div className='grid gap-2 grid-cols-2 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3'>
+                    <div className='grid gap-2 grid-cols-2 lg:hidden md:grid-cols-4 sm:grid-cols-3'>
+                        {allGamesData.filter(game => favs.includes(game.slug)).map((game) => (
+                            <Link href={`/${pageData.lang}/g/${game.slug}`} className="rounded-lg relatedgame" key={game.slug}>
+                                <ImageTilt game={game} smallScale/>
+                            </Link>
+                        ))}
+                    </div>
+                    <div className='lg:grid gap-2 grid-cols-2 lg:grid-cols-5 hidden'>
                         {allGamesData.filter(game => favs.includes(game.slug)).map((game) => (
                             <Link href={`/${pageData.lang}/g/${game.slug}`} className="rounded-lg relatedgame" key={game.slug}>
                                 <ImageTilt game={game} />
